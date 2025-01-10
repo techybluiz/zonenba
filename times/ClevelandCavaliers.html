@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Cleveland Cavaliers </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2,h1{
+            color: #6F263D;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #6F263D;
+        }
+ 
+        th {
+            background-color: #FFB81C;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #6F263D;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #FFB81C;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #FFB81C;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #6F263D;
+
+        }
+        
+        .formulario {
+            background-color: #ffd16c;
+        }
+   
+        @keyframes motion{
+            0%{
+                color: #FFB81C;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Cavaliers Fans!</h1>
+        <span class="descricao">Cleveland Cavaliers</span>
+      </header><br>
+      <br>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+        <h1 style="color: 6F263D;">Times <i class="fa-solid fa-shield"></i></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                </li>
+              </ul>
+        </div>
+      </nav>
+</header>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="historia" href="#">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Mascote">Mascote</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Rivalidades">Rivalidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CorePlayers">Core Players</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Quiz">Quiz</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+    <section>
+        <div>
+            <h1><b>Cleveland Cavaliers</b></h1>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612739/2022/03/Asset-4-3.svg" alt="Cleveland Cavaliers">
+            
+            <h2 id="historia"><b>História</b></h2>
+            <p>
+                O Cleveland Cavaliers foi fundado em 1970 como uma das equipes de expansão da NBA naquela época. A equipe começou a jogar oficialmente na temporada 1970-1971. Nos primeiros anos, o time teve um desempenho irregular e enfrentou dificuldades para se estabelecer como uma potência na liga.
+                <br>
+                Uma das fases mais notáveis da história dos Cavaliers foi durante a liderança de LeBron James. Ele foi selecionado pela equipe como a primeira escolha geral do Draft de 2003 e rapidamente se tornou uma estrela da liga. LeBron levou os Cavaliers a várias aparições nos playoffs e, em 2007, levou a equipe à sua primeira final da NBA, embora tenham sido derrotados pelo San Antonio Spurs.
+                Nos anos recentes, os Cavaliers têm focado em desenvolver jovens talentos e construir uma equipe competitiva para os próximos anos. Embora ainda não tenham alcançado o mesmo sucesso dos anos de LeBron, a equipe está trabalhando para se tornar uma força novamente na Conferência Leste da NBA.
+            </p>
+                
+            <h2><b>Arena</b></h2>
+                <p>
+                    A arena do Cleveland Cavaliers é a<b>Rocket Mortgage FieldHouse</b>, A arena está localizada em Cleveland, Ohio, nos Estados Unidos.
+                    Quanto à capacidade da Rocket Mortgage FieldHouse, ela pode variar dependendo do tipo de evento realizado. Para jogos de basquete da NBA, a capacidade é de aproximadamente 19.432.    
+                </p>
+              <hr>
+                <img src="https://media-s3-us-east-1.ceros.com/cleveland-cavaliers/images/2023/03/29/9a2bb03721d807b5a90ad060d5e96f7b/gettyimages-1244980826.png?imageOpt=1&fit=bounds&width=418&crop=2092,4100,x582,y674" alt="mascote">
+            
+            <h2><b>Mascote</b></h2>
+                <p>
+                    O mascote do Cleveland Cavaliers é o <b class="grifado">"Moondog"</b>. também conhecido como Sir CC.
+                    Moondog foi introduzido como mascote oficial dos Cavaliers em 2003. O nome "Moondog" é uma referência ao apelido de Cleveland, <b class="grifado">"The Rock 'n' Roll Capital of the World"</b>, e também uma homenagem ao lendário disc jockey de rádio de Cleveland, Alan Freed, que foi chamado de "Moondog".
+                    Moondog é representado como um cão antropomórfico de pelagem marrom e longos cabelos loiros. Ele é conhecido por sua energia contagiante, truques divertidos durante os jogos e interações animadas com os fãs.
+                    Além dos jogos, Moondog também participa de eventos comunitários, visitas a hospitais, escolas e outras atividades para interagir e envolver os fãs e a comunidade de Cleveland.
+                </p>    
+            <br>
+
+        </div>
+    </section>
+
+    <section>
+        <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+        <p>
+            <li><b class="grifado">2007 NBA Finals:</b> Os Cavaliers alcançaram as finais da NBA pela primeira vez em 2007, enfrentando o poderoso time do San Antonio Spurs. Embora tenham sido derrotados na série final, a liderança de LeBron James nesta temporada elevou a equipe para uma nova era de competitividade na liga.</li>
+            <li><b class="grifado">Return of LeBron (2014):</b> Em 2014, LeBron James retornou aos Cavaliers após uma passagem pelo Miami Heat. Sua decisão de voltar para Cleveland trouxe esperança e expectativas renovadas para a equipe e os fãs, culminando no primeiro título da NBA para os Cavaliers em 2016.</li>
+            <li><b class="grifado">2016 NBA Finals Championship:</b> Em 2016, os Cavaliers conquistaram o título da NBA pela primeira vez em sua história, derrotando o Golden State Warriors em uma série final emocionante e histórica. Este momento foi marcado pela atuação fenomenal de LeBron James e pelo retorno épico na série após estar em desvantagem de 3 a 1.</li>
+            <li><b class="grifado">LeBron James MVP (2009, 2010, 2012, 2013):</b> Durante sua primeira passagem pelos Cavaliers, LeBron James conquistou o prêmio de MVP da temporada regular em quatro ocasiões (2009, 2010, 2012, 2013), demonstrando sua importância e impacto na equipe.</li>
+            <li><b class="grifado">Return to NBA Finals (2017, 2018):</b> Após conquistar o título em 2016, os Cavaliers retornaram às finais da NBA por quatro temporadas consecutivas (2015-2018) sob a liderança de LeBron James. Embora não tenham vencido todas as finais, sua presença constante nas finais mostrou a força e consistência da equipe.</li>
+        </p>
+    </section>
+<hr>
+
+    <div class="rivalidades">
+        <h2 id="rivalidades"><b>Rivalidades</b></h2>
+        <p>
+            <li><a href="GoldenStateWarriors.html"> Golden State Warriors:</a> Durante as finais da NBA de 2015 a 2018, o Cleveland Cavaliers e o Golden State Warriors desenvolveram uma rivalidade intensa. Esses confrontos consecutivos nas finais criaram uma rivalidade moderna entre as duas equipes, especialmente devido às performances de LeBron James e Stephen Curry.</li>
+            <li><a href="ChicagoBulls.html"> Chicago Bulls:</a> Nos anos 80 e 90, o Cleveland Cavaliers e o Chicago Bulls desenvolveram uma rivalidade marcante. Os confrontos nos playoffs e a presença de estrelas como Michael Jordan (Bulls) e Mark Price (Cavaliers) contribuíram para essa rivalidade histórica.</li>
+            <li><a href="DetroitPistons.html"> Detroit Pistons:</a> Durante os anos 80 e início dos anos 90, o Cleveland Cavaliers e o Detroit Pistons tiveram confrontos memoráveis nos playoffs. Essa rivalidade foi intensificada pelas diferenças de estilo de jogo e pela competitividade entre as duas equipes.</li>
+        </p>
+    </div>
+
+    <div class="container">
+        <h1 id="CorePlayers"><b>Cleveland Cavaliers Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jarrett Allen</td>
+                    <td>C</td>
+                    <td>31</td>
+                    <td>2,06 m</td>
+                    <td>110 kg</td>
+                    <td>Texas</td>
+                    <td>$20,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066328.png" alt="Jarrett Allen" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Emoni Bates</td>
+                    <td>A</td>
+                    <td>21</td>
+                    <td>2,03 m</td>
+                    <td>77 kg</td>
+                    <td>Eastern Michigan</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433620.png" alt="Emoni Bates" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Darius Garland</td>
+                    <td>PG</td>
+                    <td>10</td>
+                    <td>1,85 m</td>
+                    <td>87 kg</td>
+                    <td>Vanderbilt</td>
+                    <td>$36,725,670</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4396907.png" alt="Darius Garland" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Ty Jerome</td>
+                    <td>SG</td>
+                    <td>2</td>
+                    <td>1,96 m</td>
+                    <td>88 kg</td>
+                    <td>Virginia</td>
+                    <td>$2,560,975</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4065733.png" alt="Ty Jerome" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Caris LeVert</td>
+                    <td>SG</td>
+                    <td>3</td>
+                    <td>1,98 m</td>
+                    <td>92 kg</td>
+                    <td>Michigan</td>
+                    <td>$16,615,384</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2991043.png" alt="Caris LeVert" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Sam Merrill</td>
+                    <td>SG</td>
+                    <td>5</td>
+                    <td>1,93 m</td>
+                    <td>92 kg</td>
+                    <td>Utah State</td>
+                    <td>$2,164,993</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066757.png" alt="Sam Merrill" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Donovan Mitchell</td>
+                    <td>SG</td>
+                    <td>45</td>
+                    <td>1,91 m</td>
+                    <td>97 kg</td>
+                    <td>Louisville</td>
+                    <td>$35,410,310</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3908809.png" alt="Donovan Mitchell" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Evan Mobley</td>
+                    <td>PF</td>
+                    <td>4</td>
+                    <td>2,11 m</td>
+                    <td>97 kg</td>
+                    <td>USC</td>
+                    <td>$11,227,809</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432158.png" alt="Evan Mobley" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Georges Niang</td>
+                    <td>SF</td>
+                    <td>20</td>
+                    <td>2,01 m</td>
+                    <td>104 kg</td>
+                    <td>Iowa State</td>
+                    <td>$8,500,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2990969.png" alt="Georges Niang" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Isaac Okoro</td>
+                    <td>SF</td>
+                    <td>35</td>
+                    <td>1,96 m</td>
+                    <td>102 kg</td>
+                    <td>Auburn</td>
+                    <td>$10,185,185</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432822.png" alt="Isaac Okoro" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Craig Porter Jr.</td>
+                    <td>G</td>
+                    <td>9</td>
+                    <td>1,85 m</td>
+                    <td>81 kg</td>
+                    <td>Wichita State</td>
+                    <td>$1,891,857</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4701233.png" alt="Craig Porter Jr." width="50"></td>
+                </tr>
+                <tr>
+                    <td>Max Strus</td>
+                    <td>SG</td>
+                    <td>1</td>
+                    <td>1,96 m</td>
+                    <td>97 kg</td>
+                    <td>DePaul</td>
+                    <td>$15,212,068</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4065778.png" alt="Max Strus" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Tristan Thompson</td>
+                    <td>C</td>
+                    <td>13</td>
+                    <td>2,06 m</td>
+                    <td>115 kg</td>
+                    <td>Texas</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6474.png" alt="Tristan Thompson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>JT Thor</td>
+                    <td>A</td>
+                    <td>15</td>
+                    <td>2,06 m</td>
+                    <td>92 kg</td>
+                    <td>Auburn</td>
+                    <td>$1,988,598</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4702233.png" alt="JT Thor" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Luke Travers</td>
+                    <td>G</td>
+                    <td>33</td>
+                    <td>2,01 m</td>
+                    <td>93 kg</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4997539.png" alt="Luke Travers" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jaylon Tyson</td>
+                    <td>A</td>
+                    <td>24</td>
+                    <td>1,98 m</td>
+                    <td>97 kg</td>
+                    <td>Califórnia</td>
+                    <td>$3,326,160</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683747.png" alt="Jaylon Tyson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dean Wade</td>
+                    <td>PF</td>
+                    <td>32</td>
+                    <td>2,06 m</td>
+                    <td>103 kg</td>
+                    <td>Kansas State</td>
+                    <td>$6,166,667</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3912848.png" alt="Dean Wade" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Cleveland Cavaliers</b></h2>
+        <form id="cavaliers-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Cleveland Cavaliers?</label>
+                <br>
+                <div>
+                    <label for="player-lebron-james">LeBron James</label>
+                    <input type="radio" id="player-lebron-james" name="favorite-player" value="LeBron James">
+                </div>
+                <div>
+                    <label for="player-darius-garland">Darius Garland</label>
+                    <input type="radio" id="player-darius-garland" name="favorite-player" value="Darius Garland">
+                </div>
+                <div>
+                    <label for="player-collin-sexton">Collin Sexton</label>
+                    <input type="radio" id="player-collin-sexton" name="favorite-player" value="Collin Sexton">
+                </div>
+                <div>
+                    <label for="player-evan-mobley">Evan Mobley</label>
+                    <input type="radio" id="player-evan-mobley" name="favorite-player" value="Evan Mobley">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Cleveland Cavaliers?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-lebron-james">LeBron James</label>
+                    <input type="radio" id="greatest-player-lebron-james" name="greatest-player" value="LeBron James">
+                </div>
+                <div>
+                    <label for="greatest-player-mark-price">Mark Price</label>
+                    <input type="radio" id="greatest-player-mark-price" name="greatest-player" value="Mark Price">
+                </div>
+                <div>
+                    <label for="greatest-player-brad-daugherty">Brad Daugherty</label>
+                    <input type="radio" id="greatest-player-brad-daugherty" name="greatest-player" value="Brad Daugherty">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA para o Cleveland Cavaliers?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-rebuilding">Reconstrução da equipe</label>
+                    <input type="radio" id="next-season-expectation-rebuilding" name="next-season-expectation" value="Reconstrução da equipe">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <div>
+                <label for="next-season-expectation-question">Quais áreas você acredita que o Cleveland Cavaliers precisa melhorar para ter sucesso na próxima temporada?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="next-season-expectation-question">Como você avalia as escolhas do draft feitas pelo Cleveland Cavaliers nesta temporada?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="next-season-expectation-question">Qual é a sua opinião sobre o técnico atual do Cleveland Cavaliers, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Cleveland Cavaliers!</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    document.getElementById('cavaliers-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

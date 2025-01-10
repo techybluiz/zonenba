@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Washington Wizards </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #E31837;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #E31837;
+        }
+ 
+        th {
+            background-color: #002B5C;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #E31837;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #af0003;
+        }
+        .bg-light {
+            background-color: rgb(255, 255, 255);
+        
+        }
+        .bg-body-tertiary{
+            background: #002B5C;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #E31837;
+
+        }
+        
+        .formulario {
+            background-color: #dbdbdb;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #002B5C;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Wizards Fans!</h1>
+        <span class="descricao">Washington Wizards</span>
+      </header><br>
+      <br>
+  <header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #E31837;">Times <i class="fa-solid fa-hat-wizard" style="color: #E31837;"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mascote">Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <section>
+        <div>
+      <img src="https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg" alt="Wizards">
+      <br>
+      <h1><b>Washington Wizards</b></h1>
+        <h2 id="historia"><b>História</b></h2>
+        <p>
+            O Washington Wizards é uma das franquias mais antigas da NBA, com uma história rica que remonta a 1961, quando a equipe foi fundada como Chicago Packers.
+            A franquia foi originalmente fundada em 1961 como Chicago Packers, fazendo parte da primeira expansão da NBA após a fusão da liga com a rival Basketball Association of America (BAA). Apenas uma temporada depois, em 1962, o time foi renomeado para Chicago Zephyrs.
+            Em 1963, a equipe mudou-se para Baltimore, tornando-se os Baltimore Bullets. Durante sua passagem por Baltimore, a franquia teve um sucesso considerável, destacando-se com jogadores como Walt Bellamy e Paul Silas. Em 1971, os Bullets chegaram às finais da NBA, mas foram derrotados pelo Milwaukee Bucks, liderado por Kareem Abdul-Jabbar (na época conhecido como Lew Alcindor).
+            m 1973, a equipe mudou-se para Washington, D.C., e passou a se chamar Washington Bullets. Foi nesse período que o time viveu um de seus maiores momentos históricos. Em 1978, os Bullets conquistaram o título da NBA, derrotando o Seattle SuperSonics nas finais. Com jogadores como Wes Unseld e Elvin Hayes, a equipe solidificou sua posição como uma força dominante da liga.
+            Ao longo da década de 1980 e 1990, os Bullets continuaram sendo uma presença regular nos playoffs, mas não conseguiram conquistar outro título. Durante esse período, estrelas como Chris Webber e Juwan Howard marcaram presença, mas o time não teve o sucesso necessário para disputar o campeonato.
+            Em 1997, o time passou a se chamar Washington Wizards, uma decisão tomada pelo proprietário da franquia na época, Abe Pollin, que acreditava que o nome "Bullets" tinha uma conotação violenta, em uma tentativa de promover uma imagem mais positiva para a cidade de Washington, D.C.
+        </p>
+            <br>
+        
+            <h2><b>Arena</b></h2>
+        <p>
+            A arena do Washington Wizards é o<b>Capital One Arena</b>.  Localizada no centro de Washington, D.C, é usada não apenas pelos Hawks, mas também por outras equipes esportivas e para vários eventos de entretenimento.<br>
+            Sua capacidade é de aproximadamente 20.000 pessoas para jogos de basquete, mas a capacidade pode variar dependendo do evento.
+        </p>
+        <br>
+            
+        
+        <hr>
+        <img src="https://cdn.nba.com/teams/uploads/sites/1610612737/2023/06/harry_2223_3.jpg" alt="">
+        <h2 id="mascote"><b>Mascote</b></h2>
+        <p>
+            <br>
+            O mascote oficial do Washington Wizards é o<b>G-Wiz</b>, uma figura carismática e energética que representa o espírito
+             da equipe e a empolgação de suas partidas. G-Wiz foi introduzido em 1997, quando a franquia ainda se chamava 
+             Washington Bullets.
+            <br>
+            Sua criação foi parte de uma iniciativa para aumentar a interação com os fãs, especialmente 
+             com as crianças, e criar uma presença mais amigável e divertida no estádio e em eventos da comunidade.
+             O nome "G-Wiz" foi escolhido como uma referência tanto à letra "G" de "Great" (grande) quanto à palavra "Wiz", que remete ao nome do time (Wizards). O mascote é frequentemente descrito como uma espécie de mago travesso e brincalhão, caracterizado por sua fantasia de mago azul e amarela, que reflete as cores do time.
+        </p>
+</div>
+    </section>
+
+    <hr>
+
+    <div>
+        <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+        <p>
+            <li><b class="grifado">Fundação da franquia (1961):</b> O Washington Wizards foi fundado como Chicago Packers em 1961, antes de mudar de nome para Chicago Zephyrs e, finalmente, para Washington Bullets em 1973. Esta mudança de identidade refletiu a evolução do time ao longo dos anos.</li>
+            <li><b class="grifado">Título da NBA (1978):</b> O primeiro título da NBA foi conquistado pelo Washington Bullets em 1978, ao derrotar o Seattle SuperSonics nas finais. Esse título foi o ápice de uma equipe liderada por estrelas como Wes Unseld e Elvin Hayes.</li>
+            <li><b class="grifado">Mudança para Washington (1973):</b> Em 1973, a equipe mudou de nome e sede, se tornando os Washington Bullets. Essa mudança simbolizou um novo capítulo para a franquia, que passou a ter uma presença consolidada na capital dos EUA.</li>
+            <li><b class="grifado">Era Gilbert Arenas (2003-2010):</b> Durante a era de Gilbert Arenas, o Wizards teve uma série de bons desempenhos, com Arenas se tornando a estrela do time. Ele levou o time aos playoffs em várias temporadas e teve momentos marcantes, como a famosa "Guerrilla Warfare" nos playoffs de 2005.</li>
+            <li><b class="grifado">A Seleção para os Playoffs de 2017:</b> O Wizards teve uma das melhores temporadas na década de 2010, levando o time aos playoffs em 2017, com um time que contou com Bradley Beal e John Wall. A série contra o Boston Celtics foi um dos momentos de maior destaque dessa fase.</li>
+            <li><b class="grifado">Era John Wall e Bradley Beal:</b> Durante os anos 2010, a dupla John Wall e Bradley Beal se tornou o principal destaque do time, criando uma das melhores duplas de armador e ala-armador da liga e levando o time a várias disputas por vagas nos playoffs.</li>
+            <li><b class="grifado">A chegada de Russell Westbrook (2020):</b> A troca de John Wall por Russell Westbrook em 2020 foi um momento marcante na história recente dos Wizards. Westbrook trouxe uma nova energia ao time, levando-o para os playoffs durante a temporada de 2020-2021.</li>
+        </p>
+    </div>
+    
+
+    <div class="rivalidades">
+        <h2 id="rivalidades"><b>Rivalidades</b></h2>
+        <p>
+            <li><a href="BostonCeltics.html">Boston Celtics:</a> A rivalidade entre o Washington Wizards e o Boston Celtics é uma das mais históricas e intensas da NBA, com ambos os times competindo na Conferência Leste. Os confrontos nos playoffs, como em 2017, foram marcados por jogos acirrados e muita emoção.</li>
+            <li><a href="Philadelphia76ers.html">Philadelphia 76ers:</a> Como equipes da Divisão Atlântica, o Wizards e o 76ers têm uma rivalidade regional que é acentuada pelos intensos jogos de divisão e pelas disputas nos playoffs, especialmente nas últimas temporadas com a presença de estrelas como Joel Embiid e Bradley Beal.</li>
+            <li><a href="MiamiHeat.html">Miami Heat:</a> O Washington Wizards e o Miami Heat têm uma rivalidade construída ao longo de vários confrontos difíceis, com ambos os times competindo por posições fortes nos playoffs da Conferência Leste. A disputa ficou ainda mais interessante com os times se enfrentando em momentos chave da temporada.</li>
+        </p>
+    </div>
+    
+   
+
+<hr>
+<div class="container">
+    <h1 id="CorePlayers"><b>Washington Wizards Core Players</b></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Número</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>Faculdade</th>
+                <th>Salário</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marvin Bagley III</td>
+                <td>Pivô</td>
+                <td>35</td>
+                <td>2,08 m</td>
+                <td>106 kg</td>
+                <td>Duke</td>
+                <td>$12,500,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433246.png" alt="Marvin Bagley III" width="50"></td>
+            </tr>
+            <tr>
+                <td>Patrick Baldwin Jr.</td>
+                <td>Ala</td>
+                <td>7</td>
+                <td>2,06 m</td>
+                <td>99 kg</td>
+                <td>Milwaukee</td>
+                <td>$2,448,840</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397136.png" alt="Patrick Baldwin Jr." width="50"></td>
+            </tr>
+            <tr>
+                <td>Saddiq Bey</td>
+                <td>Ala</td>
+                <td>14</td>
+                <td>2,01 m</td>
+                <td>97 kg</td>
+                <td>Villanova</td>
+                <td>$6,440,678</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2566769.png" alt="Saddiq Bey" width="50"></td>
+            </tr>
+            <tr>
+                <td>Malcolm Brogdon</td>
+                <td>Armador</td>
+                <td>15</td>
+                <td>1,93 m</td>
+                <td>103 kg</td>
+                <td>Virginia</td>
+                <td>$22,500,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395695.png" alt="Malcolm Brogdon" width="50"></td>
+            </tr>
+            <tr>
+                <td>Jared Butler</td>
+                <td>Ouro / Ala-armador</td>
+                <td>4</td>
+                <td>1,91 m</td>
+                <td>87 kg</td>
+                <td>Baylor</td>
+                <td>$2,196,970</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4845374.png" alt="Jared Butler" width="50"></td>
+            </tr>
+            <tr>
+                <td>Carlton Carrington</td>
+                <td>G</td>
+                <td>8</td>
+                <td>1,93 m</td>
+                <td>86 kg</td>
+                <td>Pittsburgh</td>
+                <td>$4,454,880</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432907.png" alt="Carlton Carrington" width="50"></td>
+            </tr>
+            <tr>
+                <td>Justin Champagnie</td>
+                <td>SF</td>
+                <td>9</td>
+                <td>1,98 m</td>
+                <td>93 kg</td>
+                <td>Pittsburgh</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5104155.png" alt="Justin Champagnie" width="50"></td>
+            </tr>
+            <tr>
+                <td>Bilal Coulibaly</td>
+                <td>SG</td>
+                <td>0</td>
+                <td>2,03 m</td>
+                <td>88 kg</td>
+                <td>--</td>
+                <td>$6,945,240</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432356.png" alt="Bilal Coulibaly" width="50"></td>
+            </tr>
+            <tr>
+                <td>Johnny Davis</td>
+                <td>G</td>
+                <td>1</td>
+                <td>1,93 m</td>
+                <td>88 kg</td>
+                <td>Wisconsin</td>
+                <td>$5,291,160</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5174563.png" alt="Johnny Davis" width="50"></td>
+            </tr>
+            <tr>
+                <td>Kyshawn George</td>
+                <td>Ala</td>
+                <td>18</td>
+                <td>2,03 m</td>
+                <td>90 kg</td>
+                <td>Miami</td>
+                <td>$2,825,520</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2581184.png" alt="Kyshawn George" width="50"></td>
+            </tr>
+            <tr>
+                <td>Anthony Gill</td>
+                <td>Pivô</td>
+                <td>16</td>
+                <td>2,03 m</td>
+                <td>104 kg</td>
+                <td>Virginia</td>
+                <td>$2,237,691</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2993370.png" alt="Anthony Gill" width="50"></td>
+            </tr>
+            <tr>
+                <td>Richaun Holmes</td>
+                <td>Ala</td>
+                <td>22</td>
+                <td>2,06 m</td>
+                <td>106 kg</td>
+                <td>Bowling Green</td>
+                <td>$12,648,321</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4280151.png" alt="Richaun Holmes" width="50"></td>
+            </tr>
+            <tr>
+                <td>Corey Kispert</td>
+                <td>Ala</td>
+                <td>24</td>
+                <td>1,98 m</td>
+                <td>101 kg</td>
+                <td>Gonzaga</td>
+                <td>$5,705,888</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3134907.png" alt="Corey Kispert" width="50"></td>
+            </tr>
+            <tr>
+                <td>Kyle Kuzma</td>
+                <td>Ala</td>
+                <td>33</td>
+                <td>2,06 m</td>
+                <td>100 kg</td>
+                <td>Utah</td>
+                <td>$23,522,727</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4277956.png" alt="Kyle Kuzma" width="50"></td>
+            </tr>
+            <tr>
+                <td>Jordan Poole</td>
+                <td>SG</td>
+                <td>13</td>
+                <td>1,93 m</td>
+                <td>87 kg</td>
+                <td>Michigan</td>
+                <td>$29,651,786</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5160992.png" alt="Jordan Poole" width="50"></td>
+            </tr>
+            <tr>
+                <td>Alexandre Sarr</td>
+                <td>Pivô</td>
+                <td>20</td>
+                <td>2,13 m</td>
+                <td>92 kg</td>
+                <td>--</td>
+                <td>$11,245,680</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6477.png" alt="Alexandre Sarr" width="50"></td>
+            </tr>
+            <tr>
+                <td>Jonas Valanciunas</td>
+                <td>Centro</td>
+                <td>17</td>
+                <td>2,11 m</td>
+                <td>120 kg</td>
+                <td>--</td>
+                <td>$9,900,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4997537.png" alt="Jonas Valanciunas" width="50"></td>
+            </tr>
+            <tr>
+                <td>Tristan Vukcevic</td>
+                <td>Pivô</td>
+                <td>00</td>
+                <td>2,08 m</td>
+                <td>99 kg</td>
+                <td>--</td>
+                <td>$2,424,892</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4530287.png" alt="Tristan Vukcevic" width="50"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+    <div class="formulario">
+        <h2 id="quiz"><b>Formulário de Perguntas sobre o Washington Wizards</b></h2>
+        <form id="wizards-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Washington Wizards?</label>
+                <br>
+                <div>
+                    <label for="player-bradley-beal">Bradley Beal</label>
+                    <input type="radio" id="player-bradley-beal" name="favorite-player" value="Bradley Beal">
+                </div>
+                <div>
+                    <label for="player-kuzma">Kyle Kuzma</label>
+                    <input type="radio" id="player-kuzma" name="favorite-player" value="Kyle Kuzma">
+                </div>
+                <div>
+                    <label for="player-christie">Kristaps Porzingis</label>
+                    <input type="radio" id="player-christie" name="favorite-player" value="Kristaps Porzingis">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Washington Wizards?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-john-wall">John Wall</label>
+                    <input type="radio" id="greatest-player-john-wall" name="greatest-player" value="John Wall">
+                </div>
+                <div>
+                    <label for="greatest-player-gilbert-arenas">Gilbert Arenas</label>
+                    <input type="radio" id="greatest-player-gilbert-arenas" name="greatest-player" value="Gilbert Arenas">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-rebuilding">Reformulação do time</label>
+                    <input type="radio" id="next-season-expectation-rebuilding" name="next-season-expectation" value="Reformulação do time">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Washington Wizards!</p>
+    </div>
+    
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+  <script>
+    document.getElementById('wizards-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Brooklyn Nets </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #000000;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #000000;
+        }
+ 
+        th {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #000000;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #474747;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #000000;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #000000;
+
+        }
+        
+        .formulario {
+            background-color: #b3b3b3;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #000000;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Nets Fans!</h1>
+        <span class="descricao">Brooklyn Nets</span>
+      </header><br>
+      <br>
+  <header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #000000;">Times <i class="fa-solid fa-basketball"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mascote">Mascote</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#rivalidades">Rivalidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#CorePlayers">Core Players</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#quiz">Formulario</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<br>
+    <header>
+        <h1><b>Brooklyn Nets</b></h1>
+        <img src="https://cdn.nba.com/teams/uploads/sites/1610612751/2023/04/bkn-no-bleed.svg" alt="Brooklyn Nets">
+    </header>
+
+    <section>
+        <h2 id="historia"><b>História</b></h2>
+        <p>Os Brooklyn Nets são uma equipe profissional de basquete sediada no Brooklyn, Nova York. Eles fazem parte da Divisão do Atlântico da Conferência Leste na NBA (National Basketball Association).
+            A equipe foi fundada em 1967 como uma franquia inaugural da American Basketball Association (ABA) e originalmente jogava em Nova Jersey como os New Jersey Americans. Mudaram seu nome para New York Nets em 1968 e se mudaram para Long Island, Nova York, em 1969, 
+            e eventualmente para Nova Jersey em 1977, tornando-se os New Jersey Nets. Em 2012, mudaram-se para o Brooklyn e foram renomeados Brooklyn Nets.
+        </p>
+<br>
+        <h2><b>Arena</b></h2>
+        <p>
+            A arena do Brooklyn Nets é o <b>Barclays Center</b> , localizado no bairro do Brooklyn, na cidade de Nova York. Sua capacidade para jogos de basquete é de aproximadamente 17.700 espectadores.
+        </p>
+            <hr>
+            <img src="https://pyxis.nymag.com/v1/imgs/e94/834/d7d08d76e66790d95bc98925b6bac04973-10-brooklyn-nets-mascot-discontinued-1.w710.jpg" alt="mascote">
+            <h2 id="mascote"><b>Mascote</b></h2>
+            <p>
+                O mascote do Brooklyn Nets é chamado de <b class="grifado">"BrooklyKnight"</b>. Ele foi introduzido como o mascote oficial da equipe em 2012, quando os Nets se mudaram para o Barclays Center em Brooklyn.
+                O BrooklyKnight é retratado como um cavaleiro medieval, vestindo uma armadura que incorpora elementos do design e das cores da equipe. Ele personifica o espírito guerreiro e a determinação do Brooklyn Nets.
+                O nome "BrooklyKnight" é um jogo de palavras, combinando "Brooklyn" com "Knight" (cavaleiro em inglês), além de fazer alusão à palavra "knight" (noite), evocando a ideia de um guardião ou protetor do Brooklyn.
+                A história por trás do BrooklyKnight é que ele é um defensor do Brooklyn, um guardião que protege a cidade e seu time de basquete. Sua presença nos jogos do Nets acrescenta uma dose de energia e entretenimento, interagindo com os fãs e animando a multidão com suas acrobacias e brincadeiras.
+                Embora o BrooklyKnight tenha sido descontinuado como mascote oficial em 2014, ele ainda é lembrado pelos fãs como parte da história recente do Brooklyn Nets e continua sendo uma figura icônica associada à equipe.
+            </p>
+        </div>
+  
+        <div>
+            <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+                <li><b class="grifado">Mudança para Brooklyn:</b> Em 2012, os Nets se mudaram de Nova Jersey para Brooklyn, marcando o retorno da NBA ao Brooklyn pela primeira vez desde a década de 1950. Essa mudança foi significativa para a equipe e seus fãs, pois trouxe um novo começo e uma nova identidade para a franquia.</li>
+                <li><b class="grifado">Contratação de Jason Kidd como treinador:</b> Em 2013, logo após se aposentar como jogador, Jason Kidd foi contratado como treinador principal dos Nets. Embora tenha sido uma aposta arriscada devido à sua falta de experiência como treinador, Kidd teve sucesso em sua primeira temporada, levando os Nets aos playoffs.</li>
+                <li><b class="grifado">Chegada de Kevin Durant e Kyrie Irving:</b> Em 2019, os Nets fizeram grandes movimentos no mercado de agentes livres, garantindo a assinatura de duas estrelas da NBA, Kevin Durant e Kyrie Irving. Isso elevou instantaneamente o status da equipe e aumentou as expectativas dos fãs para o futuro.</li>
+                <li><b class="grifado">Finais da Conferência Leste em 2002 e 2003:</b> Nos anos consecutivos de 2002 e 2003, os Nets alcançaram as finais da Conferência Leste da NBA. Embora tenham perdido ambas as vezes para o Los Angeles Lakers e o San Antonio Spurs, respectivamente, essas aparições nas finais da conferência foram momentos notáveis para a franquia.</li>
+                <li><b class="grifado">Retorno aos playoffs em 2019-2020:</b> Após algumas temporadas de reconstrução, os Nets retornaram aos playoffs na temporada 2019-2020. Embora tenham sido eliminados na primeira rodada, sua presença nos playoffs marcou um progresso significativo para a equipe.</li>
+        <hr>
+
+        <h2 id="rivalidades"><b>Rivalidades</b></h2>
+            <li><a href="NewYorkKnicks.html"> New York Knicks:</a> Esta é uma rivalidade local, uma vez que ambos os times estão sediados na cidade de Nova York. Os jogos entre Nets e Knicks são sempre intensos devido à competição pela supremacia na cidade.</li>
+            <li><a href="BostonCeltics.html"> Boston Celtics:</a> Embora essa rivalidade possa não ser tão intensa quanto a com o Knicks, os jogos entre Nets e Celtics geralmente são disputados, especialmente nas temporadas em que ambos os times estão competindo na parte alta da conferência.</li>
+            <li><a href="TorontoRaptors.html">Toronto Raptors:</a> Esta rivalidade cresceu principalmente durante os playoffs, quando os Nets e os Raptors se enfrentaram em uma série de jogos emocionantes. A competição entre os dois times tem sido acirrada em alguns momentos.</li>
+        </div>
+    </section>
+    <div class="container">
+        <h1 id="CorePlayers"><b>Brooklyn Nets Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reece Beekman</td>
+                    <td>G</td>
+                    <td>4</td>
+                    <td>1,91 m</td>
+                    <td>86 kg</td>
+                    <td>Virginia</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432187.png" alt="Reece Beekman" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Bojan Bogdanovic</td>
+                    <td>SF</td>
+                    <td>44</td>
+                    <td>2,01 m</td>
+                    <td>102 kg</td>
+                    <td>--</td>
+                    <td>$19,032,850</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3593.png" alt="Bojan Bogdanovic" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Nic Claxton</td>
+                    <td>C</td>
+                    <td>33</td>
+                    <td>2,11 m</td>
+                    <td>97 kg</td>
+                    <td>Geórgia</td>
+                    <td>$27,556,817</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278067.png" alt="Nic Claxton" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Noah Clowney</td>
+                    <td>A</td>
+                    <td>21</td>
+                    <td>2,06 m</td>
+                    <td>95 kg</td>
+                    <td>Alabama</td>
+                    <td>$3,244,080</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4712896.png" alt="Noah Clowney" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Tosan Evbuomwan</td>
+                    <td>A</td>
+                    <td>12</td>
+                    <td>2,03 m</td>
+                    <td>99 kg</td>
+                    <td>Princeton</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4597865.png" alt="Tosan Evbuomwan" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Cameron Johnson</td>
+                    <td>SF</td>
+                    <td>2</td>
+                    <td>2,03 m</td>
+                    <td>95 kg</td>
+                    <td>North Carolina</td>
+                    <td>$22,500,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3138196.png" alt="Cameron Johnson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Keon Johnson</td>
+                    <td>G</td>
+                    <td>45</td>
+                    <td>1,96 m</td>
+                    <td>83 kg</td>
+                    <td>Tennessee</td>
+                    <td>$2,162,606</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432192.png" alt="Keon Johnson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Maxwell Lewis</td>
+                    <td>A</td>
+                    <td>20</td>
+                    <td>2,01 m</td>
+                    <td>88 kg</td>
+                    <td>Pepperdine</td>
+                    <td>$1,891,857</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4684286.png" alt="Maxwell Lewis" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Tyrese Martin</td>
+                    <td>G</td>
+                    <td>13</td>
+                    <td>1,98 m</td>
+                    <td>97 kg</td>
+                    <td>UConn</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397179.png" alt="Tyrese Martin" width="50"></td>
+                </tr>
+                <tr>
+                    <td>De'Anthony Melton</td>
+                    <td>SG</td>
+                    <td>8</td>
+                    <td>1,91 m</td>
+                    <td>90 kg</td>
+                    <td>USC</td>
+                    <td>$12,822,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066436.png" alt="De'Anthony Melton" width="50"></td>
+                </tr>
+                <tr>
+                    <td>D'Angelo Russell</td>
+                    <td>G</td>
+                    <td>1</td>
+                    <td>1,91 m</td>
+                    <td>87 kg</td>
+                    <td>Ohio State</td>
+                    <td>$18,692,307</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3136776.png" alt="D'Angelo Russell" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Day'Ron Sharpe</td>
+                    <td>C</td>
+                    <td>20</td>
+                    <td>2,06 m</td>
+                    <td>120 kg</td>
+                    <td>North Carolina</td>
+                    <td>$3,989,122</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432194.png" alt="Day'Ron Sharpe" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Ben Simmons</td>
+                    <td>PG</td>
+                    <td>10</td>
+                    <td>2,08 m</td>
+                    <td>108 kg</td>
+                    <td>LSU</td>
+                    <td>$40,338,144</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3907387.png" alt="Ben Simmons" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Cam Thomas</td>
+                    <td>SG</td>
+                    <td>24</td>
+                    <td>1,91 m</td>
+                    <td>95 kg</td>
+                    <td>LSU</td>
+                    <td>$4,041,249</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432174.png" alt="Cam Thomas" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Trendon Watford</td>
+                    <td>PF</td>
+                    <td>9</td>
+                    <td>2,03 m</td>
+                    <td>107 kg</td>
+                    <td>LSU</td>
+                    <td>$2,726,603</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431675.png" alt="Trendon Watford" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dariq Whitehead</td>
+                    <td>A</td>
+                    <td>0</td>
+                    <td>1,98 m</td>
+                    <td>99 kg</td>
+                    <td>Duke</td>
+                    <td>$3,114,240</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432735.png" alt="Dariq Whitehead" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Ziaire Williams</td>
+                    <td>A</td>
+                    <td>8</td>
+                    <td>2,06 m</td>
+                    <td>83 kg</td>
+                    <td>Stanford</td>
+                    <td>$6,133,005</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433137.png" alt="Ziaire Williams" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jalen Wilson</td>
+                    <td>A</td>
+                    <td>22</td>
+                    <td>1,98 m</td>
+                    <td>99 kg</td>
+                    <td>Kansas</td>
+                    <td>$1,891,857</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431714.png" alt="Jalen Wilson" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+      <div class="formulario">
+        <h2 id="Quiz"><b>Formulário de Perguntas sobre o Brooklyn Nets</b></h2>
+        <form id="nets-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Brooklyn Nets?</label>
+                <br>
+                <div>
+                    <label for="player-kevin-durant">Kevin Durant</label>
+                    <input type="radio" id="player-kevin-durant" name="favorite-player" value="Kevin Durant">
+                </div>
+                <div>
+                    <label for="player-kyrie-irving">Kyrie Irving</label>
+                    <input type="radio" id="player-kyrie-irving" name="favorite-player" value="Kyrie Irving">
+                </div>
+                <div>
+                    <label for="player-james-harden">James Harden</label>
+                    <input type="radio" id="player-james-harden" name="favorite-player" value="James Harden">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Brooklyn Nets?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-julius-erving">Julius Erving</label>
+                    <input type="radio" id="greatest-player-julius-erving" name="greatest-player" value="Julius Erving">
+                </div>
+                <div>
+                    <label for="greatest-player-jason-kidd">Jason Kidd</label>
+                    <input type="radio" id="greatest-player-jason-kidd" name="greatest-player" value="Jason Kidd">
+                </div>
+                <div>
+                    <label for="greatest-player-brook-lopez">Brook Lopez</label>
+                    <input type="radio" id="greatest-player-brook-lopez" name="greatest-player" value="Brook Lopez">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Brooklyn Nets!</p>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+  <script>
+    document.getElementById('nets-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Portland Trail Blazers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #E03A3E;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #E03A3E;
+        }
+ 
+        th {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #E03A3E;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #000000;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #000000;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #E03A3E;
+
+        }
+        
+        .formulario {
+            background-color: #f1f1f1;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #E03A3E;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Blazers Fans!</h1>
+        <span class="descricao">Portland Trail Blazers</span>
+      </header>
+      <br>
+  <header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1><b>Times <i class="fa-solid fa-city" style="color: #E03A3E;"></i></b></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+            </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mascote">Mascote</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#rivalidades">Rivalidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#CorePlayers">Core Players</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Quiz">Formulario</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div>
+            <img src="https://i.bleacherreport.net/images/team_logos/328x328/portland_trail_blazers.png?canvas=492,328" alt="Portland">
+            <br>
+            <h1><b>Portland Trail Blazers</b></h1>
+            <br>
+
+            <h2 id="historia"><b>História</b></h2>
+            <p>    
+              O<b>Portland Trail Blazers</b>foi fundado em 1970 e rapidamente se estabeleceu como uma das franquias em ascensão da NBA. A equipe foi criada para trazer mais atenção ao esporte em Portland, Oregon, e entrou na liga como parte de uma expansão.
+                <br>
+                Os anos iniciais foram marcados por altos e baixos, mas o time teve um grande sucesso em 1977, quando conquistou o seu primeiro (e único até hoje) título da NBA. Com um time liderado por jogadores como Bill Walton, Maurice Lucas e outros, os Blazers derrotaram o Philadelphia 76ers nas finais, conquistando o campeonato em uma série de sete jogos.
+                <br>
+                Após o título de 1977, o time passou por uma série de altos e baixos, mas continuou sendo competitivo ao longo das décadas seguintes. Durante os anos 80, com a adição de jogadores como Clyde Drexler, os Blazers foram uma das equipes mais fortes da liga. No entanto, o time não conseguiu repetir o sucesso de 1977, apesar de ter ido às finais da NBA em 1990 e 1992, mas perdeu para o Detroit Pistons e o Chicago Bulls, respectivamente.
+                O Portland Trail Blazers, embora não tenha conquistado vários campeonatos, sempre foi uma equipe com uma grande base de fãs, com uma cultura de perseverança e orgulho local. A equipe também teve grande importância para a popularização do basquete na região noroeste dos Estados Unidos.
+                Ao longo dos anos, o time teve alguns dos maiores jogadores da NBA em sua história, incluindo Clyde Drexler, Bill Walton, e mais recentemente, Damian Lillard. A franquia é conhecida por sua lealdade aos seus jogadores e à comunidade de Portland, e a cidade de Portland tem um dos públicos mais apaixonados e dedicados da liga.
+            </p>
+
+                <h2><b>Arena</b></h2>
+
+                <p>A arena do Portland Trail Blazers é a<b>Moda Center</b>, localizada em Portland, Oregon<b>Spectrum Center</b>,localizado no centro de Charlotte, Carolina do Norte, nos Estados Unidos.
+                <br>
+                O Moda Center foi inaugurado em 1995 e originalmente era chamado de Rose Garden, nome que remete às famosas rosas da cidade de Portland. Em 2013, o nome da arena foi alterado para Moda Center, após uma parceria de naming rights com a empresa de seguros Moda Health.<br>
+                Sua capacidade é de aproximadamente 19.000 para basquete.</p>
+                <hr>
+                <img src="https://mascothalloffame.com/wp-content/uploads/bb-plugin/cache/blaze-e1679257035234-circle.jpg" alt="Macoste">
+                
+                <h2 id="mascote"><b>Mascote</b></h2>
+                <p>
+                    O  mascote do Portland Trail Blazers é o<b class="grifado">Blaze the Trail Cat</b>um dos mascotes mais queridos da NBA. Blaze foi introduzido oficialmente em 2002.
+                    Blaze é um leão de pelúcia com um visual marcante, com uma camisa do time dos Blazers e um comportamento alegre e enérgico. Ele é retratado como um felino atlético e cheio de vida, com uma personalidade vibrante que encanta tanto os fãs mais jovens quanto os adultos. Seu nome, "Blaze", faz referência ao espírito competitivo do time e à paixão dos torcedores.
+                    Além de suas atividades durante os jogos, Blaze é um mascote muito ativo na comunidade de Portland. Ele faz aparições em escolas, eventos beneficentes e em outras atividades para promover o time e apoiar iniciativas comunitárias. Blaze participa de várias campanhas de arrecadação de fundos e eventos educativos, sempre com o objetivo de incentivar o espírito esportivo e a unidade na cidade.
+                </p>
+            </p>
+        </div>
+    </section>
+
+    <div>
+      <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+      <p>
+          <li><b class="grifado">Inauguração da equipe (1970):</b> O Portland Trail Blazers foi fundado em 1970, marcando a chegada da NBA a Portland. Desde o início, o time teve um grande apoio da comunidade local e se estabeleceu como uma presença importante na liga.</li>
+          <li><b class="grifado">Primeiro título da NBA (1977):</b> O ponto culminante da história dos Blazers aconteceu em 1977, quando a equipe conquistou seu primeiro e único título da NBA. A vitória foi um marco para a cidade e fez dos Blazers uma das franquias mais queridas da liga.</li>
+          <li><b class="grifado">A lenda de Bill Walton (1977):</b> Bill Walton, um dos maiores jogadores da história da franquia, foi o grande herói da campanha de 1977, sendo nomeado MVP das Finais. Sua habilidade e liderança foram cruciais para o título.</li>
+          <li><b class="grifado">Era Clyde Drexler (1980-1990):</b> Clyde Drexler foi o grande nome do Portland Trail Blazers nas décadas de 1980 e 1990, levando a equipe a várias finais da Conferência Oeste e consolidando seu lugar como uma das maiores lendas da franquia.</li>
+          <li><b class="grifado">Chegada de Damian Lillard (2012):</b> Damian Lillard, um dos maiores jogadores da história recente do time, foi selecionado pelos Blazers em 2012. Lillard rapidamente se tornou a cara da franquia e um dos líderes mais emblemáticos da NBA.</li>
+          <li><b class="grifado">Finais da Conferência Oeste (1990, 1992, 2019):</b> O Portland Trail Blazers teve três grandes aparições nas finais da Conferência Oeste, em 1990, 1992 e 2019. Em 1990 e 1992, a equipe foi liderada por Clyde Drexler e chegou perto de conquistar o título da NBA, enquanto em 2019, os Blazers, liderados por Lillard, enfrentaram os Warriors nas finais da conferência.</li>
+          <li><b class="grifado">Momentos icônicos de Damian Lillard:</b> Desde sua chegada, Damian Lillard tem sido a estrela dos Blazers, com momentos inesquecíveis como o famoso "buzzer-beater" contra os Houston Rockets em 2014 e o jogo vencedor contra os Oklahoma City Thunder em 2019, garantindo a vitória na primeira rodada dos playoffs com um tiro de longa distância.</li>
+      </p> 
+  </div>
+  
+
+<hr>
+<div class="rivalidades">
+  <h2 id="rivalidades"><b>Rivalidades</b></h2>
+  <p>
+      <li><a href="LosAngelesLakers.html">Los Angeles Lakers:</a> Uma das rivalidades mais intensas da história da NBA. O Portland Trail Blazers e o Los Angeles Lakers frequentemente se enfrentam em jogos emocionantes, especialmente nos playoffs. A rivalidade atingiu seu auge nas finais da Conferência Oeste de 2000, quando os Blazers quase derrotaram os Lakers, que posteriormente venceram o campeonato.</li>
+      <li><a href="GoldenStateWarriors.html">Golden State Warriors:</a> Os confrontos entre os Blazers e os Warriors têm sido intensos nas últimas temporadas, especialmente durante os playoffs. Liderados por Damian Lillard, os Blazers tentaram desafiar a dominação dos Warriors na Conferência Oeste, criando uma rivalidade crescente entre as duas equipes.</li>
+      <li><a href="SeattleSuperSonics.html">Seattle SuperSonics:</a> Antes de sua mudança para Oklahoma City, os SuperSonics foram um grande rival dos Blazers na região do Noroeste dos Estados Unidos. Os jogos entre as duas equipes eram sempre carregados de rivalidade regional, com disputas acirradas ao longo dos anos. Mesmo com a saída dos Sonics, a rivalidade ainda é lembrada pelos fãs de Portland.</li>
+  </p>
+</div>
+
+
+    <div class="container">
+      <h1 id="CorePlayers"><b>Portland Trail Blazers Core Players</b></h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>Posição</th>
+                  <th>Número</th>
+                  <th>Altura</th>
+                  <th>Peso</th>
+                  <th>Universidade</th>
+                  <th>Salário</th>
+                  <th>Foto</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Deni Avdija</td>
+                  <td>SF</td>
+                  <td>8</td>
+                  <td>2,06 m</td>
+                  <td>108 kg</td>
+                  <td>--</td>
+                  <td>$15,625,000</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683021.png" alt="Deni Avdija" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Deandre Ayton</td>
+                  <td>C</td>
+                  <td>2</td>
+                  <td>2,13 m</td>
+                  <td>112 kg</td>
+                  <td>Arizona</td>
+                  <td>$34,005,126</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278129.png" alt="Deandre Ayton" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Dalano Banton</td>
+                  <td>G</td>
+                  <td>5</td>
+                  <td>2,03 m</td>
+                  <td>92 kg</td>
+                  <td>Nebraska</td>
+                  <td>$2,196,970</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397885.png" alt="Dalano Banton" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Toumani Camara</td>
+                  <td>A</td>
+                  <td>33</td>
+                  <td>2,01 m</td>
+                  <td>102 kg</td>
+                  <td>Dayton</td>
+                  <td>$1,891,857</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431736.png" alt="Toumani Camara" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Donovan Clingan</td>
+                  <td>C</td>
+                  <td>23</td>
+                  <td>2,18 m</td>
+                  <td>127 kg</td>
+                  <td>UConn</td>
+                  <td>$6,586,440</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5105565.png" alt="Donovan Clingan" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Jerami Grant</td>
+                  <td>SF</td>
+                  <td>9</td>
+                  <td>2,01 m</td>
+                  <td>95 kg</td>
+                  <td>Syracuse</td>
+                  <td>$29,793,104</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2991070.png" alt="Jerami Grant" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Scoot Henderson</td>
+                  <td>G</td>
+                  <td>00</td>
+                  <td>1,91 m</td>
+                  <td>91 kg</td>
+                  <td>--</td>
+                  <td>$10,259,160</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683678.png" alt="Scoot Henderson" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Bryce McGowens</td>
+                  <td>G</td>
+                  <td>11</td>
+                  <td>1,98 m</td>
+                  <td>79 kg</td>
+                  <td>Nebraska</td>
+                  <td>$2,019,699</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4576086.png" alt="Bryce McGowens" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Justin Minaya</td>
+                  <td>A</td>
+                  <td>10</td>
+                  <td>1,96 m</td>
+                  <td>92 kg</td>
+                  <td>Providence</td>
+                  <td>--</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278111.png" alt="Justin Minaya" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Taze Moore</td>
+                  <td>G</td>
+                  <td>76</td>
+                  <td>1,96 m</td>
+                  <td>88 kg</td>
+                  <td>Houston</td>
+                  <td>--</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066808.png" alt="Taze Moore" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Kris Murray</td>
+                  <td>A</td>
+                  <td>24</td>
+                  <td>2,03 m</td>
+                  <td>95 kg</td>
+                  <td>Iowa</td>
+                  <td>$2,990,040</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4594326.png" alt="Kris Murray" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Duop Reath</td>
+                  <td>C</td>
+                  <td>26</td>
+                  <td>2,06 m</td>
+                  <td>111 kg</td>
+                  <td>LSU</td>
+                  <td>$2,048,780</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066211.png" alt="Duop Reath" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Rayan Rupert</td>
+                  <td>G</td>
+                  <td>21</td>
+                  <td>1,98 m</td>
+                  <td>83 kg</td>
+                  <td>--</td>
+                  <td>$1,891,857</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5099752.png" alt="Rayan Rupert" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Shaedon Sharpe</td>
+                  <td>SG</td>
+                  <td>17</td>
+                  <td>1,96 m</td>
+                  <td>92 kg</td>
+                  <td>Kentucky</td>
+                  <td>$6,614,160</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4914336.png" alt="Shaedon Sharpe" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Anfernee Simons</td>
+                  <td>SG</td>
+                  <td>1</td>
+                  <td>1,91 m</td>
+                  <td>88 kg</td>
+                  <td>--</td>
+                  <td>$25,892,857</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4351851.png" alt="Anfernee Simons" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Matisse Thybulle</td>
+                  <td>SG</td>
+                  <td>4</td>
+                  <td>1,96 m</td>
+                  <td>91 kg</td>
+                  <td>Washington</td>
+                  <td>$11,025,160</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3907498.png" alt="Matisse Thybulle" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Jabari Walker</td>
+                  <td>A</td>
+                  <td>34</td>
+                  <td>2,01 m</td>
+                  <td>102 kg</td>
+                  <td>Colorado</td>
+                  <td>$2,019,699</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432446.png" alt="Jabari Walker" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Robert Williams III</td>
+                  <td>C</td>
+                  <td>35</td>
+                  <td>2,06 m</td>
+                  <td>112 kg</td>
+                  <td>Texas A&M</td>
+                  <td>$12,428,571</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066268.png" alt="Robert Williams III" width="50"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  
+    <div class="formulario">
+        <h2 id="quiz"><b>Formulário de Perguntas sobre o Charlotte Hornets</b></h2>
+        <form id="hornets-form">
+          <div class="form-group">
+            <label>Qual é o seu jogador favorito atual do Charlotte Hornets?</label>
+            <br>
+            <div>
+              <label for="player-lamelo-ball">LaMelo Ball</label>
+              <input type="radio" id="player-lamelo-ball" name="favorite-player" value="LaMelo Ball">
+            </div>
+            <div>
+              <label for="player-gordon-hayward">Gordon Hayward</label>
+              <input type="radio" id="player-gordon-hayward" name="favorite-player" value="Gordon Hayward">
+            </div>
+            <div>
+              <label for="player-terry-rozier">Terry Rozier</label>
+              <input type="radio" id="player-terry-rozier" name="favorite-player" value="Terry Rozier">
+            </div>
+            <div>
+              <label for="player-other">Outro:</label>
+              <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Quem você considera o maior jogador da história do Charlotte Hornets?</label>
+            <br>
+            <div>
+              <label for="greatest-player-alonzo-mourning">Alonzo Mourning</label>
+              <input type="radio" id="greatest-player-alonzo-mourning" name="greatest-player" value="Alonzo Mourning">
+            </div>
+            <div>
+              <label for="greatest-player-larry-johnson">Larry Johnson</label>
+              <input type="radio" id="greatest-player-larry-johnson" name="greatest-player" value="Larry Johnson">
+            </div>
+            <div>
+              <label for="greatest-player-other">Outro:</label>
+              <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+            <br>
+            <div>
+              <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+              <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+            </div>
+            <div>
+              <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+              <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+            </div>
+            <div>
+              <label for="next-season-expectation-other">Outro:</label>
+              <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+            </div>
+          </div>
+          <input type="submit" value="Enviar Respostas">
+        </form>
+      </div>
+      
+      <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Portland Trail Blazers!</p>
+      </div>
+<br>
+
+<footer>
+  <div class="container">
+      <ul>
+          <li><a href="nbaoficial/index.html">Home</a></li>
+          <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+          <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+          <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+      </ul>
+      
+      <div class="social-icons">
+          <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+          <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+  </div>
+  
+  <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+</footer>
+
+  <script>
+    document.getElementById('hornets-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>

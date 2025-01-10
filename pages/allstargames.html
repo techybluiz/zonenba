@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>NBAZone - Star Game</title>
+    <style>
+        .baner{
+            width: 100%;
+            height: 50%;
+        }
+        .allstar-games {
+            max-width: 1200px; /* Largura máxima do container */
+            margin: 0 auto; /* Centraliza o container */
+            padding: 20px; /* Espaçamento interno */
+            font-family: 'Barlow', sans-serif; /* Fonte padrão */
+            color: #333; /* Cor do texto */
+            background-color: #f9f9f9; /* Cor de fundo da página */
+          }
+          
+          .allstar-games h1 {
+            text-align: center; /* Centraliza o título principal */
+            color: #C8102E; /* Cor do título principal */
+            margin-bottom: 30px; /* Margem inferior do título */
+          }
+          
+          .allstar-games h2 {
+            color: #004B87; /* Cor do título das seções */
+            margin-top: 20px; /* Margem superior */
+            margin-bottom: 10px; /* Margem inferior */
+            border-bottom: 2px solid #d81b60; /* Linha abaixo do título */
+            padding-bottom: 5px; /* Espaçamento inferior */
+          }
+          
+          .allstar-games p {
+            line-height: 1.6; /* Altura da linha para melhor legibilidade */
+            margin-bottom: 15px; /* Margem inferior dos parágrafos */
+          }
+          
+          .allstar-games ul {
+            list-style-type: disc; /* Tipo de lista */
+            margin-left: 20px; /* Margem esquerda */
+          }
+          
+          .allstar-games section {
+            padding: 15px; /* Espaçamento interno das seções */
+            background-color: #fff; /* Fundo branco para as seções */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            margin-bottom: 20px; /* Margem inferior das seções */
+          }
+          
+          .allstar-games section:last-child {
+            margin-bottom: 0; /* Remove a margem do último elemento */
+          }     
+          footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #333; /* Linha sutil para separar */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px; /* Espaçamento entre links */
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12; /* Cor laranja suave no hover */
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center;
+  flex-wrap: wrap; /* Permite quebra em telas menores */
+  max-width: 1200px; /* Limita o tamanho máximo do footer */
+  margin: 0 auto; /* Centraliza o footer */
+}
+
+footer ul {
+  list-style: none;
+  display: flex; /* Organiza os links em linha */
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 0 10px; /* Espaçamento entre os itens */
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+}
+
+footer .social-icons a {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2); /* Aumenta o ícone no hover */
+}
+
+footer .copy-text {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.7;
+  width: 100%;
+  text-align: center; /* Centraliza o texto de copyright */
+}  
+    </style>
+</head>
+<body>
+    <img class="baner" src="https://i.ibb.co/tH9Z1Mh/stargamesbaner.png" alt="baner">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="AllStarGames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="arenas.html">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="times.html">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="e-mail.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <div class="allstar-games">
+        <h1>All-Star Games da NBA</h1>
+        
+        <section id="introducao">
+          <h2>Introdução</h2>
+          <p>O All-Star Game da NBA é um dos eventos mais aguardados e emocionantes do calendário esportivo. Aqui está tudo o que você precisa saber, desde sua história fascinante até detalhes interessantes sobre este evento único</p>
+          <ul>
+            <li><b>Fim de Semana do All-Star:</b> O All-Star Game é o ponto culminante de um fim de semana repleto de eventos emocionantes, incluindo o Jogo das Estrelas, o Concurso de Habilidades, o Concurso de 3 Pontos e o Concurso de Enterradas. Estes eventos adicionam uma dose extra de entretenimento e competição para os fãs e jogadores.</li><br>
+            <li><b>Localização:</b> O local do All-Star Game muda a cada ano, com cidades de todo os Estados Unidos tendo a oportunidade de sediar o evento. Isso permite que diferentes comunidades tenham a chance de experimentar a emoção do All-Star Game de perto.</li><br>
+            <li><b>Impacto Cultural:</b> Além do basquete, o All-Star Game se tornou um evento cultural importante, com uma variedade de atividades que vão além das quadras. Concertos, festas, eventos de caridade e encontros de fãs são realizados durante o fim de semana, tornando-o um momento de celebração para a comunidade e os fãs de basquete em todo o país.</li><br>
+            <li><b>Legado e Memórias:</b> O All-Star Game produziu inúmeras memórias memoráveis ao longo dos anos, desde jogadas incríveis até momentos emocionantes de camaradagem entre os melhores jogadores da liga. Momentos icônicos, como o arremesso de meia quadra de Michael Jordan em 1997 ou a performance incrível de Kobe Bryant em seu último All-Star Game em 2016, são lembrados e celebrados pelos fãs de basquete em todo o mundo.</li><br>
+            <li><b>Impacto Social:</b>Além do entretenimento, o All-Star Game também serve como uma plataforma para causas sociais importantes. Eventos de caridade e iniciativas comunitárias são realizados em conjunto com o All-Star Weekend, permitindo que a NBA e seus jogadores façam uma diferença positiva nas comunidades ao redor do mundo.</li><br>
+        </ul>
+        </section>
+      
+        <section id="historia">
+          <h2>História</h2>
+          <p>O All-Star Game da NBA, realizado pela primeira vez em 2 de março de 1951, no icônico Boston Garden, foi criado para exibir as estrelas do basquete em um único jogo emocionante. O evento original reuniu os melhores jogadores da Conferência Leste contra os da Conferência Oeste, estabelecendo um formato que ainda perdura hoje.
+
+            Na estreia, lendas como Bill Russell, Bob Cousy e Paul Arizin brilharam em quadra, e a Conferência Leste saiu vitoriosa em uma partida repleta de ação. Com o passar dos anos, o All-Star Game evoluiu e, em 2017, introduziu um novo formato em que os capitães escolhem suas equipes de forma independente, tornando a competição ainda mais emocionante.
+            
+            Mas o All-Star não se limita apenas ao jogo. O fim de semana inteiro é uma verdadeira festa do basquete, com eventos como o Slam Dunk Contest e o Three-Point Contest, onde os jogadores mostram suas habilidades em um espetáculo de talento e criatividade.
+            
+            Hoje, o All-Star Game é um marco cultural, reunindo fãs, jogadores e celebridades. Ele ajudou a consolidar a NBA como uma das ligas esportivas mais populares do mundo, com um apelo global que continua a crescer a cada edição. É um evento que não apenas celebra o esporte, mas também a paixão e a energia que o basquete traz para milhões de pessoas ao redor do mundo!</p>
+        </section>
+      
+        <section id="participantes">
+          <h2>Participantes Notáveis</h2>
+          <ul>
+            <li><b>Michael Jordan:</b> Jordan foi selecionado para 14 All-Star Games e venceu o MVP do All-Star Game em três ocasiões, sendo lembrado por jogadas memoráveis durante esses eventos.</li>
+            <br>
+            <li><b>LeBron James:</b> Com várias aparições no All-Star Game (23 até 2024) e quatro prêmios de MVP do All-Star, LeBron é um dos atletas mais reconhecidos e respeitados na história do basquete.</li>
+            <br>
+            <li><b>Kobe Bryant:</b> Com 18 seleções para o All-Star Game e quatro prêmios de MVP, Kobe deixou um legado que ainda influencia jovens jogadores. Sua morte trágica em 2020 solidificou ainda mais seu status como uma lenda do esporte.</li>
+          </ul>
+        </section>
+      
+
+      
+        <section id="votacao">
+          <h2>Votação dos Jogadores</h2>
+          <p>A seleção dos jogadores para o All-Star Game da NBA é um processo democrático que envolve a participação ativa dos fãs, jogadores e mídia. A torcida exerce um papel fundamental, votando em seus atletas favoritos através de diversas plataformas digitais e redes sociais. Essa participação popular garante que os jogadores mais queridos e carismáticos sejam reconhecidos e tenham a oportunidade de brilhar no maior palco do basquete. Os jogadores da NBA também têm voz nesse processo, votando em seus colegas que consideram mais merecedores. A mídia especializada, por sua vez, contribui com sua avaliação, analisando o desempenho dos atletas ao longo da temporada e escolhendo aqueles que se destacaram em suas respectivas posições. Essa combinação de votos garante uma seleção equilibrada, que reflete tanto a popularidade dos jogadores quanto o seu desempenho em quadra.
+            A votação popular, que antes era realizada por meio de cupons enviados pelo correio, tornou-se um processo totalmente digital e interativo. Essa democratização do processo de seleção permitiu que novos talentos fossem reconhecidos e que a diversidade de estilos de jogo fosse celebrada.
+          </p>
+        </section>
+      
+        <section id="eventos-relacionados">
+          <h2>Eventos Relacionados</h2>
+          <p>O All-Star Weekend é um dos eventos mais aguardados do calendário da NBA, oferecendo uma experiência completa para os fãs de basquete. Além do tradicional All-Star Game, o fim de semana inclui atividades que celebram habilidades, criatividade e o talento emergente da liga. Aqui estão alguns dos destaques:</p>
+          <ul>
+            <li><strong>Slam Dunk Contest:</strong> Uma competição eletrizante onde os jogadores exibem suas habilidades acrobáticas em enterradas criativas e espetaculares.</li>
+            <li><strong>Three-Point Contest:</strong> Um desafio de precisão em que os melhores arremessadores da liga competem para ver quem consegue acertar mais cestas de três pontos.</li>
+            <li><strong>Rising Stars Challenge:</strong> Um jogo que coloca os talentos mais promissores da NBA em destaque, dividindo as equipes entre jogadores de primeiro e segundo ano.</li>
+            <li><strong>Skills Challenge:</strong> Uma prova de habilidades técnicas que combina dribles, passes e arremessos em um formato contra o relógio.</li>
+          </ul>
+          <p>Esses eventos não apenas proporcionam entretenimento, mas também destacam as diversas habilidades que tornam o basquete tão emocionante. O All-Star Weekend é uma celebração completa do esporte e da cultura que o envolve.</p>
+        </section>
+
+
+        <section id="interatividade">
+          <h2>Participe!</h2>
+          <p>Vote no seu jogador favorito!</p>
+          <P>O NBA All-Star Game é um dos eventos mais aguardados da temporada, reunindo as maiores estrelas do basquete em uma celebração do esporte. Se você deseja influenciar quem estará em quadra, é hora de participar da votação para o All-Star Game 2025. Aqui está tudo o que você precisa saber para exercer seu direito de voto.</P>
+        </section>
+        
+      
+        <section id="votacao">
+            <h2>Como Participar e Votar no NBA All-Star Game 2025</h2>
+            <p>O NBA All-Star Game 2025 está se aproximando, e você pode fazer parte desse evento icônico, ajudando a escolher os jogadores que irão participar. A votação para os titulares já está aberta e vai até 20 de janeiro de 2025.</p>
+            
+            <p><strong>Período de Votação:</strong> A votação vai até 20 de janeiro de 2025. Durante esse período, você pode votar todos os dias, uma vez por dia.</p>
+            
+            <p><strong>Como Votar:</strong></p>
+            <ul>
+                <li><strong>Crie um NBA ID:</strong> Para votar, é necessário ter um NBA ID, uma conta gratuita da NBA. Se você ainda não tem, crie uma no <a href="https://vote.nba.com/en/howto">site oficial</a>.</li>
+                <li><strong>Acesse as plataformas de votação:</strong> Você pode votar no <a href="https://www.nba.com/allstar/2025/vote">site da NBA</a> ou no <a href="https://www.nba.com/allstar/2025/vote">app da NBA</a>.</li>
+                <li><strong>Escolha seus jogadores:</strong> Selecione três jogadores de frontcourt (ala/pivô) e dois de backcourt (armador/ala-armador) para cada conferência.</li>
+                <li><strong>Envie seu voto:</strong> Após escolher, confirme e envie seu voto. Você pode votar em até 10 jogadores por dia, cinco de cada conferência.</li>
+            </ul>
+        
+            <p><strong>Dias de Votação Tripla:</strong> Durante alguns dias específicos, seus votos contarão três vezes. As datas são:</p>
+            <ul>
+                <li>21 de dezembro de 2024</li>
+                <li>25 de dezembro de 2024</li>
+                <li>3 de janeiro de 2025</li>
+                <li>10 de janeiro de 2025</li>
+                <li>17 de janeiro de 2025</li>
+                <li>20 de janeiro de 2025</li>
+            </ul>
+            
+            <p><strong>Prêmios:</strong> Ao votar com seu NBA ID, você participa de um sorteio para ganhar uma viagem para o NBA All-Star 2025.</p>
+        
+            <p><strong>Datas Importantes:</strong></p>
+            <ul>
+                <li><strong>Anúncio dos Titulares:</strong> 23 de janeiro de 2025</li>
+                <li><strong>Anúncio dos Reservas:</strong> 30 de janeiro de 2025</li>
+            </ul>
+            
+            <p>Não perca a chance de votar em seus jogadores favoritos e acompanhar as novidades do NBA All-Star Game 2025!</p>
+        </section>
+      </div>
+
+      <footer>
+        <div class="container">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/pages/arenas.html">Arenas</a></li>
+                <li><a href="/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+      
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+      
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Dallas Mavericks </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    .navbar-expand-lg .navbar-nav {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: white;
+    }
+
+    h2{
+        color: #00538C;
+    }
+    b {
+        padding: 15px;
+        font-size: 1em;
+        color: #00538C;
+    }
+
+    th {
+        background-color: #19a3ff;
+        color: rgb(255, 255, 255);
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    input[type="submit"] {
+        background-color: #2e4b5e;
+        color: #fff;
+
+    }
+    input[type="submit"]:hover {
+        background-color: #002b47;
+    }
+    .bg-light {
+        background-color: darkgray;
+    
+    }
+    .bg-body-tertiary{
+        background: #00538C;
+       }
+
+       .box-texto{
+        background: red;
+    
+    }
+
+    .title{
+        color: #00538C;
+
+    }
+    
+    .formulario {
+        background-color: #d1e9fa;
+    }
+
+    @keyframes motion{
+        0%{
+            color: #79c9ff;
+            margin-bottom: -42px;
+        }
+        30%{
+            letter-spacing: 30px;
+            margin-bottom: -42px;
+            }
+        85%{
+            letter-spacing: 5px;
+            margin-bottom: -42px;
+        }
+    }
+</style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Mavericks Fans!</h1>
+        <span class="descricao">Dallas Mavericks</span>
+      </header><br>
+      <br>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #00538C;">Times <i class="fa-solid fa-horse"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="historia" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg" alt="Dallas Mavericks">
+            <br>
+            <h1><b>Dallas Mavericks</b></h1>
+            <br>
+
+            <h2 id="historia"><b>História</b></h2> 
+                <p>
+                    Os <b class="grifado">Mavericks</b> foram fundados em 1980 como uma equipe de expansão da NBA. A equipe foi oficialmente anunciada em 1980 e começou a jogar na temporada 1980-1981.<br>
+                    O empresário e empresário Don Carter foi um dos principais impulsionadores da criação dos Mavericks. Ele foi o proprietário fundador da equipe, junto com Norm Sonju.
+                    O nome "Mavericks" foi escolhido por meio de um concurso público. O termo "maverick" é uma referência a um tipo de gado, especificamente bezerros sem marcação, e também é usado para descrever pessoas independentes ou não convencionais.
+                    <br>
+                </p>
+            <h2><b>Arena</b></h2> 
+                <p>
+                    A arena dos Dallas Mavericks é o <a href="#">American Airlines Center</a>, localizado no distrito de Victory Park, no centro de Dallas, Texas, nos Estados Unidos. A capacidade é de aproximadamente 19.200 espectadores.<br>
+                </p>
+            <br>
+                <img src="https://cdn.playbuzz.com/cdn/6e4a843f-6493-4708-8497-26b5fce91f6f/142655a7-1a40-493d-b96c-17ff37233557.jpg" alt="Macote Dallas Mavericks">
+                    <h2><b>Mascote</b></h2> 
+                <p>
+            <br>
+                    O mascote dos Dallas Mavericks é conhecido como <b class="grifado">"Mavs Man" (ou "Mavs Champ")</b>. <br>
+                    Sua história remonta aos primeiros anos da equipe na NBA e evoluiu ao longo do tempo para se tornar uma parte integrante da experiência dos fãs nos jogos dos Mavericks.
+            <br>
+                    Embora não haja uma história específica de origem para o mascote, ele foi introduzido para entreter e interagir com os fãs durante os jogos em casa e outros eventos da equipe. Como é comum com muitos mascotes esportivos, Mavs Man é uma figura animada e enérgica, muitas vezes envolvendo os fãs em brincadeiras, danças e atividades durante as pausas nos jogos e eventos promocionais.
+            <br>
+                    Ao longo dos anos, Mavs Man se tornou uma figura querida entre os fãs dos Mavericks, representando o espírito da equipe e agregando uma dose extra de diversão e entretenimento aos jogos. Ele também é frequentemente visto em eventos comunitários, escolares e de caridade, ajudando a promover a marca dos Mavericks e a interagir com os fãs em toda a comunidade de Dallas-Fort Worth.
+            <br>
+                    Embora a história específica por trás da criação de Mavs Man possa não ser amplamente conhecida, seu papel como mascote dos Mavericks continua a ser uma parte importante da identidade da equipe e da experiência dos fãs nos jogos e eventos relacionados aos Mavericks.<br>
+                </p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b>1994 Draft e Aquisição de Dirk Nowitzki:</b> Em 1998, os Mavericks adquiriram Dirk Nowitzki em uma troca com o Milwaukee Bucks, que havia selecionado Nowitzki como a 9ª escolha no Draft de 1998. Esta aquisição foi crucial para o futuro dos Mavericks, já que Nowitzki se tornaria o maior jogador da história da franquia.</li>
+        <li><b>2006 NBA Finals:</b> Os Mavericks alcançaram as finais da NBA pela primeira vez em 2006, enfrentando o Miami Heat liderado por Dwyane Wade e Shaquille O'Neal. Embora os Mavericks tenham perdido a série final, essa foi uma conquista significativa para a equipe.</li>
+        <li><b>2011 NBA Championship:</b> O momento mais notável na história dos Mavericks ocorreu em 2011, quando eles conquistaram seu primeiro título da NBA. Liderados por Dirk Nowitzki, Jason Terry e Jason Kidd, os Mavericks derrotaram o Miami Heat em uma série final emocionante, vencendo por 4-2.</li>
+        <li><b>Dirk Nowitzki - MVP e Hall da Fama:</b> Dirk Nowitzki foi uma figura central nos momentos notáveis dos Mavericks. Ele foi nomeado MVP da temporada regular em 2007 e se tornou um dos maiores jogadores da história da NBA. Sua indução ao Hall da Fama do Basquete é um testemunho de sua contribuição para os Mavericks e para o basquete em geral.</li>
+        <li><b>Playoffs Contínuos e Competitividade:</b> Os Mavericks estabeleceram uma cultura de consistência nos playoffs ao longo dos anos, frequentemente competindo em séries de playoffs emocionantes e sendo uma presença regular na pós-temporada.</li>
+    </p>
+<hr>
+    <h2 id="rivalidades"><b>Rivalidades</b></h2>
+    <p>
+        <li><a href="SanAntonioSpurs.html">San Antonio Spurs:</a> A rivalidade entre Dallas Mavericks e San Antonio Spurs é uma das mais intensas na NBA. Ambas as equipes são da região do Texas e frequentemente competem pela supremacia na divisão Sudoeste. Os confrontos nos playoffs e na temporada regular sempre foram emocionantes, destacando a rivalidade entre as duas cidades.</li>
+        <li><a href="HoustonRockets.html">Houston Rockets:</a>Outra rivalidade significativa para os Mavericks é contra o Houston Rockets, outra equipe do Texas. Os confrontos entre Mavericks e Rockets sempre foram competitivos, especialmente durante os playoffs, quando a rivalidade se intensifica.</li>
+        <li><a href="MiamiHeat.html">Miami Heat:</a> A rivalidade entre Dallas Mavericks e Miami Heat atingiu um pico em 2011, quando os Mavericks derrotaram o Heat nas finais da NBA para conquistar seu primeiro título. A dinâmica entre Dirk Nowitzki e LeBron James acrescentou um elemento extra a essa rivalidade.</li>
+    </p>
+    </section>
+
+    <div class="container">
+        <h1 id="CorePlayers"><b>Dallas Mavericks Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spencer Dinwiddie</td>
+                    <td>PG</td>
+                    <td>26</td>
+                    <td>1,96 m</td>
+                    <td>97 kg</td>
+                    <td>Colorado</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2580782.png" alt="Spencer Dinwiddie" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Luka Doncic</td>
+                    <td>PG</td>
+                    <td>77</td>
+                    <td>1,98 m</td>
+                    <td>104 kg</td>
+                    <td>--</td>
+                    <td>$43,031,940</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3945274.png" alt="Luka Doncic" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Kessler Edwards</td>
+                    <td>SF</td>
+                    <td>20</td>
+                    <td>2,01 m</td>
+                    <td>92 kg</td>
+                    <td>Pepperdine</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397693.png" alt="Kessler Edwards" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dante Exum</td>
+                    <td>G</td>
+                    <td>0</td>
+                    <td>1,96 m</td>
+                    <td>97 kg</td>
+                    <td>--</td>
+                    <td>$3,150,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3102528.png" alt="Dante Exum" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Daniel Gafford</td>
+                    <td>C</td>
+                    <td>21</td>
+                    <td>2,08 m</td>
+                    <td>120 kg</td>
+                    <td>Arkansas</td>
+                    <td>$13,394,160</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278049.png" alt="Daniel Gafford" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jazian Gortman</td>
+                    <td>G</td>
+                    <td>00</td>
+                    <td>1,88 m</td>
+                    <td>83 kg</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4708972.png" alt="Jazian Gortman" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Quentin Grimes</td>
+                    <td>SG</td>
+                    <td>5</td>
+                    <td>1,93 m</td>
+                    <td>95 kg</td>
+                    <td>Houston</td>
+                    <td>$4,296,615</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397014.png" alt="Quentin Grimes" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jaden Hardy</td>
+                    <td>G</td>
+                    <td>1</td>
+                    <td>1,91 m</td>
+                    <td>89 kg</td>
+                    <td>--</td>
+                    <td>$2,019,699</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4868423.png" alt="Jaden Hardy" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Kyrie Irving</td>
+                    <td>PG</td>
+                    <td>11</td>
+                    <td>1,88 m</td>
+                    <td>88 kg</td>
+                    <td>Duke</td>
+                    <td>$41,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6442.png" alt="Kyrie Irving" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Maxi Kleber</td>
+                    <td>PF</td>
+                    <td>42</td>
+                    <td>2,08 m</td>
+                    <td>108 kg</td>
+                    <td>--</td>
+                    <td>$11,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2960236.png" alt="Maxi Kleber" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dereck Lively II</td>
+                    <td>C</td>
+                    <td>2</td>
+                    <td>2,16 m</td>
+                    <td>104 kg</td>
+                    <td>Duke</td>
+                    <td>$5,014,560</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683688.png" alt="Dereck Lively II" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Naji Marshall</td>
+                    <td>SF</td>
+                    <td>13</td>
+                    <td>1,98 m</td>
+                    <td>99 kg</td>
+                    <td>Xavier</td>
+                    <td>$8,571,429</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278594.png" alt="Naji Marshall" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Markieff Morris</td>
+                    <td>PF</td>
+                    <td>88</td>
+                    <td>2,06 m</td>
+                    <td>111 kg</td>
+                    <td>Kansas</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6461.png" alt="Markieff Morris" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dwight Powell</td>
+                    <td>C</td>
+                    <td>7</td>
+                    <td>2,08 m</td>
+                    <td>108 kg</td>
+                    <td>Stanford</td>
+                    <td>$4,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2531367.png" alt="Dwight Powell" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Olivier-Maxence Prosper</td>
+                    <td>A</td>
+                    <td>8</td>
+                    <td>2,01 m</td>
+                    <td>104 kg</td>
+                    <td>Marquette</td>
+                    <td>$2,869,920</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4595400.png" alt="Olivier-Maxence Prosper" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Klay Thompson</td>
+                    <td>SG</td>
+                    <td>31</td>
+                    <td>1,96 m</td>
+                    <td>99 kg</td>
+                    <td>Washington State</td>
+                    <td>$15,873,016</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6475.png" alt="Klay Thompson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>P.J. Washington</td>
+                    <td>PF</td>
+                    <td>25</td>
+                    <td>1,98 m</td>
+                    <td>104 kg</td>
+                    <td>Kentucky</td>
+                    <td>$15,500,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278078.png" alt="P.J. Washington" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Brandon Williams</td>
+                    <td>G</td>
+                    <td>10</td>
+                    <td>1,85 m</td>
+                    <td>86 kg</td>
+                    <td>Arizona</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397040.png" alt="Brandon Williams" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Dallas Mavericks</b></h2>
+        <form id="mavericks-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Dallas Mavericks?</label>
+                <br>
+                <div>
+                    <label for="player-luka-doncic">Luka Dončić</label>
+                    <input type="radio" id="player-luka-doncic" name="favorite-player" value="Luka Dončić">
+                </div>
+                <div>
+                    <label for="player-kyrie-irving">Kyrie Irving</label>
+                    <input type="radio" id="player-kyrie-irving" name="favorite-player" value="Kyrie Irving">
+                </div>
+                <div>
+                    <label for="player-dorian-finnie-smith">Dorian Finney-Smith</label>
+                    <input type="radio" id="player-dorian-finnie-smith" name="favorite-player" value="Dorian Finney-Smith">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Dallas Mavericks?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-dirks">Dirk Nowitzki</label>
+                    <input type="radio" id="greatest-player-dirks" name="greatest-player" value="Dirk Nowitzki">
+                </div>
+                <div>
+                    <label for="greatest-player-jason-kidd">Jason Kidd</label>
+                    <input type="radio" id="greatest-player-jason-kidd" name="greatest-player" value="Jason Kidd">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA para o Dallas Mavericks?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-rebuilding">Reconstrução da equipe</label>
+                    <input type="radio" id="next-season-expectation-rebuilding" name="next-season-expectation" value="Reconstrução da equipe">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <div>
+                <label for="improvement-areas">Quais áreas você acredita que o Dallas Mavericks precisa melhorar para ter sucesso na próxima temporada?</label>
+                <input type="text" id="improvement-areas" name="improvement-areas" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="draft-choices">Como você avalia as escolhas do draft feitas pelo Dallas Mavericks nesta temporada?</label>
+                <input type="text" id="draft-choices" name="draft-choices" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="coach-opinion">Qual é a sua opinião sobre o técnico atual do Dallas Mavericks, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                <input type="text" id="coach-opinion" name="coach-opinion" placeholder="Digite a resposta">
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Dallas Mavericks!</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    document.getElementById('mavericks-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

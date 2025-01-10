@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Sacramento Kings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #5A2D8C;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #5A2D8C;
+        }
+ 
+        th {
+            background-color: #B4B8B6;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #5A2D8C;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #B4B8B6;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #B4B8B6;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #5A2D8C;
+
+        }
+        
+        .formulario {
+            background-color: #ede8ff;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #B4B8B6;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <header class="box-texto">      
+          <h1 class="title">Bem vindo Kings Fans!</h1>
+          <span class="descricao">Sacramento Kings</span>
+        </header><br>
+        <br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #5A2D8C;">Times <i class="fa-solid fa-crown" style="color: #5A2D8C;"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Mascote">Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg" alt="Sacramento Kings">
+            <br>
+            <h1><b>Sacramento Kings</b></h1>
+            <br>
+            <h2><b>História</b></h2>
+            <p>
+                O <b class="grifado">Sacramento Kings</b> começou como uma equipe chamada Rochester Seagrams em Rochester, Nova York, em 1923, jogando na National Basketball League (NBL). Em 1948, a equipe foi renomeada para Rochester Royals e ingressou na NBA, quando a liga ainda se chamava Basketball Association of America (BAA). Sob a liderança do treinador Les Harrison, o time teve muito sucesso na década de 1950.<br>
+                <br>
+                Em 1951, os Rochester Royals conquistaram o título da NBA ao derrotar o New York Knicks nas finais. Esta foi a única vez que o time de Rochester venceu um campeonato da NBA.<br>
+                <br>
+                Após a saída de Rochester, a franquia se mudou para Cincinnati, onde passou a se chamar Cincinnati Royals. Durante esse período, o time contou com grandes jogadores, incluindo Oscar Robertson, considerado um dos maiores jogadores de todos os tempos. Robertson jogou para os Royals de 1960 a 1970 e foi um dos primeiros a conquistar uma média de triple-double na história da liga.
+                <br>
+                Em 1972, a franquia se mudou novamente, dessa vez para Kansas City, tornando-se o Kansas City-Omaha Kings. Mais tarde, em 1975, a cidade de Kansas City passou a ser a única sede do time, e a equipe ficou conhecida como Kansas City Kings.
+                <br>
+                Em 1985, a franquia fez sua maior mudança de todas, transferindo-se para Sacramento, Califórnia, e se tornando o Sacramento Kings. A equipe continuou a passar por altos e baixos ao longo dos anos, mas na década de 2000, o time se tornou um dos mais fortes da NBA.
+            </p>
+
+                <h2><b>Arena</b></h2>
+                <p>A arena do Sacramento Kings é o <b>Golden 1 Center</b>,localizado no centro de Sacramento, Califórnia. Inaugurada em 2016, a arena é conhecida por sua moderna infraestrutura e por ser uma das mais avançadas em termos de sustentabilidade.
+                <br>
+                Ela possui capacidade para cerca de 17.600 espectadores para jogos de basquete e é famosa por oferecer uma experiência de alta qualidade tanto para os fãs quanto para os jogadores.</p>
+                <hr>
+                <img src="https://i.pinimg.com/originals/5d/b2/b7/5db2b704d510d83fd5f69dd59192c3d0.jpg" alt="Mascote">
+                
+                <h2><b>Mascote</b></h2>
+                <p>   
+                    O mascote do Sacramento Kings é chamado<b class="grifado">"Slamson, o Leão"</b>,Ele é um leão antropomórfico e é conhecido por suas aparições animadas durante os jogos, interagindo com a torcida e participando de várias atividades e eventos promocionais. Slamson é uma figura muito popular entre os fãs e se tornou um ícone da franquia, trazendo energia e diversão para os jogos e eventos do time.
+
+                </p>
+        </div>
+    </section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Seleção para os Playoffs de 2002:</b> Em 2002, o Sacramento Kings teve uma das suas temporadas mais marcantes, conquistando a primeira posição na Conferência Oeste e avançando para as finais de conferência. A equipe foi eliminada pelos Los Angeles Lakers em uma série controversa, mas sua performance histórica fez o Kings ser reconhecido como uma das equipes mais talentosas da NBA naquela época.</li>
+        <li><b class="grifado">Temporada de 2001-2002:</b> A temporada de 2001-2002 foi uma das mais impressionantes da história do Sacramento Kings, quando conquistaram um recorde de 61 vitórias e 21 derrotas. A equipe, liderada por Chris Webber, Mike Bibby, Peja Stojakovic e Vlade Divac, ficou famosa por seu estilo de jogo rápido e coletivo, tornando-se um dos times mais divertidos de se assistir.</li>
+        <li><b class="grifado">Retorno aos Playoffs após 13 anos (2019):</b> Em 2019, o Sacramento Kings voltou aos playoffs após 13 anos de ausência, o que foi um momento importante para a equipe e sua base de fãs. Embora não tenha avançado muito nas eliminatórias, o retorno aos playoffs foi um marco significativo para a reconstrução do time.</li>
+        <li><b class="grifado">O Jogo 7 da Final de Conferência de 2002:</b> Um dos momentos mais notáveis para o Sacramento Kings foi o Jogo 7 da final da Conferência Oeste contra o Los Angeles Lakers. A partida ficou marcada por uma disputa épica e controversa, que muitos consideram uma das melhores séries de playoffs de todos os tempos. A equipe lutou bravamente, mas acabou sendo derrotada em um jogo polêmico.</li>
+        <li><b class="grifado">O Draft de 2018 (Escolha de Marvin Bagley III):</b> O Sacramento Kings fez história no Draft de 2018 ao escolher Marvin Bagley III com a segunda escolha geral. Embora a escolha tenha gerado discussões, ela marcou o início de uma nova era para a equipe, com a esperança de que Bagley se tornaria um jogador central no futuro da franquia.</li>
+    </p>
+</section>
+
+<hr>
+
+<div class="rivalidades">
+    <h2><b>Rivalidades</b></h2>
+    <ul>
+        <li><a href="LosAngelesLakers.html">Los Angeles Lakers:</a> A rivalidade entre o Sacramento Kings e o Los Angeles Lakers é uma das mais notáveis da NBA, especialmente durante os anos 2000. Os confrontos entre as duas equipes foram intensos, com jogos decisivos nos playoffs, como as famosas finais de conferência de 2002. A rivalidade é alimentada pela proximidade geográfica e pela competição constante pela supremacia na Conferência Oeste.</li>
+        <li><a href="SanAntonioSpurs.html">San Antonio Spurs:</a> O Sacramento Kings e o San Antonio Spurs tiveram várias batalhas épicas nas duas décadas passadas. O Spurs, com sua dinastia dominadora, enfrentou o Kings em momentos chave, principalmente nos playoffs. A rivalidade foi marcada por confrontos táticos e emocionais, com a defesa e a consistência do Spurs desafiando a energia e o talento emergente dos Kings.</li>
+        <li><a href="GoldenStateWarriors.html">Golden State Warriors:</a> A rivalidade com o Golden State Warriors tem se intensificado nos últimos anos, com ambos os times competindo pelo topo da Conferência Oeste. A proximidade geográfica e os jogos acirrados criam uma rivalidade crescente entre essas duas equipes, que compartilham uma base de fãs fervorosa e muitas vezes se enfrentam em jogos cruciais para a classificação.</li>
+    </ul>
+</div>
+
+
+   
+    <div class="container">
+        <h1 id="CorePlayers"><b>Sacramento Kings Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Isaiah Crawford</td>
+                    <td>A</td>
+                    <td>24</td>
+                    <td>1,98 m</td>
+                    <td>99 kg</td>
+                    <td>Louisiana Tech</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592857.png" alt="Isaiah Crawford" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jae Crowder</td>
+                    <td>PF</td>
+                    <td>99</td>
+                    <td>1,98 m</td>
+                    <td>106 kg</td>
+                    <td>Marquette</td>
+                    <td>$1,655,619</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6581.png" alt="Jae Crowder" width="50"></td>
+                </tr>
+                <tr>
+                    <td>DeMar DeRozan</td>
+                    <td>SF</td>
+                    <td>10</td>
+                    <td>1,98 m</td>
+                    <td>99 kg</td>
+                    <td>USC</td>
+                    <td>$23,400,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3978.png" alt="DeMar DeRozan" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Keon Ellis</td>
+                    <td>G</td>
+                    <td>23</td>
+                    <td>1,93 m</td>
+                    <td>79 kg</td>
+                    <td>Alabama</td>
+                    <td>$2,120,693</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4702177.png" alt="Keon Ellis" width="50"></td>
+                </tr>
+                <tr>
+                    <td>De'Aaron Fox</td>
+                    <td>PG</td>
+                    <td>5</td>
+                    <td>1,91 m</td>
+                    <td>83 kg</td>
+                    <td>Kentucky</td>
+                    <td>$34,848,340</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066259.png" alt="De'Aaron Fox" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Kevin Huerter</td>
+                    <td>SG</td>
+                    <td>9</td>
+                    <td>2,01 m</td>
+                    <td>89 kg</td>
+                    <td>Maryland</td>
+                    <td>$16,830,357</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066372.png" alt="Kevin Huerter" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Colby Jones</td>
+                    <td>G</td>
+                    <td>20</td>
+                    <td>1,98 m</td>
+                    <td>93 kg</td>
+                    <td>Xavier</td>
+                    <td>$2,120,693</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433378.png" alt="Colby Jones" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Isaac Jones</td>
+                    <td>C</td>
+                    <td>17</td>
+                    <td>2,06 m</td>
+                    <td>111 kg</td>
+                    <td>Washington State</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5107818.png" alt="Isaac Jones" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Mason Jones</td>
+                    <td>G</td>
+                    <td>8</td>
+                    <td>1,93 m</td>
+                    <td>90 kg</td>
+                    <td>Arkansas</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395704.png" alt="Mason Jones" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Alex Len</td>
+                    <td>C</td>
+                    <td>25</td>
+                    <td>2,13 m</td>
+                    <td>113 kg</td>
+                    <td>Maryland</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2596107.png" alt="Alex Len" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Trey Lyles</td>
+                    <td>PF</td>
+                    <td>41</td>
+                    <td>2,06 m</td>
+                    <td>106 kg</td>
+                    <td>Kentucky</td>
+                    <td>$8,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3136196.png" alt="Trey Lyles" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Doug McDermott</td>
+                    <td>SF</td>
+                    <td>7</td>
+                    <td>1,98 m</td>
+                    <td>102 kg</td>
+                    <td>Creighton</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2528588.png" alt="Doug McDermott" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jordan McLaughlin</td>
+                    <td>PG</td>
+                    <td>3</td>
+                    <td>1,83 m</td>
+                    <td>83 kg</td>
+                    <td>USC</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3134916.png" alt="Jordan McLaughlin" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Malik Monk</td>
+                    <td>SG</td>
+                    <td>0</td>
+                    <td>1,91 m</td>
+                    <td>90 kg</td>
+                    <td>Kentucky</td>
+                    <td>$17,405,202</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066262.png" alt="Malik Monk" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Keegan Murray</td>
+                    <td>SF</td>
+                    <td>13</td>
+                    <td>2,03 m</td>
+                    <td>102 kg</td>
+                    <td>Iowa</td>
+                    <td>$8,809,560</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4594327.png" alt="Keegan Murray" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Domantas Sabonis</td>
+                    <td>PF</td>
+                    <td>11</td>
+                    <td>2,08 m</td>
+                    <td>108 kg</td>
+                    <td>Gonzaga</td>
+                    <td>$40,500,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3155942.png" alt="Domantas Sabonis" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Sacramento Kings</b></h2>
+        <form id="kings-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Sacramento Kings?</label>
+                <div>
+                    <label for="player-deaaron-fox">De'Aaron Fox</label>
+                    <input type="radio" id="player-deaaron-fox" name="favorite-player" value="De'Aaron Fox">
+                </div>
+                <div>
+                    <label for="player-domantas-sabonis">Domantas Sabonis</label>
+                    <input type="radio" id="player-domantas-sabonis" name="favorite-player" value="Domantas Sabonis">
+                </div>
+                <div>
+                    <label for="player-keegan-murray">Keegan Murray</label>
+                    <input type="radio" id="player-keegan-murray" name="favorite-player" value="Keegan Murray">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Sacramento Kings?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-chris-webber">Chris Webber</label>
+                    <input type="radio" id="greatest-player-chris-webber" name="greatest-player" value="Chris Webber">
+                </div>
+                <div>
+                    <label for="greatest-player-pete-maravich">Pete Maravich</label>
+                    <input type="radio" id="greatest-player-pete-maravich" name="greatest-player" value="Pete Maravich">
+                </div>
+                <div>
+                    <label for="greatest-player-rex-chapman">Rex Chapman</label>
+                    <input type="radio" id="greatest-player-rex-chapman" name="greatest-player" value="Rex Chapman">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada do Sacramento Kings?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-developing">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-developing" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <div>
+                <label for="next-season-expectation-question">Quais áreas você acredita que o Sacramento Kings precisa melhorar para ter sucesso na próxima temporada?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="offseason-acquisitions">Como você avalia as contratações feitas pelo Sacramento Kings nesta offseason?</label>
+                <input type="text" id="question-offseason-acquisitions" name="question-offseason-acquisitions" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="coach-evaluation">Qual é a sua opinião sobre o treinador atual do Sacramento Kings, Mike Brown, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                <input type="text" id="question-coach-evaluation" name="question-coach-evaluation" placeholder="Digite a resposta">
+            </div>
+    
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Sacramento Kings!</p>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    document.getElementById('kings-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

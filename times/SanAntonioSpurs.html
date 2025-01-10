@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - San Antonio Spurs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #000000;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #000000;
+        }
+ 
+        th {
+            background-color: #C4CED4;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        input[type="submit"] {
+            background-color: #000000;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #C4CED4;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #C4CED4;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #000000;
+
+        }
+        
+        .formulario {
+            background-color: #e6e6e6;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #C4CED4;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Spurs Fans!</h1>
+        <span class="descricao">San Antonio Spurs</span>
+      </header>
+      <br>
+  <header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1><b>Times <i class="fa-solid fa-hat-cowboy" style="color: #000000;"></i> </b></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+            </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mascote">Mascote</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#rivalidades">Rivalidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#CorePlayers">Core Players</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Quiz">Formulario</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg" alt="O San Antonio Spurs">
+            <br>
+            <h1><b>San Antonio Spurs</b></h1>
+            <br>
+
+            <h2 id="historia"><b>História</b></h2>
+            <p>    
+                O San Antonio Spurs foi fundado em 1967, como parte da expansão da NBA na época, mas inicialmente, o time se chamava Dallas Chaparrals. Eles faziam parte da American Basketball Association (ABA), a liga concorrente da NBA, que existiu entre 1967 e 1976. Em 1973, o time mudou sua sede para San Antonio, no Texas, e passou a se chamar San Antonio Spurs, um nome que marcaria o início de uma nova era.
+                <br>
+                Durante os primeiros anos, o time teve altos e baixos, mas logo estabeleceu uma base de fãs fiel na cidade. A transição da ABA para a NBA em 1976, com a fusão das duas ligas, foi um marco importante na história da franquia.
+                <br>
+                O Spurs ganhou notoriedade nos anos 1980 com a contratação de alguns grandes nomes, mas foi no final da década, com a chegada de David Robinson, que o time realmente se firmou como uma das potências da NBA. Robinson, apelidado de "O Almirante", foi escolhido como a primeira escolha do draft de 1987. Ele rapidamente se tornou um dos melhores jogadores da liga e levou os Spurs a uma nova era de sucesso.
+                <br>
+                A década de 1990 trouxe o primeiro grande pico para o time. Com Robinson e uma base sólida, os Spurs se tornaram regulares nos playoffs, embora ainda faltasse aquele empurrãozinho extra para alcançar o topo da NBA.
+            </p>
+
+                <h2><b>Arena</b></h2>
+
+                <p>A arena do San Antonio Spurs é o<b>AT&T Center</b>, localizado em San Antonio, Texas. O AT&T Center é o lar do time desde sua inauguração em 2002, substituindo o antigo Alamodome.</p>
+                <p> A arena tem capacidade para cerca de 18.000 espectadores durante os jogos de basquete, mas pode acomodar até 19.000 pessoas para eventos como shows e outros esportes.</p>
+                <hr>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6xaidvNleeHmNdQBR9oZnRIrmXhpx1VqRtQ&s" alt="Macoste">
+                
+                <h2 id="mascote"><b>Mascote</b></h2>
+                <p>
+                    O mascote oficial do San Antonio Spurs é o<b class="grifado">The Coyote</b>,O The Coyote foi apresentado ao público em 1983, e rapidamente se tornou um símbolo do time e da cidade de San Antonio. Ele foi criado para trazer energia, 
+                    entretenimento e diversão aos jogos dos Spurs, além de conectar com os fãs de todas as idades.O The Coyote é um dos mascotes mais reconhecidos da NBA e tem uma grande base de fãs, especialmente em San Antonio, onde ele é uma figura amada.
+                    Sua energia contagiante e seu papel como embaixador da equipe fazem dele um componente essencial da experiência de jogo dos Spurs.
+                </p>
+            </p>
+        </div>
+    </section>
+
+    <div>
+        <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+        <p>
+            <li><b class="grifado">Fundação e Primeiros Anos (1967-1973):</b> O San Antonio Spurs foi fundado em 1967 como Dallas Chaparrals na ABA. A mudança para San Antonio em 1973 e a adoção do nome "Spurs" marcou o início de sua jornada na NBA.</li>
+            <li><b class="grifado">Primeiro Título da NBA (1999):</b> O Spurs conquistou seu primeiro campeonato da NBA em 1999, derrotando o New York Knicks. Este título marcou o início da era vitoriosa da franquia, com Tim Duncan e David Robinson como os grandes destaques.</li>
+            <li><b class="grifado">A Era Tim Duncan (1997-2016):</b> A chegada de Tim Duncan em 1997 transformou o time. Duncan, junto com o técnico Gregg Popovich, levou o Spurs a uma era de dominância, conquistando cinco campeonatos da NBA (1999, 2003, 2005, 2007, 2014).</li>
+            <li><b class="grifado">Títulos de 2003, 2005, 2007 e 2014:</b> Durante esses anos, os Spurs consolidaram sua dinastia. A equipe teve uma era de sucesso sustentado, vencendo títulos e realizando finais épicas, como a vitória sobre o Detroit Pistons em 2005 e a varrida sobre o Cleveland Cavaliers em 2007.</li>
+            <li><b class="grifado">A Temporada de 2014 - "Jogo Perfeito":</b> A conquista do título de 2014 contra o Miami Heat foi marcada por uma série de playoffs impressionante, com um basquete coletivo perfeito e uma vitória no Game 5 das finais que ficou marcada como uma das mais brilhantes da história da NBA.</li>
+            <li><b class="grifado">A Retirada de Tim Duncan (2016):</b> A aposentadoria de Tim Duncan em 2016, após uma carreira de sucesso e liderança, marcou o fim de uma era histórica para os Spurs e o início de uma nova fase para a franquia.</li>
+            <li><b class="grifado">A Era Pós-Duncan e a Saída de Kawhi Leonard (2018):</b> A saída de Kawhi Leonard em 2018 representou uma grande mudança para os Spurs, que passaram a enfrentar desafios em um cenário de reconstrução e renovação do elenco.</li>
+        </p>
+    </div>
+    
+
+<hr>
+<div class="rivalidades">
+    <h2 id="rivalidades"><b>Rivalidades</b></h2>
+    <p>
+        <li><a href="LosAngelesLakers.html">Los Angeles Lakers:</a> Uma das rivalidades mais notáveis do San Antonio Spurs, especialmente durante os anos 2000, quando ambas as equipes se encontraram frequentemente nos playoffs. O confronto entre Kobe Bryant, líder dos Lakers, e Tim Duncan, estrela dos Spurs, criou uma disputa intensa que resultou em grandes jogos e títulos, com os Spurs vencendo os Lakers nas finais de 2003 e 2004.</li>
+        <li><a href="MiamiHeat.html">Miami Heat:</a> A rivalidade entre os Spurs e o Miami Heat se intensificou nas finais da NBA de 2013 e 2014. Em 2013, os Spurs perderam um título apertado para o Heat de LeBron James, mas no ano seguinte, vingaram-se ao derrotar o Heat nas finais de 2014, em uma série marcada por um jogo coletivo perfeito.</li>
+        <li><a href="DallasMavericks.html">Dallas Mavericks:</a> Como rivais estaduais no Texas, o confronto entre Spurs e Mavericks é sempre muito esperado. A rivalidade se intensificou com jogos épicos nos playoffs, incluindo a derrota dos Spurs para os Mavericks em 2006 e a vingança em 2014, quando o Spurs venceu os Mavericks nas finais da Conferência Oeste.</li>
+    </p>
+</div>
+
+<div class="container">
+  <h1 id="CorePlayers"><b>San Antonio Spurs Core Players</b></h1>
+  <table>
+      <thead>
+          <tr>
+        <th>Foto</th>
+        <th>Nome</th>
+        <th>Posição</th>
+        <th>Idade</th>
+        <th>Altura</th>
+        <th>Peso</th>
+        <th>Universidade</th>
+        <th>Salário</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Harrison Barnes</td>
+        <td>SF</td>
+        <td>32</td>
+        <td>2.03 m</td>
+        <td>102 kg</td>
+        <td>North Carolina</td>
+        <td>$18,000,000</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6578.png" alt="Harrison Barnes"></td>
+      </tr>
+      <tr>
+        <td>Charles Bassey</td>
+        <td>C</td>
+        <td>24</td>
+        <td>2.08 m</td>
+        <td>104 kg</td>
+        <td>Western Kentucky</td>
+        <td>$2,087,519</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397886.png" alt="Charles Bassey"></td>
+      </tr>
+      <tr>
+        <td>Malaki Branham</td>
+        <td>G</td>
+        <td>21</td>
+        <td>1.93 m</td>
+        <td>81 kg</td>
+        <td>Ohio State</td>
+        <td>$3,217,920</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4565201.png" alt="Malaki Branham"></td>
+      </tr>
+      <tr>
+        <td>Stephon Castle</td>
+        <td>G</td>
+        <td>20</td>
+        <td>1.98 m</td>
+        <td>97 kg</td>
+        <td>UConn</td>
+        <td>$9,131,760</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4845367.png" alt="Stephon Castle"></td>
+      </tr>
+      <tr>
+        <td>Julian Champagnie</td>
+        <td>A</td>
+        <td>23</td>
+        <td>2.01 m</td>
+        <td>98 kg</td>
+        <td>St. John's</td>
+        <td>$3,000,000</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592479.png" alt="Julian Champagnie"></td>
+      </tr>
+      <tr>
+        <td>Sidy Cissoko</td>
+        <td>G</td>
+        <td>20</td>
+        <td>1.98 m</td>
+        <td>90 kg</td>
+        <td>--</td>
+        <td>$1,891,857</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5081727.png" alt="Sidy Cissoko"></td>
+      </tr>
+      <tr>
+        <td>Zach Collins</td>
+        <td>PF</td>
+        <td>27</td>
+        <td>2.11 m</td>
+        <td>113 kg</td>
+        <td>Gonzaga</td>
+        <td>$16,741,200</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066650.png" alt="Zach Collins"></td>
+      </tr>
+      <tr>
+        <td>David Duke Jr.</td>
+        <td>G</td>
+        <td>25</td>
+        <td>1.93 m</td>
+        <td>92 kg</td>
+        <td>Providence</td>
+        <td>--</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397107.png" alt="David Duke Jr."></td>
+      </tr>
+      <tr>
+        <td>Harrison Ingram</td>
+        <td>A</td>
+        <td>22</td>
+        <td>1.96 m</td>
+        <td>104 kg</td>
+        <td>North Carolina</td>
+        <td>--</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433618.png" alt="Harrison Ingram"></td>
+      </tr>
+      <tr>
+        <td>Keldon Johnson</td>
+        <td>SF</td>
+        <td>25</td>
+        <td>1.96 m</td>
+        <td>99 kg</td>
+        <td>Kentucky</td>
+        <td>$19,000,000</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395723.png" alt="Keldon Johnson"></td>
+      </tr>
+      <tr>
+        <td>Tre Jones</td>
+        <td>PG</td>
+        <td>25</td>
+        <td>1.85 m</td>
+        <td>83 kg</td>
+        <td>Duke</td>
+        <td>$9,104,167</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395626.png" alt="Tre Jones"></td>
+      </tr>
+      <tr>
+        <td>Sandro Mamukelashvili</td>
+        <td>PF</td>
+        <td>25</td>
+        <td>2.06 m</td>
+        <td>108 kg</td>
+        <td>Seton Hall</td>
+        <td>$2,087,519</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278580.png" alt="Sandro Mamukelashvili"></td>
+      </tr>
+      <tr>
+        <td>Riley Minix</td>
+        <td>A</td>
+        <td>24</td>
+        <td>2.01 m</td>
+        <td>104 kg</td>
+        <td>Morehead State</td>
+        <td>--</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5177362.png" alt="Riley Minix"></td>
+      </tr>
+      <tr>
+        <td>Chris Paul</td>
+        <td>PG</td>
+        <td>39</td>
+        <td>1.83 m</td>
+        <td>79 kg</td>
+        <td>Wake Forest</td>
+        <td>$10,460,000</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2779.png" alt="Chris Paul"></td>
+      </tr>
+      <tr>
+        <td>Jeremy Sochan</td>
+        <td>A</td>
+        <td>21</td>
+        <td>2.03 m</td>
+        <td>104 kg</td>
+        <td>Baylor</td>
+        <td>$5,570,040</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4610139.png" alt="Jeremy Sochan"></td>
+      </tr>
+      <tr>
+        <td>Devin Vassell</td>
+        <td>SG</td>
+        <td>24</td>
+        <td>1.96 m</td>
+        <td>92 kg</td>
+        <td>Florida State</td>
+        <td>$29,347,826</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395630.png" alt="Devin Vassell"></td>
+      </tr>
+      <tr>
+        <td>Victor Wembanyama</td>
+        <td>C</td>
+        <td>21</td>
+        <td>2.21 m</td>
+        <td>106 kg</td>
+        <td>--</td>
+        <td>$12,768,960</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5104157.png" alt="Victor Wembanyama"></td>
+      </tr>
+      <tr>
+        <td>Blake Wesley</td>
+        <td>G</td>
+        <td>21</td>
+        <td>1.91 m</td>
+        <td>83 kg</td>
+        <td>Notre Dame</td>
+        <td>$2,624,280</td>
+        <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683935.png" alt="Blake Wesley"></td>
+      </tr>
+    </tbody>
+</table>
+</div>
+  
+
+    <div class="formulario">
+        <h2 id="quiz"><b>Formulário de Perguntas sobre o San Antonio Spurs</b></h2>
+        <form id="spurs-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do San Antonio Spurs?</label>
+                <br>
+                <div>
+                    <label for="player-victor-wembanyama">Victor Wembanyama</label>
+                    <input type="radio" id="player-victor-wembanyama" name="favorite-player" value="Victor Wembanyama">
+                </div>
+                <div>
+                    <label for="player-keldon-johnson">Keldon Johnson</label>
+                    <input type="radio" id="player-keldon-johnson" name="favorite-player" value="Keldon Johnson">
+                </div>
+                <div>
+                    <label for="player-devin-vassell">Devin Vassell</label>
+                    <input type="radio" id="player-devin-vassell" name="favorite-player" value="Devin Vassell">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do San Antonio Spurs?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-tim-duncan">Tim Duncan</label>
+                    <input type="radio" id="greatest-player-tim-duncan" name="greatest-player" value="Tim Duncan">
+                </div>
+                <div>
+                    <label for="greatest-player-david-robinson">David Robinson</label>
+                    <input type="radio" id="greatest-player-david-robinson" name="greatest-player" value="David Robinson">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-rebuilding">Reformulação do time</label>
+                    <input type="radio" id="next-season-expectation-rebuilding" name="next-season-expectation" value="Reformulação do time">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos San Antonio Spurs!</p>
+    </div>   
+<br>
+
+<footer>
+  <div class="container">
+      <ul>
+          <li><a href="nbaoficial/index.html">Home</a></li>
+          <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+          <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+          <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+      </ul>
+      
+      <div class="social-icons">
+          <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+          <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+  </div>
+  
+  <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+</footer>
+
+  <script>
+    document.getElementById('spurs-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>

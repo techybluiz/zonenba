@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>NBAZone - Times</title>
+    <style>
+      .baner{
+        width: 100%;
+        height: 50%;
+    }
+    .introducao {
+      text-align: center;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+      a.nav-link{
+        color: #000000;
+      }
+      .bg-light{
+        background-color: #A7A6A6;
+      }
+      .toggle-mode {
+        width: 0px;
+        padding: 10px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .toggle-mode:hover {
+        background-color: #ffffff;
+      }
+    .fa-solid, .fas {
+      width: 70px;
+        height: 70px;
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .bg-light{
+      background: #363636 ;
+    }
+    .grid {
+      padding-left: 55px;
+      font-weight: 400;
+      font-size: 27px;
+      display: flex; 
+      align-items: center; 
+  }
+      .grid-item {
+        color: #790000;
+        padding: 5px; 
+      }
+
+      .separator {
+          margin: 0 10px; 
+      }
+      .tema{
+        font-family: "Roboto Mono", monospace;
+        color: #790000;
+        padding-left: 35px;
+        margin-top: 10px;
+      }
+      .maurice{
+            width: 300px;
+            float: right;
+            margin-right: 30px;
+      }
+      .formcontainer {
+        max-width: 800px;
+        margin: auto;
+        background: #c5c5c5;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .formcontainer {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+      form {
+          display: grid;
+          gap: 10px;
+      }
+      label {
+          display: block;
+          font-weight: bold;
+          color: #000000;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #000000;
+          border-radius: 4px;
+      }
+      textarea {
+          resize: vertical;
+          height: 100px;
+      }
+      input[type="submit"] {
+          background-color: #790000;
+          color: white;
+          border: none;
+          padding: 12px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      input[type="submit"]:hover {
+          background-color: #b60000;
+      }
+        
+      h1 {
+        padding-top: 10px;
+        text-align: center;
+      }
+      p {
+        padding: 30px;
+      }
+      .row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: 17px;
+      }
+      .form-control{
+        border-radius: #000000;
+      }
+    .btn-primary {
+      color: #fff;
+      background-color: #cc0000;
+      border-color: #790000;
+    }
+
+  footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #333; /* Linha sutil para separar */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px; /* Espaçamento entre links */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f39c12; /* Cor laranja suave no hover */
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens */
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+    max-width: 1200px; /* Limita o tamanho máximo do footer */
+    margin: 0 auto; /* Centraliza o footer */
+}
+
+footer ul {
+    list-style: none;
+    display: flex; /* Organiza os links em linha */
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px; /* Espaçamento entre os itens */
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+footer .social-icons a {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2); /* Aumenta o ícone no hover */
+}
+
+footer .copy-text {
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.7;
+    width: 100%;
+    text-align: center; /* Centraliza o texto de copyright */
+}
+
+
+
+        h1 {
+            padding-top: 10px;
+            text-align: center;
+        }
+        
+        .link {
+            text-align: center;
+            left: 25%; 
+            transform: translate(-40%, -40%); 
+            font-size: 25px;
+            color: #000000;
+            border: 5px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        #close-btn {
+            display: none;
+        }
+
+        #splash-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            animation: fadeOut 2s forwards;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(0,0,1);
+            z-index: 1000;
+        }
+        .screenh1{
+            color: rgb(255, 255, 255) ;
+            font-family: FreeMono, monospace; 
+            width: 100%;
+            align-items: center;
+        }
+        .splash-content {
+            text-align: center;
+        }
+
+        #main-content {
+            padding: 0px;
+            display: none;
+        }
+          
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+        document.getElementById('splash-screen').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+        }, 2500);
+});
+    </script>
+
+    <div id="splash-screen">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/c7b99334-d7ca-4538-859d-d9638ef0eefd/AcenrtWn2k.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    <h2 style="color: white; text-align: center; margin-top: 20px;">"Onde a paixão pelo basquete ganha vida!"</h2>
+    </div>
+    </div>
+
+    <div id="main-content" style="display:none;">  
+    <img class="baner" src="https://i.ibb.co/hBTpdpJ/Onde-a-paix-o-pelo-basquete-ganha-vida.png" alt="baner">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA4CAMAAAC8A5r5AAAArlBMVEX///8AQ4zaGjIAN4elsMoANYbZACLtqa3so6m1vdIALYMAL4S1u9HXAAAAOYgAMoUAKIEAP4oAPInXAA7a3uittc3wvL3Ax9n33d7vt7rYABfYABzeSVXusLQAHX7ZACaSoL/p6/H55udPaZ9ieajgW2XcMkLS1uMbSY/21tj29/pEYpv88/PbJjrmgYfyxcfiaXFug66Dk7jnio/plZs5WpcAFXwvUZPkdH3dPUvvNBhDAAACMklEQVRIibWW23aqMBCGJ+GgBuWMJ7QQtVIjrRVxt33/F9tJEaRrOdCLvecC5md9a5gMwyQA/9/C0VhZlMFmPZ1O5ygotq6hjO2kGE7iOHjG0KNNvs2ZKbWnlJoIm7GKJC9cSaosODxEdaMiffV+mAcKNQePUe0WlQmpBmYv6vmGJcVhQvtQ67jTM4D8lfahPq/8/C3oQVnWqMWyE63WfrNNJ8rCtj7FOGq8/Hxg4qg7/vlg1ZFAW+UA7wmKpu2Ib11oyu/+QPVfaWLoqOXvafJdAiyBu3sIaLCBfIKi56J2ZfnNNcBngqFPaeMPTfoqgy9RVDS+bOx4ATDBUNISlCZUXgMEPbbEZ7zayO/wPOyPuqDVfY3k2mqs4WOmRq3zXcwf/9U1qrmtT3vqRv1W2Et1Q0aGRjy9Ke17qa5liaGEpbUqg/2l3E+QYqk50KS7iGki+7UD9a61rAZRB0qMOoV13IcStx4bvVFl3FsVLkkv6nnV0hZmL0o87Zs9LPtR4jmqcfLfoHJterUuHGWOZjPXIJZlbWXHLHHU4jO94DB6CkPHlTl84SjjXC9gC384dxlXGeBRQxEV8AEOF7Ycy5ugK4FwVgidf2T86rlh3olGYSFGfDfLdp4xgo7OYrwQKoFUiMKXv4QcRAhqMHGFAs4QjWe6LdHSRKZL5jqhzc+hSMdFGtl2CvMlsh3LTd4hlm9ZtubbGtEiObNWj8nm6FCZm8LpK0dQdSBp2RjwA8m/s7/pkywk3J7sqAAAAABJRU5ErkJggg==" class="logo" alt="">
+        <h1 class="titulo">Pagina Inicial</h1>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/pages/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/allstargames.html">All Star Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/arenas.html">Arenas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/times.html">Times</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/e-mail.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  </header>
+  
+  <div>
+    <h1 style="color: #790000;">Informações importantes</h1>
+    <br>
+    <P class="introducao">
+        Bem-vindo(a) ao meu site dedicado ao universo da NBA!!<br>
+        Este é um espaço criado com o intuito inicial apenas para estudo e compartilhar informações verídicas sobre a National Basketball Association. Meu interesse pelo basquete e pela dinâmica do esporte me inspiraram a criar este espaço, onde você encontrará uma variedade de conteúdos relacionados ao universo da NBA.<br>
+        
+        É importante ressaltar que todas as informações contidas neste site são verdadeiras e foram cuidadosamente pesquisadas para garantir precisão e confiabilidade<br>
+        
+        O tema da NBA foi escolhido por ser mais do que apenas um tópico de interesse - é um hobby pessoal.<br>
+        
+        Este site é uma tentativa inicial e está sujeito a alterações futuras, à medida que buscos aprimorar a experiência do usuário e expandir o conteúdo.<br>
+        <br>
+        Gostaria muito de ouvir sua opinião sobre o que achou do site! Por favor, sinta-se à vontade para deixar seus comentários, ideias de melhorias ou críticas construtivas na aba de opiniões, que se encontra no final da página.<br>
+    </P>
+  </div>
+
+  
+<br>
+<div>
+  <h2 class="tema">História da NBA</h2>
+  <P>
+    A NBA, sigla para <b>National Basketball Association</b>, representa o ápice do basquete profissional não apenas nos Estados Unidos, mas em todo o mundo. Sua história remonta ao ano de 1946, quando foi fundada como Basketball Association of America (BAA), resultado da união de várias ligas menores de basquete. A primeira temporada oficial da NBA ocorreu em 1949, após a fusão com a <b>National Basketball League (NBL)</b>, estabelecendo-se como a principal liga profissional do esporte nos Estados Unidos.
+    Nos seus primeiros anos, a NBA viu o surgimento de grandes jogadores como ,<b>George Mikan</b>, <b>Bob Cousy</b> e <b>Bill Russell</b>, que ajudaram a solidificar o status da liga. A década de 1960 foi dominada pelo <a href="times/BostonCeltics.html">Boston Celtics</a> de <b>Bill Russell</b>, que conquistou 11 títulos em 13 anos, estabelecendo um padrão de sucesso e rivalidade com outras equipes notáveis da época.<br>
+    <br>
+    Na década de 1970, a NBA testemunhou a emergência de superastros como Kareem Abdul-Jabbar e Julius Erving (Dr. J), que contribuíram para a popularidade e o crescimento da liga. Os anos 1980 foram marcados pela rivalidade lendária entre Boston Celtics e Los Angeles Lakers, personificada por Larry Bird e Magic Johnson, respectivamente. Esta década viu a NBA alcançar novos patamares de popularidade e globalização.<br>
+    <br>
+    O ícone supremo da NBA, Michael Jordan, emergiu nos anos 1990 como uma figura dominante, levando o Chicago Bulls a seis títulos de campeonato durante sua era. Jordan não apenas redefiniu o jogo de basquete, mas também elevou a NBA a um nível global sem precedentes, tornando-a uma força cultural e comercial globalmente reconhecida.<br>
+    <br>
+    Desde o início do século XXI, a NBA continuou a expandir seu alcance internacional, com a ascensão de novos superastros como Kobe Bryant, LeBron James, e mais recentemente, Kevin Durant e Stephen Curry. A liga não é apenas um espetáculo esportivo, mas também um fenômeno cultural, abraçando questões sociais e impulsionando mudanças através do ativismo dos jogadores.<br>
+    <br>
+    Atualmente, a NBA consiste em 30 equipes divididas em duas conferências: Conferência Leste e Conferência Oeste. A temporada regular, que vai de outubro a abril, é seguida pelos playoffs e culmina com as Finais da NBA em junho. A liga continua a ser uma força inovadora, utilizando tecnologia avançada e mídias sociais para expandir sua base de fãs e melhorar a experiência do espectador.
+  </P>
+</div>
+<div>
+  <h2 class="tema">Maurice Podoloff</h2>
+  <img class="maurice" src="https://www.jewishsports.net/BioImages/bookA_Page_032_Image_0001.jpg" alt="">
+  <p>
+    Maurice Podoloff foi uma figura significativa no mundo dos esportes americanos do século XX, especialmente no basquete.
+
+    Maurice Podoloff nasceu em 1890 na Ucrânia, então parte do Império Russo. Sua família emigrou para os Estados Unidos, onde ele cresceu e recebeu sua educação.
+
+    Podoloff entrou no mundo do esporte profissional através da administração. Ele trabalhou como gerente geral e proprietário de equipes esportivas, inicialmente no hóquei no gelo.<br>
+    <br>
+    Antes de se envolver com o basquete, Maurice Podoloff foi presidente da American Hockey League (AHL) de 1938 a 1943. Sua experiência na AHL o preparou para futuros papéis de liderança em ligas esportivas.
+
+    Em 1946, Maurice Podoloff foi um dos principais arquitetos por trás da fundação da <b>Basketball Association of America (BAA)</b>, que mais tarde se fundiu com a <b>National Basketball League (NBL)</b> em 1949 para formar a NBA. Podoloff foi escolhido como o primeiro presidente da BAA e continuou a liderar a liga após a fusão, servindo como o primeiro presidente da NBA até 1963.<br>
+    <br>
+    Sob a presidência de Podoloff, a NBA começou a crescer e se estabelecer como a principal liga profissional de basquete nos Estados Unidos. Ele ajudou a estabelecer as bases administrativas e operacionais que permitiram à NBA prosperar ao longo dos anos.
+
+    Após sua aposentadoria da NBA, Maurice Podoloff continuou a ser lembrado como uma figura histórica importante no basquete profissional americano.<br>
+    <br>
+    Ele faleceu em 1985, deixando um legado duradouro na história da NBA.
+  </p>
+</div>
+<hr>
+<br>
+
+
+<hr>
+<footer>
+  <div class="container">
+      <ul>
+          <li><a href="nbaoficial/index.html">Home</a></li>
+          <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+          <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+          <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+      </ul>
+      
+      <div class="social-icons">
+          <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+          <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+  </div>
+  
+  <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+</footer>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+

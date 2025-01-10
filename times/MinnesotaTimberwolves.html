@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Minnesota Timberwolves</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #0C2340;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #0C2340;
+        }
+ 
+        th {
+            background-color: #2374A1;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #0C2340;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #0C2340;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #2374A1;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #0C2340;
+
+        }
+        
+        .formulario {
+            background-color: #d8eaff;
+        }
+
+        footer ul li {
+            display: inline-block;
+            margin: 0 -7px;
+        }
+   
+        @keyframes motion{
+            0%{
+                color: #2374A1;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <header class="box-texto">      
+          <h1 class="title">Bem vindo Timberwolves Fans!</h1>
+          <span class="descricao">Minnesota Timberwolves</span>
+        </header><br>
+        <br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #0C2340;">Times <i class="fa-brands fa-wolf-pack-battalion" style="color: #0C2340;"></i></h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/jogadores.html">Jogadores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/contato.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612750/2021/11/logo-1.svg" alt="Timberwolves">
+            <br>
+            <h1><b>Minnesota Timberwolves</b></h1>
+            <br>
+            <h2><b>História</b></h2>
+            <p>
+                O <b class="grifado">Minnesota Timberwolves</b> é uma equipe de basquete profissional com sede em Minneapolis, Minnesota, nos Estados Unidos. A franquia foi fundada em 1989, quando a NBA concedeu uma equipe de expansão para a cidade. A entrada da equipe na NBA marcou o retorno do basquete profissional à região, que havia perdido o Minneapolis Lakers para Los Angeles em 1960.<br>
+                O nome "Timberwolves" foi escolhido por meio de um concurso popular, refletindo a abundância de florestas de pinheiros e a relevância histórica do lobo na região de Minnesota. Desde então, o Timberwolves tem sido uma parte significativa da cena esportiva de Minnesota, proporcionando aos fãs momentos emocionantes e algumas temporadas de destaque na NBA.<br>
+                <br>
+                A equipe teve altos e baixos ao longo de sua história, mas em 2004 chegou à sua primeira e até agora única aparição nos playoffs da NBA, liderada pelo lendário jogador Kevin Garnett. Embora não tenham conseguido conquistar um campeonato da NBA, os Timberwolves continuam a ser uma parte vibrante da cultura esportiva de Minnesota e da NBA como um todo.<br>
+                <br>
+                <h2><b>Arena</b></h2>
+                <p>A arena do time é o<b>Target Center</b>. Localizado em Minneapolis, Minnesota. A capacidade do Target Center é de aproximadamente 18.000 espectadores para eventos de basquete. </p>
+                <hr>
+                <img src="https://mascothalloffame.com/wp-content/uploads/bb-plugin/cache/crunch-e1679257201176-circle.jpg" alt="Mascote">
+                
+                <h2><b>Cores e Mascote</b></h2>
+                <p>   
+                    O mascote do Minnesota Timberwolves é chamado de<b>"Crunch"</b>. Ele é um lobo antropomórfico que representa o espírito da equipe e da comunidade de Minnesota. Crunch fez sua estreia como mascote oficial dos Timberwolves em 1996 e desde então se tornou uma figura querida entre os fãs da equipe.<br>
+                    <br>
+                    A história por trás de Crunch é que ele é um lobo amigável e enérgico que está sempre animando os torcedores nos jogos em casa, participando de eventos da comunidade e interagindo com os fãs, especialmente as crianças. Sua presença adiciona um elemento de diversão e entretenimento aos jogos, e ele é frequentemente visto realizando acrobacias, dançando e interagindo com os torcedores durante os intervalos.<br>
+                    <br>
+                    Crunch não só representa o espírito competitivo dos Timberwolves, mas também personifica a energia e o entusiasmo da comunidade de Minnesota. Ele é uma parte integrante da experiência dos fãs nos jogos e eventos da equipe, e seu carisma e personalidade ajudaram a torná-lo um dos mascotes mais reconhecíveis e queridos da NBA.<br>
+                </p>
+        </div>
+    </section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Draft de Kevin Garnett (1995):</b> A escolha de Kevin Garnett no Draft de 1995 marcou o início de uma era para os Timberwolves. Garnett se tornou uma lenda da equipe e um dos melhores jogadores da NBA em sua época. </li>
+        <li><b class="grifado">Primeira Aparição nos Playoffs (1997):</b> Sob o comando de Garnett, os Timberwolves conseguiram chegar aos playoffs pela primeira vez em 1997. Embora tenham sido eliminados na primeira rodada, foi um marco significativo para a franquia.</li>
+        <li><b class="grifado">Chegada de Kevin Love (2008):</b> A seleção de Kevin Love no Draft de 2008 trouxe uma nova esperança para os Timberwolves. Sua combinação de habilidades de rebote e arremesso o tornou uma estrela da equipe.</li>
+        <li><b class="grifado">Temporada 2003-2004:</b>  Sob o comando de Garnett, os Timberwolves alcançaram seu auge na temporada 2003-2004, terminando com o melhor recorde da Conferência Oeste e chegando às finais da conferência pela primeira vez na história da franquia.</li>
+        <li><b class="grifado">Troca de Kevin Garnett (2007):</b> Embora doloroso para os fãs, a troca de Kevin Garnett para o Boston Celtics em 2007 marcou o fim de uma era para os Timberwolves. No entanto, a troca trouxe várias peças importantes que ajudaram a reconstruir a equipe.</li>
+        </p>
+</section>
+<hr>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+        <p>
+            <a href="PortlandTrailBlazers.html">Portland Trail Blazers:</a> Esta rivalidade remonta aos anos em que ambos os times estavam competindo na Divisão Noroeste. Os jogos entre Timberwolves e Trail Blazers geralmente são disputados e intensos. <br>
+            <a href="DenverNuggets.html"> Denver Nuggets:</a> Os Timberwolves e os Nuggets têm competido ferozmente ao longo dos anos, muitas vezes disputando posições nos playoffs e enfrentando-se em jogos emocionantes.<br>
+            <a href="OklahomaCityThunder.html">Oklahoma City Thunder </a> Embora esta rivalidade seja mais recente, remonta à época em que Kevin Durant liderava o Thunder (então SuperSonics). Jogos entre Timberwolves e Thunder costumavam ser emocionantes, especialmente quando ambas as equipes estavam competindo por uma posição nos playoffs.<br>
+         </p>
+    </div>
+
+   
+    <div class="container">
+        <h1 id="CorePlayers"><b>Minnesota Timberwolves Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nickeil Alexander-Walker</td>
+                    <td>SG</td>
+                    <td>9</td>
+                    <td>1,96 m</td>
+                    <td>92 kg</td>
+                    <td>Virginia Tech</td>
+                    <td>$4,312,500</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278039.png" alt="Nickeil Alexander-Walker" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jaylen Clark</td>
+                    <td>G</td>
+                    <td>22</td>
+                    <td>1,93 m</td>
+                    <td>92 kg</td>
+                    <td>UCLA</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432247.png" alt="Jaylen Clark" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Mike Conley</td>
+                    <td>PG</td>
+                    <td>10</td>
+                    <td>1,83 m</td>
+                    <td>79 kg</td>
+                    <td>Ohio State</td>
+                    <td>$9,975,962</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3195.png" alt="Mike Conley" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Donte DiVincenzo</td>
+                    <td>SG</td>
+                    <td>0</td>
+                    <td>1,93 m</td>
+                    <td>92 kg</td>
+                    <td>Villanova</td>
+                    <td>$11,445,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3934673.png" alt="Donte DiVincenzo" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Rob Dillingham</td>
+                    <td>G</td>
+                    <td>4</td>
+                    <td>1,91 m</td>
+                    <td>79 kg</td>
+                    <td>Kentucky</td>
+                    <td>$6,262,920</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4684275.png" alt="Rob Dillingham" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Anthony Edwards</td>
+                    <td>SG</td>
+                    <td>5</td>
+                    <td>1,93 m</td>
+                    <td>102 kg</td>
+                    <td>Geórgia</td>
+                    <td>$42,176,400</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4594268.png" alt="Anthony Edwards" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jesse Edwards</td>
+                    <td>C</td>
+                    <td>14</td>
+                    <td>2,13 m</td>
+                    <td>107 kg</td>
+                    <td>West Virginia</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431816.png" alt="Jesse Edwards" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Luka Garza</td>
+                    <td>C</td>
+                    <td>55</td>
+                    <td>2,08 m</td>
+                    <td>110 kg</td>
+                    <td>Iowa</td>
+                    <td>$2,162,606</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4277951.png" alt="Luka Garza" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Rudy Gobert</td>
+                    <td>C</td>
+                    <td>27</td>
+                    <td>2,16 m</td>
+                    <td>117 kg</td>
+                    <td>--</td>
+                    <td>$43,827,587</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3032976.png" alt="Rudy Gobert" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Joe Ingles</td>
+                    <td>SG</td>
+                    <td>7</td>
+                    <td>2,03 m</td>
+                    <td>99 kg</td>
+                    <td>--</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2968436.png" alt="Joe Ingles" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jaden McDaniels</td>
+                    <td>PF</td>
+                    <td>3</td>
+                    <td>2,06 m</td>
+                    <td>83 kg</td>
+                    <td>Washington</td>
+                    <td>$23,017,242</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431671.png" alt="Jaden McDaniels" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Leonard Miller</td>
+                    <td>A</td>
+                    <td>33</td>
+                    <td>2,08 m</td>
+                    <td>99 kg</td>
+                    <td>--</td>
+                    <td>$1,891,857</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5044385.png" alt="Leonard Miller" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Josh Minott</td>
+                    <td>A</td>
+                    <td>8</td>
+                    <td>2,03 m</td>
+                    <td>92 kg</td>
+                    <td>Memphis</td>
+                    <td>$2,019,699</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4687718.png" alt="Josh Minott" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Tristen Newton</td>
+                    <td>G</td>
+                    <td>4</td>
+                    <td>1,96 m</td>
+                    <td>86 kg</td>
+                    <td>UConn</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592965.png" alt="Tristen Newton" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Julius Randle</td>
+                    <td>PF</td>
+                    <td>30</td>
+                    <td>2,06 m</td>
+                    <td>113 kg</td>
+                    <td>Kentucky</td>
+                    <td>$33,073,920</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3064514.png" alt="Julius Randle" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Naz Reid</td>
+                    <td>C</td>
+                    <td>11</td>
+                    <td>2,06 m</td>
+                    <td>119 kg</td>
+                    <td>LSU</td>
+                    <td>$13,986,432</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4396971.png" alt="Naz Reid" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Terrence Shannon Jr.</td>
+                    <td>G</td>
+                    <td>00</td>
+                    <td>1,98 m</td>
+                    <td>97 kg</td>
+                    <td>Illinois</td>
+                    <td>$2,546,640</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432847.png" alt="Terrence Shannon Jr." width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Minnesota Timberwolves</b></h2>
+        <form id="timberwolves-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Minnesota Timberwolves?</label>
+                <br>
+                <div>
+                    <label for="player-karl-anthony-towns">Karl-Anthony Towns</label>
+                    <input type="radio" id="player-karl-anthony-towns" name="favorite-player" value="Karl-Anthony Towns">
+                </div>
+                <div>
+                    <label for="player-anthony-edwards">Anthony Edwards</label>
+                    <input type="radio" id="player-anthony-edwards" name="favorite-player" value="Anthony Edwards">
+                </div>
+                <div>
+                    <label for="player-dangelo-russell">D'Angelo Russell</label>
+                    <input type="radio" id="player-dangelo-russell" name="favorite-player" value="D'Angelo Russell">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Minnesota Timberwolves?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-kevin-garnett">Kevin Garnett</label>
+                    <input type="radio" id="greatest-player-kevin-garnett" name="greatest-player" value="Kevin Garnett">
+                </div>
+                <div>
+                    <label for="greatest-player-karl-anthony-towns">Karl-Anthony Towns</label>
+                    <input type="radio" id="greatest-player-karl-anthony-towns" name="greatest-player" value="Karl-Anthony Towns">
+                </div>
+                <div>
+                    <label for="greatest-player-andrew-wiggins">Andrew Wiggins</label>
+                    <input type="radio" id="greatest-player-andrew-wiggins" name="greatest-player" value="Andrew Wiggins">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA para o Minnesota Timberwolves?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-rebuilding">Reconstrução do time</label>
+                    <input type="radio" id="next-season-expectation-rebuilding" name="next-season-expectation" value="Reconstrução do time">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o Minnesota Timberwolves precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+        
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo Minnesota Timberwolves nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+        
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do Minnesota Timberwolves, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Minnesota Timberwolves!</p>
+      </div>
+    
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+      <script>
+        document.getElementById('timberwolves-form').addEventListener('submit', function (event) {
+          event.preventDefault(); // Impede o envio padrão do formulário
+          document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+          document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+        });
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+</body>

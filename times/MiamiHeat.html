@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Miami Heat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #98002E;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #98002E;
+        }
+ 
+        th {
+            background-color: #F9A01B;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #98002E;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #F9A01B;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #F9A01B;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #98002E;
+
+        }
+        
+        .formulario {
+            background-color: #fdeed7;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #F9A01B;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <header class="box-texto">      
+          <h1 class="title">Bem vindo Heat Fans!</h1>
+          <span class="descricao">Miami Heat</span>
+        </header><br>
+        <br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #98002E;">Times <i class="fa-solid fa-fire" style="color: #98002E;"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612748/2024/05/core-1.svg" alt="Miami Heat">
+            <br>
+            <h1><b>Miami Heat</b></h1>
+            <br>
+            <h2><b>História</b></h2>
+            <p>
+                O <b class="grifado">Miami Heat</b> é uma equipe de basquete profissional sediada em Miami, Flórida, nos Estados Unidos. A história do Miami Heat começou em 1988, quando a NBA concedeu uma franquia de expansão para a cidade de Miami. O time foi fundado pelo empresário de televisão Ted Arison e seu filho Micky Arison, que se tornou o proprietário majoritário.<br>
+                <br>
+                Nos primeiros anos, o Heat teve um desempenho instável, como é comum para novas equipes em ligas esportivas profissionais. No entanto, em 1995, o time conseguiu uma grande aquisição ao contratar Pat Riley como treinador e presidente da equipe. Riley trouxe consigo uma riqueza de experiência e sucesso da época em que treinou o Los Angeles Lakers.<br>
+                <br>
+                Em 2006, o Miami Heat alcançou seu primeiro grande sucesso ao conquistar o título da NBA. Sob o comando de Riley, e com uma equipe liderada por estrelas como Dwyane Wade, Shaquille O'Neal e Alonzo Mourning, o Heat derrotou o Dallas Mavericks na final da NBA, conquistando o título em seis jogos.
+                O Heat continuou sendo uma força competitiva na NBA ao longo dos anos seguintes. Em 2010, o time novamente chegou às finais da NBA, mas foi derrotado pelo Dallas Mavericks. No entanto, o momento de glória retornou em 2012 e 2013, quando o Heat conquistou dois títulos consecutivos da NBA. Estas vitórias foram lideradas por uma formação estelar, incluindo Dwyane Wade, LeBron James e Chris Bosh, sob a orientação de Pat Riley e o treinador Erik Spoelstra.
+               
+                <h2><b>Arena</b></h2>
+                <p>A arena principal do Miami Heat é a<b>American Airlines Arena</b>,localizada no centro de Miami, Flórida, Estados Unidos.A capacidade da American Airlines Arena varia dependendo do evento, mas para jogos de basquete da NBA, a capacidade é de aproximadamente 19.600 espectadores.</p>
+                <hr>
+                <img src="https://noticiasdebasquete.com.br/wp-content/uploads/2023/07/HEAT_WARRIORS_DAV14.jpg" alt="Mascote">
+                
+                <h2><b>Mascote</b></h2>
+                <p>   
+                    O mascote do Miami Heat é chamado de <b class="grifado">"Burnie"</b> ,Burnie é um foguinho, uma mascote antropomórfica que incorpora o calor e a energia associados ao nome e à identidade do Miami Heat. Ele foi introduzido como mascote oficial da equipe em 1993.<br>
+                    <br>
+                    A história por trás de Burnie é simplesmente a de um foguinho animado, cuja missão é entreter os fãs e apoiar o time durante os jogos e eventos relacionados ao Miami Heat. Como muitas mascotes esportivas, Burnie é conhecido por suas acrobacias enérgicas, danças divertidas e interações com fãs de todas as idades. Ele é uma presença animada nos jogos em casa do Heat, ajudando a criar uma atmosfera empolgante e divertida para os torcedores.<br>
+                    <br>
+                    Burnie tornou-se uma parte essencial da experiência dos fãs do Miami Heat e é uma das mascotes mais reconhecíveis e amadas da NBA. Sua energia contagiosa e personalidade divertida contribuem para a atmosfera única dos jogos da equipe.
+
+                </p>
+        </div>
+    </section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Título da NBA em 2006:</b> Em 2006, o Miami Heat conquistou seu primeiro título da NBA ao derrotar o Dallas Mavericks na final. Liderados por Dwyane Wade, Shaquille O'Neal e Alonzo Mourning, o Heat venceu a série por 4-2, trazendo o primeiro campeonato para a equipe e para a cidade de Miami.</li>
+        <li><b class="grifado">A Era Big Three (2010-2014):</b> Durante este período, o Miami Heat formou um dos trios mais poderosos da história da NBA, conhecido como "Big Three". Com LeBron James, Dwyane Wade e Chris Bosh, o Heat chegou às finais da NBA em quatro anos consecutivos, vencendo dois títulos em 2012 e 2013.</li>
+        <li><b class="grifado">Vitória na final da Conferência Leste de 2012:</b> Em 2012, o Miami Heat enfrentou o Boston Celtics na final da Conferência Leste. Após uma batalha intensa e uma performance histórica de LeBron James no Jogo 6, o Heat conquistou a vitória e avançou para as finais da NBA.</li>
+        <li><b class="grifado">Vitória contra o San Antonio Spurs em 2013:</b> Na final da NBA de 2013, o Miami Heat enfrentou o San Antonio Spurs em uma série emocionante. O Jogo 6 ficou marcado por uma cesta de três pontos crucial de Ray Allen nos segundos finais, forçando a prorrogação e eventualmente levando o Heat à vitória. O Heat conquistou o título em um emocionante Jogo 7.</li>
+        <li><b class="grifado">Retirada do Número 23 de Michael Jordan:</b> Em 2003, o Miami Heat se tornou a primeira equipe da NBA a aposentar o número 23 em homenagem a Michael Jordan, em reconhecimento à sua contribuição para o basquete e à influência que ele teve no esporte.</li>
+    </p> 
+</section>
+<hr>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+        <p>
+            <li><a href="NewYorkKnicks.html">New York Knicks:</a> A rivalidade entre o Miami Heat e o New York Knicks é uma das mais antigas e acirradas da NBA. As equipes se enfrentaram diversas vezes nos playoffs ao longo dos anos, resultando em confrontos intensos e emocionantes. A rivalidade foi alimentada por disputas entre jogadores e momentos polêmicos, criando uma atmosfera elétrica sempre que as equipes se enfrentam.</li>
+            <li><a href="IndianaPacers.html">Indiana Pacers:</a> Nos anos 2010, o Miami Heat e o Indiana Pacers desenvolveram uma forte rivalidade, especialmente durante os playoffs. Os confrontos entre as duas equipes foram marcados por intensidade física e jogos emocionantes. As equipes se enfrentaram em várias séries de playoffs, incluindo finais de conferência, adicionando mais combustível à rivalidade.</Li>
+            <li><a href="BostonCeltics.html">Boston Celtics:</a>Embora tenha diminuído um pouco nos últimos anos, a rivalidade entre o Miami Heat e o Boston Celtics tem uma longa história. Durante a era do "Big Three" do Heat, as equipes se encontraram várias vezes em jogos importantes, incluindo finais de conferência. A rivalidade foi alimentada por confrontos entre grandes jogadores e pela competição acirrada em quadra.</li>
+        </p>
+    </div>
+
+   
+    <div class="container">
+        <h1 id="CorePlayers"><b>Miami Heat Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bam Adebayo</td>
+                    <td>C</td>
+                    <td>13</td>
+                    <td>2,06 m</td>
+                    <td>115 kg</td>
+                    <td>Kentucky</td>
+                    <td>$34,848,340</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066261.png" alt="Bam Adebayo" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Alec Burks</td>
+                    <td>SG</td>
+                    <td>18</td>
+                    <td>1,96 m</td>
+                    <td>97 kg</td>
+                    <td>Colorado</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6429.png" alt="Alec Burks" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jimmy Butler</td>
+                    <td>SF</td>
+                    <td>22</td>
+                    <td>2,01 m</td>
+                    <td>104 kg</td>
+                    <td>Marquette</td>
+                    <td>$48,798,677</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6430.png" alt="Jimmy Butler" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Josh Christopher</td>
+                    <td>SG</td>
+                    <td>8</td>
+                    <td>1,93 m</td>
+                    <td>97 kg</td>
+                    <td>Arizona State</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432168.png" alt="Josh Christopher" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Tyler Herro</td>
+                    <td>PG</td>
+                    <td>14</td>
+                    <td>1,96 m</td>
+                    <td>88 kg</td>
+                    <td>Kentucky</td>
+                    <td>$29,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395725.png" alt="Tyler Herro" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Haywood Highsmith</td>
+                    <td>A</td>
+                    <td>24</td>
+                    <td>1,96 m</td>
+                    <td>99 kg</td>
+                    <td>Wheeling Jesuit</td>
+                    <td>$5,200,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4291678.png" alt="Haywood Highsmith" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jaime Jaquez Jr.</td>
+                    <td>G</td>
+                    <td>11</td>
+                    <td>1,98 m</td>
+                    <td>102 kg</td>
+                    <td>UCLA</td>
+                    <td>$3,685,800</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432848.png" alt="Jaime Jaquez Jr." width="50"></td>
+                </tr>
+                <tr>
+                    <td>Keshad Johnson</td>
+                    <td>A</td>
+                    <td>16</td>
+                    <td>2,01 m</td>
+                    <td>102 kg</td>
+                    <td>Arizona</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431786.png" alt="Keshad Johnson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Nikola Jovic</td>
+                    <td>A</td>
+                    <td>5</td>
+                    <td>2,08 m</td>
+                    <td>92 kg</td>
+                    <td>--</td>
+                    <td>$2,464,200</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4997528.png" alt="Nikola Jovic" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Pelle Larsson</td>
+                    <td>G</td>
+                    <td>9</td>
+                    <td>1,96 m</td>
+                    <td>97 kg</td>
+                    <td>Arizona</td>
+                    <td>$1,157,143</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4601025.png" alt="Pelle Larsson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Kevin Love</td>
+                    <td>PF</td>
+                    <td>42</td>
+                    <td>2,03 m</td>
+                    <td>113 kg</td>
+                    <td>UCLA</td>
+                    <td>$3,850,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3449.png" alt="Kevin Love" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Josh Richardson</td>
+                    <td>SG</td>
+                    <td>0</td>
+                    <td>1,96 m</td>
+                    <td>90 kg</td>
+                    <td>Tennessee</td>
+                    <td>$3,051,153</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2581190.png" alt="Josh Richardson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Duncan Robinson</td>
+                    <td>A</td>
+                    <td>55</td>
+                    <td>2,01 m</td>
+                    <td>97 kg</td>
+                    <td>Michigan</td>
+                    <td>$19,406,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3157465.png" alt="Duncan Robinson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Terry Rozier</td>
+                    <td>SG</td>
+                    <td>2</td>
+                    <td>1,85 m</td>
+                    <td>86 kg</td>
+                    <td>Louisville</td>
+                    <td>$24,924,126</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3074752.png" alt="Terry Rozier" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dru Smith</td>
+                    <td>G</td>
+                    <td>12</td>
+                    <td>1,88 m</td>
+                    <td>92 kg</td>
+                    <td>Missouri</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066993.png" alt="Dru Smith" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Isaiah Stevens</td>
+                    <td>G</td>
+                    <td>4</td>
+                    <td>1,83 m</td>
+                    <td>83 kg</td>
+                    <td>Colorado State</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432117.png" alt="Isaiah Stevens" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Kel'el Ware</td>
+                    <td>C</td>
+                    <td>7</td>
+                    <td>2,13 m</td>
+                    <td>104 kg</td>
+                    <td>Indiana</td>
+                    <td>$4,231,800</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5105623.png" alt="Kel'el Ware" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Miami Heat</b></h2>
+        <form id="heat-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Miami Heat?</label>
+          
+                <div>
+                    <label for="player-jimmy-butler">Jimmy Butler</label>
+                    <input type="radio" id="player-jimmy-butler" name="favorite-player" value="Jimmy Butler">
+                </div>
+                <div>
+                    <label for="player-bam-adebayo">Bam Adebayo</label>
+                    <input type="radio" id="player-bam-adebayo" name="favorite-player" value="Bam Adebayo">
+                </div>
+                <div>
+                    <label for="player-tyler-herro">Tyler Herro</label>
+                    <input type="radio" id="player-tyler-herro" name="favorite-player" value="Tyler Herro">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Miami Heat?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-dwyane-wade">Dwyane Wade</label>
+                    <input type="radio" id="greatest-player-dwyane-wade" name="greatest-player" value="Dwyane Wade">
+                </div>
+                <div>
+                    <label for="greatest-player-alonzo-mourning">Alonzo Mourning</label>
+                    <input type="radio" id="greatest-player-alonzo-mourning" name="greatest-player" value="Alonzo Mourning">
+                </div>
+                <div>
+                    <label for="greatest-player-lebron-james">LeBron James</label>
+                    <input type="radio" id="greatest-player-lebron-james" name="greatest-player" value="LeBron James">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <div>
+                <label for="next-season-expectation-question">Quais áreas você acredita que o Miami Heat precisa melhorar para ter sucesso na próxima temporada?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo Miami Heat nesta offseason?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+    
+            <div>
+                <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do Miami Heat, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+            
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Miami Heat!</p>
+    </div>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    document.getElementById('heat-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

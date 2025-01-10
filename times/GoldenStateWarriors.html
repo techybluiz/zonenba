@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Golden State Warriors </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #006BB6;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #006BB6;
+        }
+ 
+        th {
+            background-color: #FDB927;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #006BB6;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #FDB927;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #FDB927;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #006BB6;
+
+        }
+        
+        .formulario {
+            background-color: #f7f7f7;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #FDB927;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Warriors Fans!</h1>
+        <span class="descricao">Golden State Warriors</span>
+      </header><br>
+      <br>
+  <header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #FDB927;">Times <i class="fa-solid fa-coins" style="color: #FDB927;"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mascote">Mascote</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#rivalidades">Rivalidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#CorePlayers">Core Players</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#quiz">Formulario</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<br>
+    <header>
+        <h1><b>Golden State Warriors</b></h1>
+        <img src="https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg" alt="Warriors">
+    </header>
+
+    <section>
+        <h2 id="historia"><b>História</b></h2>
+        <p>O<b>Golden State Warriors</b>é uma das franquias mais bem-sucedidas e renomadas da NBA, com uma história marcada por títulos,
+            lendas e momentos de grande destaque. A equipe tem uma longa trajetória que remonta a 1946, quando foi fundada como 
+            Philadelphia Warriors, e passou por várias mudanças ao longo das décadas para se tornar o time globalmente conhecido que é hoje.
+            <br>
+            Em 1962, o Time se mudou para a Califórnia, mantendo o nome de Warriors e se tornando a San Francisco Warriors. Durante essa fase, a equipe ainda não teve muito sucesso em termos de títulos, mas teve a honra de contar com alguns grandes jogadores como Wilt Chamberlain, que mais tarde se tornaria uma lenda da NBA.
+            <br>
+            Em 1971, a equipe adotou o nome Golden State Warriors para refletir seu apelo em todo o estado da Califórnia, não apenas em San Francisco. Em 1975, o Warriors conquistou seu primeiro título da NBA na era Golden State, derrotando o Washington Bullets nas finais. Esse título foi marcante, pois a equipe não era considerada favorita e, sob a liderança de Rick Barry, surpreendeu a todos com sua vitória. O título de 1975 é lembrado até hoje como um dos maiores feitos da franquia.
+        </p>
+<br>
+        <h2><b>Arena</b></h2>
+        <p>
+            A arena dos Golden State Warriors é a<b>Chase Center</b>,localizada em San Francisco, Califórnia.O Chase Center foi inaugurado em 2019, substituindo o antigo Oracle Arena em Oakland, que havia sido a casa dos Warriors desde 1971.
+            A capacidade da arena é de aproximadamente 18.000 lugares para jogos de basquete, mas a capacidade pode variar dependendo do tipo de evento.
+        </p>
+            <hr>
+            <h2 id="mascote"><b>Mascote</b></h2>
+            <p>
+                Diferente de muitos outros times da NBA, os Golden State Warriors optaram por não ter um mascote tradicional. Essa decisão permite que a equipe se concentre mais na história e na tradição da franquia, sem a necessidade de um personagem específico para representar a equipe.
+                <br>
+                No entanto, o time é amplamente reconhecido por sua base de fãs vibrante e pelas suas estrelas como Stephen Curry, Klay Thompson, e Draymond Green, que são as figuras principais que atraem a atenção e representam a identidade da franquia.
+            </p>
+        </div>
+  
+        <div>
+            <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+            <p>
+                <li><b class="grifado">Primeiro título da NBA (1947):</b> Em sua primeira temporada na BAA, os Warriors conquistaram o primeiro título da história da liga, marcando o início de uma longa trajetória de sucesso.</li>
+                <li><b class="grifado">Mudança para a Califórnia e o título de 1975:</b> A equipe mudou-se para a Califórnia em 1962 e, em 1975, conquistou seu primeiro título na era Golden State, vencendo os Washington Bullets de forma surpreendente.</li>
+                <li><b class="grifado">A era de dominância de Stephen Curry (2015-2019):</b> A ascensão de Stephen Curry e a formação de um supertime com Klay Thompson e Draymond Green tornaram os Warriors uma potência na NBA, com títulos em 2015, 2017 e 2018. O estilo de jogo baseado em três pontos revolucionou a liga.</li>
+                <li><b class="grifado">Recorde de 73 vitórias (2016):</b> Os Warriors estabeleceram um recorde histórico de 73 vitórias em uma temporada regular, quebrando o recorde anterior de 72 vitórias, mas perderam nas finais da NBA para o Cleveland Cavaliers.</li>
+                <li><b class="grifado">Títulos de 2017 e 2018:</b> Dominando a NBA, o Warriors conquistou dois títulos consecutivos, com uma equipe de talento incomparável, incluindo Kevin Durant, que se juntou ao time em 2016 e foi peça-chave nessas vitórias.</li>
+                <li><b class="grifado">Retorno ao topo em 2022:</b> Após um período de lesões, os Warriors voltaram ao título em 2022, derrotando o Boston Celtics e solidificando sua dinastia moderna, com Stephen Curry sendo eleito MVP das Finais pela primeira vez.</li>
+            </p>
+        </div>
+        
+
+        <div class="rivalidades">
+            <h2 id="rivalidades"><b>Rivalidades</b></h2>
+            <p>
+                <li><a href="ClevelandCavaliers.html">Cleveland Cavaliers:</a> A rivalidade entre os Warriors e os Cavaliers se intensificou especialmente nas finais da NBA, onde se enfrentaram por quatro vezes consecutivas de 2015 a 2018. A rivalidade foi marcada por confrontos épicos, incluindo o retorno histórico dos Cavaliers em 2016, quando eles superaram os Warriors e conquistaram o campeonato.</li>
+                <li><a href="LosAngelesLakers.html">Los Angeles Lakers:</a> Como equipes da Costa Oeste, os Warriors e os Lakers têm uma rivalidade natural. A rivalidade entre as duas equipes ganhou força nos últimos anos, especialmente com o retorno dos Lakers aos playoffs e a presença de estrelas como LeBron James, o que trouxe mais emoção aos confrontos.</li>
+                <li><a href="SacramentoKings.html">Sacramento Kings:</a> Como equipes próximas geograficamente, a rivalidade entre os Warriors e os Kings é marcada pela intensa competição na região da Califórnia. A rivalidade se intensificou com o surgimento de uma nova geração de jogadores talentosos para os Kings, desafiando a supremacia dos Warriors na Conferência Oeste.</li>
+                <li><a href="HoustonRockets.html">Houston Rockets:</a> Os Warriors e os Rockets se tornaram grandes rivais na década de 2010, especialmente durante os playoffs, com as equipes se enfrentando em várias edições das semifinais de conferência. As batalhas entre as estrelas como Stephen Curry e James Harden criaram uma rivalidade de alto nível, com confrontos intensos pelo domínio do Oeste.</li>
+            </p>
+        </div>
+        
+    </section>
+    <div class="container">
+        <h1 id="NBAPlayers"><b>Golden State Warriors Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kyle Anderson</td>
+                    <td>SF</td>
+                    <td>31</td>
+                    <td>2.06 m</td>
+                    <td>104 kg</td>
+                    <td>UCLA</td>
+                    <td>$8,780,488</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2993874.png" alt="Kyle Anderson" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Stephen Curry</td>
+                    <td>PG</td>
+                    <td>30</td>
+                    <td>1.88 m</td>
+                    <td>83 kg</td>
+                    <td>Davidson</td>
+                    <td>$55,761,216</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3975.png" alt="Stephen Curry" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Draymond Green</td>
+                    <td>PF</td>
+                    <td>23</td>
+                    <td>1.98 m</td>
+                    <td>104 kg</td>
+                    <td>Michigan State</td>
+                    <td>$24,107,143</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6589.png" alt="Draymond Green" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Buddy Hield</td>
+                    <td>SG</td>
+                    <td>7</td>
+                    <td>1.93 m</td>
+                    <td>99 kg</td>
+                    <td>Oklahoma</td>
+                    <td>$8,780,488</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2990984.png" alt="Buddy Hield" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Trayce Jackson-Davis</td>
+                    <td>A</td>
+                    <td>32</td>
+                    <td>2.06 m</td>
+                    <td>111 kg</td>
+                    <td>Indiana</td>
+                    <td>$1,891,857</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431684.png" alt="Trayce Jackson-Davis" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jonathan Kuminga</td>
+                    <td>PF</td>
+                    <td>00</td>
+                    <td>2.01 m</td>
+                    <td>102 kg</td>
+                    <td>--</td>
+                    <td>$7,636,154</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433247.png" alt="Jonathan Kuminga" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Kevon Looney</td>
+                    <td>A</td>
+                    <td>5</td>
+                    <td>2.06 m</td>
+                    <td>100 kg</td>
+                    <td>UCLA</td>
+                    <td>$8,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3155535.png" alt="Kevon Looney" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Moses Moody</td>
+                    <td>SG</td>
+                    <td>4</td>
+                    <td>1.96 m</td>
+                    <td>95 kg</td>
+                    <td>Arkansas</td>
+                    <td>$5,803,269</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432171.png" alt="Moses Moody" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Gary Payton II</td>
+                    <td>SG</td>
+                    <td>0</td>
+                    <td>1.88 m</td>
+                    <td>88 kg</td>
+                    <td>Oregon State</td>
+                    <td>$9,130,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3134903.png" alt="Gary Payton II" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Brandin Podziemski</td>
+                    <td>G</td>
+                    <td>2</td>
+                    <td>1.93 m</td>
+                    <td>92 kg</td>
+                    <td>Santa Clara</td>
+                    <td>$3,519,960</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4709138.png" alt="Brandin Podziemski" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Quinten Post</td>
+                    <td>C</td>
+                    <td>21</td>
+                    <td>2.13 m</td>
+                    <td>107 kg</td>
+                    <td>Boston College</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4593016.png" alt="Quinten Post" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Gui Santos</td>
+                    <td>A</td>
+                    <td>15</td>
+                    <td>1.98 m</td>
+                    <td>83 kg</td>
+                    <td>--</td>
+                    <td>$1,891,857</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4997536.png" alt="Gui Santos" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dennis Schroder</td>
+                    <td>PG</td>
+                    <td>71</td>
+                    <td>1.85 m</td>
+                    <td>79 kg</td>
+                    <td>--</td>
+                    <td>$13,025,250</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3032979.png" alt="Dennis Schroder" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Pat Spencer</td>
+                    <td>G</td>
+                    <td>61</td>
+                    <td>1.91 m</td>
+                    <td>92 kg</td>
+                    <td>Northwestern</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592714.png" alt="Pat Spencer" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Lindy Waters III</td>
+                    <td>A</td>
+                    <td>43</td>
+                    <td>1.98 m</td>
+                    <td>95 kg</td>
+                    <td>Oklahoma State</td>
+                    <td>$2,196,970</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066317.png" alt="Lindy Waters III" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="formulario">
+        <h2 id="Quiz"><b>Formulário de Perguntas sobre o Golden State Warriors</b></h2>
+        <form id="warriors-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Golden State Warriors?</label>
+                <br>
+                <div>
+                    <label for="player-stephen-curry">Stephen Curry</label>
+                    <input type="radio" id="player-stephen-curry" name="favorite-player" value="Stephen Curry">
+                </div>
+                <div>
+                    <label for="player-klay-thompson">Klay Thompson</label>
+                    <input type="radio" id="player-klay-thompson" name="favorite-player" value="Klay Thompson">
+                </div>
+                <div>
+                    <label for="player-draymond-green">Draymond Green</label>
+                    <input type="radio" id="player-draymond-green" name="favorite-player" value="Draymond Green">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Golden State Warriors?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-wilt-chamberlain">Wilt Chamberlain</label>
+                    <input type="radio" id="greatest-player-wilt-chamberlain" name="greatest-player" value="Wilt Chamberlain">
+                </div>
+                <div>
+                    <label for="greatest-player-stephen-curry">Stephen Curry</label>
+                    <input type="radio" id="greatest-player-stephen-curry" name="greatest-player" value="Stephen Curry">
+                </div>
+                <div>
+                    <label for="greatest-player-kevin-durant">Kevin Durant</label>
+                    <input type="radio" id="greatest-player-kevin-durant" name="greatest-player" value="Kevin Durant">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Golden State Warriors!</p>
+    </div>
+    
+    
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+  <script>
+    document.getElementById('warriors-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

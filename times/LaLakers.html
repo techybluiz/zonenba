@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Los Angeles Lakers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #552583;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #552583;
+        }
+ 
+        th {
+            background-color: #FDB927;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #552583;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #FDB927;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #FDB927;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #552583;
+
+        }
+        
+        .formulario {
+            background-color: #ffefce;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #FDB927;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <header class="box-texto">      
+          <h1 class="title">Bem vindo Lakers Fans!</h1>
+          <span class="descricao">Los Angeles Lakers</span>
+        </header><br>
+        <br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #552583;">Times</h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                  </li>
+                </ul>
+          </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612747/2021/12/lakers_70x70.svg" alt="Lakers">
+            <br>
+            <h1><b>Los Angeles Lakers</b></h1>
+            <br>
+            <h2><b>História</b></h2>
+            <p>
+                A história da fundação do <b class="grifado">Los Angeles Lakers</b> remonta à década de 1940, quando a equipe foi originalmente estabelecida na cidade de Minneapolis, Minnesota. O time começou como Minneapolis Lakers, nomeado após o grande número de lagos na região. A fundação da equipe ocorreu em 1947.
+                <br>
+                Naquela época, a equipe era parte da Basketball Association of America (BAA), que mais tarde se fundiu com a National Basketball League (NBL) para formar a National Basketball Association (NBA) em 1949.
+                <br>
+                Os Lakers, liderados por estrelas como George Mikan, foram uma potência dominante na era inicial da NBA. Eles conquistaram vários campeonatos da NBA enquanto ainda estavam em Minneapolis.
+                Em 1960, a equipe mudou-se para Los Angeles devido a questões financeiras e a falta de um ginásio adequado em Minneapolis. Essa mudança para Los Angeles marcou o início de uma nova era para a equipe.
+                <br>
+                Sob a liderança de lendas como Jerry West, Elgin Baylor, Wilt Chamberlain, Magic Johnson, Kareem Abdul-Jabbar, Shaquille O'Neal e Kobe Bryant, os Lakers construíram uma das mais impressionantes histórias de sucesso na história da NBA.
+                <br>
+                <h2><b>Arena</b></h2>
+                <p>O Los Angeles Lakers joga suas partidas em casa no <b>Staples Center</b>.<br> Localizado no centro de Los Angeles, Califórnia. O Staples Center é uma arena multiuso que também é a casa de outros times profissionais, como o Los Angeles Clippers (NBA) e o Los Angeles Kings (NHL).Quanto à capacidade, o Staples Center pode acomodar cerca de 18.997 espectadores para jogos de basquete da NBA.</p>
+                <hr>
+                
+                <h2><b>Mascote</b></h2>
+                <p>   
+                    A história por trás do mascote "Jack the Laker" remonta a 2003, quando ele foi introduzido pela primeira vez como parte dos esforços de marketing e entretenimento da equipe.
+                    O nome "Jack" é uma referência a <b class="grifado">Jack Kent Cooke</b>, o lendário proprietário dos Lakers durante sua época em Los Angeles.
+                    A escolha de um leão como mascote pode estar ligada à ideia de força, coragem e realeza, características que muitas equipes desejam associar a si mesmas. 
+                    Além disso, os leões são frequentemente vistos como símbolos de liderança e poder, o que pode refletir a imagem que os Lakers querem projetar como uma equipe dominante na NBA.
+                    Desde sua introdução, Jack the Laker tornou-se uma presença familiar durante os jogos em casa dos Lakers, animando a multidão e participando de diversas atividades de entretenimento durante os intervalos e eventos especiais. Ele se tornou uma parte querida da experiência do torcedor dos Lakers ao longo dos anos.
+                </p>
+        </div>
+    </section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Dinastia de Minneapolis:</b> Nos anos 1950, os Lakers de Minneapolis, liderados por George Mikan, dominaram a NBA, conquistando cinco títulos da liga.</li>
+        <li><b class="grifado">Mudança para Los Angeles:</b> Em 1960, os Lakers mudaram-se de Minneapolis para Los Angeles. Isso marcou o início de uma nova era para a equipe e foi um marco importante em sua história.</li>
+        <li><b class="grifado">Jerry West e Elgin Baylor:</b> Durante os anos 1960, Jerry West e Elgin Baylor lideraram os Lakers, mas apesar de chegarem a várias finais, não conseguiram conquistar um título da NBA.</li>
+        <li><b class="grifado">A chegada de Wilt Chamberlain:</b> Em 1968, Wilt Chamberlain juntou-se aos Lakers, formando uma equipe lendária com Jerry West e Elgin Baylor. Juntos, eles conquistaram o título da NBA em 1972.</li>
+        <li><b class="grifado">Era Magic Johnson e Kareem Abdul-Jabbar:</b> Nos anos 1980, Magic Johnson e Kareem Abdul-Jabbar lideraram os Lakers a cinco títulos da NBA durante a década, solidificando seu lugar como uma das maiores duplas da história do basquete.</li>
+        <li><b class="grifado">Três-peat com Shaq e Kobe:</b>Nos anos 2000, Shaquille O'Neal e Kobe Bryant lideraram os Lakers a três títulos consecutivos da NBA em 2000, 2001 e 2002.</li>
+        <li><b class="grifado">LeBron James e Anthony Davis:</b> A chegada de LeBron James e Anthony Davis aos Lakers em 2018 e 2019, respectivamente, trouxe esperança de mais sucesso e uma nova era de competitividade para a equipe.</li>
+        <li><b class="grifado">Retorno ao topo com Kobe e Pau Gasol:</b> Nos anos 2010, Kobe Bryant e Pau Gasol lideraram os Lakers a dois títulos da NBA em 2009 e 2010, solidificando o legado de Bryant como um dos maiores jogadores da história.</li>
+    </p>
+</section>
+<hr>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+        <p>
+            <li><a href="BostonCeltics.html">Boston Celtics:</a> Esta é uma das maiores rivalidades na história da NBA. Os Lakers e os Celtics têm se enfrentado em várias finais da NBA ao longo dos anos, proporcionando alguns dos momentos mais memoráveis do basquete profissional.</li>
+            <li><a href="LAClippers.html">Los Angeles Clippers:</a> Compartilhando a mesma cidade, os Lakers e os Clippers têm uma rivalidade intraurbana intensa. Nos últimos anos, os Clippers emergiram como uma equipe competitiva na NBA, tornando os confrontos entre essas equipes ainda mais emocionantes.</li>
+            <li><a href="SanAntonioSpurs.html">San Antonio Spurs:</a> Durante os anos 2000, os Lakers e os Spurs tiveram uma rivalidade marcante, com confrontos frequentes nos playoffs. Ambas as equipes conquistaram vários títulos da NBA nessa década, o que aumentou a intensidade dos jogos entre elas.</li>
+        </p>
+    </div>
+    <div class="container">
+      <h1 id="CorePlayers"><b>Los Angeles Lakers Core Players</b></h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>Posição</th>
+                  <th>Número</th>
+                  <th>Altura</th>
+                  <th>Peso</th>
+                  <th>Universidade</th>
+                  <th>Salário</th>
+                  <th>Foto</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Max Christie</td>
+                  <td>G</td>
+                  <td>12</td>
+                  <td>1,96 m</td>
+                  <td>86 kg</td>
+                  <td>Michigan State</td>
+                  <td>$7,142,857</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432582.png" alt="Max Christie" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Anthony Davis</td>
+                  <td>PF</td>
+                  <td>3</td>
+                  <td>2,08 m</td>
+                  <td>114 kg</td>
+                  <td>Kentucky</td>
+                  <td>$43,219,440</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6583.png" alt="Anthony Davis" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Dorian Finney-Smith</td>
+                  <td>PF</td>
+                  <td>17</td>
+                  <td>2,01 m</td>
+                  <td>99 kg</td>
+                  <td>Flórida</td>
+                  <td>$14,924,168</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2578185.png" alt="Dorian Finney-Smith" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Rui Hachimura</td>
+                  <td>PF</td>
+                  <td>28</td>
+                  <td>2,03 m</td>
+                  <td>104 kg</td>
+                  <td>Gonzaga</td>
+                  <td>$17,000,000</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066648.png" alt="Rui Hachimura" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Jaxson Hayes</td>
+                  <td>C</td>
+                  <td>11</td>
+                  <td>2,13 m</td>
+                  <td>99 kg</td>
+                  <td>Texas</td>
+                  <td>$2,463,946</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397077.png" alt="Jaxson Hayes" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Jalen Hood-Schifino</td>
+                  <td>G</td>
+                  <td>0</td>
+                  <td>1,96 m</td>
+                  <td>97 kg</td>
+                  <td>Indiana</td>
+                  <td>$3,879,840</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5105797.png" alt="Jalen Hood-Schifino" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Bronny James</td>
+                  <td>G</td>
+                  <td>9</td>
+                  <td>1,88 m</td>
+                  <td>95 kg</td>
+                  <td>USC</td>
+                  <td>$1,157,153</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683774.png" alt="Bronny James" width="50"></td>
+              </tr>
+              <tr>
+                  <td>LeBron James</td>
+                  <td>SF</td>
+                  <td>23</td>
+                  <td>2,06 m</td>
+                  <td>113 kg</td>
+                  <td>--</td>
+                  <td>$48,728,845</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/1966.png" alt="LeBron James" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Dalton Knecht</td>
+                  <td>G</td>
+                  <td>4</td>
+                  <td>1,98 m</td>
+                  <td>97 kg</td>
+                  <td>Tennessee</td>
+                  <td>$3,819,120</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5104156.png" alt="Dalton Knecht" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Christian Koloko</td>
+                  <td>C</td>
+                  <td>10</td>
+                  <td>2,13 m</td>
+                  <td>104 kg</td>
+                  <td>Arizona</td>
+                  <td>--</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431778.png" alt="Christian Koloko" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Shake Milton</td>
+                  <td>SG</td>
+                  <td>20</td>
+                  <td>1,96 m</td>
+                  <td>92 kg</td>
+                  <td>SMU</td>
+                  <td>$2,875,000</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3915195.png" alt="Shake Milton" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Quincy Olivari</td>
+                  <td>G</td>
+                  <td>41</td>
+                  <td>1,91 m</td>
+                  <td>90 kg</td>
+                  <td>Xavier</td>
+                  <td>--</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432070.png" alt="Quincy Olivari" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Austin Reaves</td>
+                  <td>SG</td>
+                  <td>15</td>
+                  <td>1,96 m</td>
+                  <td>89 kg</td>
+                  <td>Oklahoma</td>
+                  <td>$12,976,362</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066457.png" alt="Austin Reaves" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Cam Reddish</td>
+                  <td>SF</td>
+                  <td>5</td>
+                  <td>2,01 m</td>
+                  <td>98 kg</td>
+                  <td>Duke</td>
+                  <td>$2,463,946</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395627.png" alt="Cam Reddish" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Armel Traore</td>
+                  <td>A</td>
+                  <td>94</td>
+                  <td>2,03 m</td>
+                  <td>97 kg</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5104156.png" alt="Armel Traore" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Jarred Vanderbilt</td>
+                  <td>PF</td>
+                  <td>2</td>
+                  <td>2,03 m</td>
+                  <td>97 kg</td>
+                  <td>Kentucky</td>
+                  <td>$10,714,286</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278077.png" alt="Jarred Vanderbilt" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Gabe Vincent</td>
+                  <td>PG</td>
+                  <td>7</td>
+                  <td>1,88 m</td>
+                  <td>90 kg</td>
+                  <td>UC Santa Barbara</td>
+                  <td>$11,000,000</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3137259.png" alt="Gabe Vincent" width="50"></td>
+              </tr>
+              <tr>
+                  <td>Christian Wood</td>
+                  <td>A</td>
+                  <td>35</td>
+                  <td>2,03 m</td>
+                  <td>97 kg</td>
+                  <td>UNLV</td>
+                  <td>$3,036,040</td>
+                  <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3058254.png" alt="Christian Wood" width="50"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Los Angeles Lakers</b></h2>
+        <form id="lakers-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Los Angeles Lakers?</label>
+                <br>
+                <div>
+                    <label for="player-lebron-james">LeBron James</label>
+                    <input type="radio" id="player-lebron-james" name="favorite-player" value="LeBron James">
+                    
+                </div>
+                <div>
+                    <label for="player-anthony-davis">Anthony Davis</label>
+                    <input type="radio" id="player-anthony-davis" name="favorite-player" value="Anthony Davis">
+                    
+                </div>
+                <div>
+                    <label for="player-russell-westbrook">Russell Westbrook</label>
+                    <input type="radio" id="player-russell-westbrook" name="favorite-player" value="Russell Westbrook">
+                    
+                </div>
+                <div>
+                    
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Los Angeles Lakers?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-magic-johnson">Magic Johnson</label>
+                    <input type="radio" id="greatest-player-magic-johnson" name="greatest-player" value="Magic Johnson">    
+                </div>
+                <div>   
+                    <label for="greatest-player-kobe-bryant">Kobe Bryant</label>
+                    <input type="radio" id="greatest-player-kobe-bryant" name="greatest-player" value="Kobe Bryant">
+                </div>
+                <div>
+                    <label for="greatest-player-kareem-abdul-jabbar">Kareem Abdul-Jabbar</label>
+                    <input type="radio" id="greatest-player-kareem-abdul-jabbar" name="greatest-player" value="Kareem Abdul-Jabbar">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada do Los Angeles Lakers?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o Los Angeles Lakers precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo Los Angeles Lakers nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do Los Angeles Lakers, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+      <h2>Obrigado pela sua participação!</h2>
+      <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Los Angeles Lakers!</p>
+  </div>
+
+  <footer>
+      <div class="container">
+          <ul>
+              <li><a href="nbaoficial/index.html">Home</a></li>
+              <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+              <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+              <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+          </ul>
+          
+          <div class="social-icons">
+              <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+              <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+              <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div>
+      
+      <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+    </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+        <script>
+          document.getElementById('lakers-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+            document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+          });
+        </script>
+</body>

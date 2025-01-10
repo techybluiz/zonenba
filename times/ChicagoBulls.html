@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Chicago Bulls </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #CE1141;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #CE1141;
+        }
+ 
+        th {
+            background-color: #CE1141;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #CE1141;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #3f0010;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #CE1141;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #CE1141;
+
+        }
+        
+        .formulario {
+            background-color: #ffdfdf;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #CE1141;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo bulls Fans!</h1>
+        <span class="descricao">Chicago Bulls</span>
+    </header><br>
+      <br>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+           <h1 style="color: #CE1141;">Times <img src="https://www.flaticon.com/br/icone-gratis/visao-lateral-forte-do-touro_36474?term=touro&page=1&position=2&origin=search&related_id=36474" alt=""></h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mascote">Mascote</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#rivalidades">Rivalidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#CorePlayers">Core Players</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Quiz">Formulario</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+<br>
+
+<section>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Chicago_Bulls.png/200px-Chicago_Bulls.png" alt="chicago bulls">
+        <br>
+        <h1><b>Chicago Bulls</b></h1>
+        <br>
+
+        <h2 id="historia"><b>História</b></h2>
+
+        <p>
+            O <b class="grifado">Chicago Bulls</b> é uma franquia de basquete da NBA, fundada em 1966. O time ganhou notoriedade principalmente na década de 1990, quando conquistou 
+            seis campeonatos da NBA entre 1991 e 1998, com uma equipe estrelada por Michael Jordan, Scottie Pippen e outros grandes jogadores. Sob a liderança
+            do técnico Phil Jackson, os Bulls se tornaram uma das equipes mais dominantes da história da NBA, com um estilo de jogo inovador e uma dinastia 
+            que marcou época. Além dos títulos, a equipe se destacou pelo seu impacto cultural global, transformando Jordan em um ícone do esporte e elevando
+            o basquete a um novo patamar de popularidade ao redor do mundo.
+        </p>
+        <h2><b>Arena</b></h2>
+            <p> arena principal do Chicago Bulls é o<B>United Center</B>, localizado em Chicago, Illinois, nos Estados Unidos. É uma das arenas mais icônicas da NBA e também é usada pelo time de hóquei no gelo Chicago Blackhawks da NHL.Para jogos de basquete da NBA, a capacidade é de aproximadamente 20.917 espectadores.</p>
+    <hr>
+        <img src="https://frankthetank.files.wordpress.com/2006/11/benny2_061024.jpg" alt="mascote">
+
+        <h2 id="mascote"><b>Mascote</b></h2>
+            <p>
+                O mascote do Chicago Bulls é conhecido como <b class="grifado">"Benny the Bull"</b>. Ele é um touro antropomórfico, caracterizado por suas cores vermelho, preto e branco, que são as cores tradicionais da equipe. Benny the Bull é um dos mascotes mais reconhecíveis e queridos na NBA e tem uma história interessante por trás de sua criação e evolução.
+                Benny the Bull fez sua estreia como mascote oficial do Chicago Bulls em 1969. Ele foi criado como uma representação divertida e carismática do espírito da equipe, destinada a entreter os fãs durante os jogos e eventos relacionados ao Bulls. O nome "Benny" foi escolhido como uma abreviação de "Bulls", tornando-se uma identidade icônica associada ao time.
+                Benny the Bull recebeu vários prêmios e reconhecimentos por sua atuação como mascote, incluindo múltiplos prêmios como "Melhor Mascote da NBA". Sua capacidade de entreter e cativar o público o tornou uma figura querida não apenas entre os fãs dos Bulls, mas também entre os fãs de esportes em geral.
+            </p>
+    </div>
+</section>
+
+<div>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Era Michael Jordan (1984-1998):</b> Durante os anos 90, Michael Jordan liderou o Chicago Bulls a seis títulos da NBA, consolidando-se como um dos maiores jogadores de basquete de todos os tempos. Esse período inclui a famosa "trilogia" de títulos consecutivos de 1991 a 1993, seguidos por mais três títulos em 1996, 1997 e 1998.</li>
+        <li><b class="grifado">Dynasty Bulls:</b> Além de Jordan, o Chicago Bulls contava com outros jogadores notáveis como Scottie Pippen, Dennis Rodman, Horace Grant e Toni Kukoc. Juntos, formaram uma das equipes mais dominantes da história da NBA.</li>
+        <li><b class="grifado">O Tiro do Jordan:</b> O arremesso de Jordan para vencer o Jogo 6 das Finais da NBA de 1998 contra o Utah Jazz ficou conhecido como "The Shot". Esse momento icônico encapsula a habilidade de Jordan em momentos decisivos.</li>
+        <li><b class="grifado">72-10 na Temporada Regular de 1995-1996:</b> Os Bulls de 1995-1996 estabeleceram um recorde impressionante na temporada regular da NBA, terminando com um recorde de 72 vitórias e apenas 10 derrotas. Esse recorde permanece como um dos melhores da história da liga.</li>
+        <li><b class="grifado">Derrick Rose e o MVP de 2011:</b> Derrick Rose, jogador dos Bulls, foi nomeado MVP (Jogador Mais Valioso) da temporada 2010-2011 da NBA. Sua habilidade explosiva e liderança levaram os Bulls de volta ao destaque na liga.</li>
+    </p>
+</div>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+        <p>
+            <li><a href="DetroidPistons.html">Detroit Pistons:</a> Durante os anos 1980 e início dos anos 1990, os Bulls e os Pistons tiveram uma rivalidade intensa, especialmente nos playoffs. Os Pistons, conhecidos como "Bad Boys", foram uma grande barreira para os Bulls no início da carreira de Michael Jordan, mas os Bulls eventualmente superaram os Pistons e se tornaram uma potência da NBA.</li>
+            <li><a href="NewYorkKnicks.html">New York Knicks:</a> Nos anos 1990, os Bulls e os Knicks tiveram uma rivalidade intensa, enfrentando-se repetidamente nos playoffs. Os jogos entre essas equipes eram fisicamente intensos e muito disputados, especialmente nas séries de playoffs.</li>
+            <li><a href="ClevelandCavaliers.html">Cleveland Cavaliers:</a> Durante os anos 1980 e 1990, os Bulls e os Cavaliers desenvolveram uma rivalidade considerável, especialmente nos playoffs. Os Cavaliers foram um adversário frequente dos Bulls nas séries de playoffs, com jogos memoráveis, incluindo o famoso "The Shot", de Michael Jordan, em 1989.</li>
+        </p>
+    </div>
+
+
+    <div class="container">
+        <h1 id="CorePlayers"><b>Chicago Bulls Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lonzo Ball</td>
+                    <td>PG</td>
+                    <td>2</td>
+                    <td>1,98 m</td>
+                    <td>86 kg</td>
+                    <td>UCLA</td>
+                    <td>$21,395,348</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4066421.png" alt="Lonzo Ball" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Matas Buzelis</td>
+                    <td>A</td>
+                    <td>14</td>
+                    <td>2,08 m</td>
+                    <td>94 kg</td>
+                    <td>--</td>
+                    <td>$5,195,520</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4711294.png" alt="Matas Buzelis" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jevon Carter</td>
+                    <td>PG</td>
+                    <td>5</td>
+                    <td>1,85 m</td>
+                    <td>90 kg</td>
+                    <td>West Virginia</td>
+                    <td>$6,500,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3133635.png" alt="Jevon Carter" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Torrey Craig</td>
+                    <td>SF</td>
+                    <td>13</td>
+                    <td>1,98 m</td>
+                    <td>100 kg</td>
+                    <td>South Carolina Upstate</td>
+                    <td>$2,845,342</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2528693.png" alt="Torrey Craig" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Ayo Dosunmu</td>
+                    <td>SG</td>
+                    <td>11</td>
+                    <td>1,96 m</td>
+                    <td>90 kg</td>
+                    <td>Illinois</td>
+                    <td>$7,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397002.png" alt="Ayo Dosunmu" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Chris Duarte</td>
+                    <td>SG</td>
+                    <td>27</td>
+                    <td>1,98 m</td>
+                    <td>86 kg</td>
+                    <td>Oregon</td>
+                    <td>$5,893,768</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592402.png" alt="Chris Duarte" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Josh Giddey</td>
+                    <td>SG</td>
+                    <td>3</td>
+                    <td>2,03 m</td>
+                    <td>97 kg</td>
+                    <td>--</td>
+                    <td>$8,352,367</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4871145.png" alt="Josh Giddey" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Talen Horton-Tucker</td>
+                    <td>SF</td>
+                    <td>22</td>
+                    <td>1,93 m</td>
+                    <td>106 kg</td>
+                    <td>Iowa State</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4396991.png" alt="Talen Horton-Tucker" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Zach LaVine</td>
+                    <td>SG</td>
+                    <td>8</td>
+                    <td>1,96 m</td>
+                    <td>90 kg</td>
+                    <td>UCLA</td>
+                    <td>$43,031,940</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3064440.png" alt="Zach LaVine" width="50"></td>
+                </tr>
+                <tr>
+                    <td>E.J. Liddell</td>
+                    <td>A</td>
+                    <td>32</td>
+                    <td>1,98 m</td>
+                    <td>108 kg</td>
+                    <td>Ohio State</td>
+                    <td>$2,120,693</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432821.png" alt="E.J. Liddell" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Emanuel Miller</td>
+                    <td>A</td>
+                    <td>20</td>
+                    <td>2,01 m</td>
+                    <td>97 kg</td>
+                    <td>TCU</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432872.png" alt="Emanuel Miller" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Julian Phillips</td>
+                    <td>A</td>
+                    <td>15</td>
+                    <td>2,03 m</td>
+                    <td>89 kg</td>
+                    <td>Tennessee</td>
+                    <td>$1,891,857</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5105553.png" alt="Julian Phillips" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Adama Sanogo</td>
+                    <td>C</td>
+                    <td>21</td>
+                    <td>2,06 m</td>
+                    <td>111 kg</td>
+                    <td>UConn</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4702023.png" alt="Adama Sanogo" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jalen Smith</td>
+                    <td>PF</td>
+                    <td>7</td>
+                    <td>2,08 m</td>
+                    <td>97 kg</td>
+                    <td>Maryland</td>
+                    <td>$8,571,429</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397189.png" alt="Jalen Smith" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dalen Terry</td>
+                    <td>A</td>
+                    <td>25</td>
+                    <td>2,01 m</td>
+                    <td>88 kg</td>
+                    <td>Arizona</td>
+                    <td>$3,510,480</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433159.png" alt="Dalen Terry" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Nikola Vucevic</td>
+                    <td>C</td>
+                    <td>9</td>
+                    <td>2,08 m</td>
+                    <td>117 kg</td>
+                    <td>USC</td>
+                    <td>$20,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6478.png" alt="Nikola Vucevic" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Coby White</td>
+                    <td>PG</td>
+                    <td>0</td>
+                    <td>1,96 m</td>
+                    <td>95 kg</td>
+                    <td>North Carolina</td>
+                    <td>$12,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395651.png" alt="Coby White" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Patrick Williams</td>
+                    <td>PF</td>
+                    <td>44</td>
+                    <td>2,03 m</td>
+                    <td>97 kg</td>
+                    <td>Florida State</td>
+                    <td>$18,500,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431687.png" alt="Patrick Williams" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <div class="formulario">
+        <h2 id="Quiz"><b>Formulário de Perguntas sobre o Chicago Bulls</b></h2>
+        <form id="bulls-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Chicago Bulls?</label>
+                <br>
+                <div>
+                    <label for="player-zach-lavine">Zach LaVine</label>
+                    <input type="radio" id="player-zach-lavine" name="favorite-player" value="Zach LaVine">
+                </div>
+                <div>
+                    <label for="player-nikola-vucevic">Nikola Vucevic</label>
+                    <input type="radio" id="player-nikola-vucevic" name="favorite-player" value="Nikola Vucevic">
+                </div>
+                <div>
+                    <label for="player-demar-derozan">DeMar DeRozan</label>
+                    <input type="radio" id="player-demar-derozan" name="favorite-player" value="DeMar DeRozan">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Chicago Bulls?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-michael-jordan">Michael Jordan</label>
+                    <input type="radio" id="greatest-player-michael-jordan" name="greatest-player" value="Michael Jordan">
+                </div>
+                <div>
+                    <label for="greatest-player-scottie-pippen">Scottie Pippen</label>
+                    <input type="radio" id="greatest-player-scottie-pippen" name="greatest-player" value="Scottie Pippen">
+                </div>
+                <div>
+                    <label for="greatest-player-derrick-rose">Derrick Rose</label>
+                    <input type="radio" id="greatest-player-derrick-rose" name="greatest-player" value="Derrick Rose">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Chicago Bulls!</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    document.getElementById('bulls-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Atlanta Hawks </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #E03A3E;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #E03A3E;
+        }
+ 
+        th {
+            background-color: #E03A3E;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #E03A3E;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #af0003;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #E03A3E;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #E03A3E;
+
+        }
+        
+        .formulario {
+            background-color: #ffe8e8;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #b80003;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Hawks Fans!</h1>
+        <span class="descricao">Atlanta Hawks</span>
+      </header><br>
+      <br>
+  <header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #E03A3E;">Times <i class="fa-solid fa-feather"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mascote">Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <section>
+        <div>
+      <img src="https://cdn.nba.com/teams/uploads/sites/1610612737/2023/01/atl_hawks_primary_icon.svg" alt="Atlanta Hawks">
+      <br>
+      <h1><b>Atlanta Hawks</b></h1>
+        <h2 id="historia"><b>História</b></h2>
+        <p>
+            Atlanta Hawks na NBA remonta ao ano de 1946, quando a equipe foi fundada em Moline, Illinois, como Tri-Cities Blackhawks. Naquela época, eles eram membros da National Basketball League (NBL), que mais tarde se tornou parte da NBA após a fusão em 1949.
+            O nome "Blackhawks" foi inspirado na unidade de combate do exército americano, a 86ª Divisão de Infantaria, que era conhecida como <B class="grifado">"Blackhawk Division"</B>, em homenagem a um chefe indígena Sauk chamado Black Hawk.
+            Em 1951, a equipe mudou-se para Milwaukee, Wisconsin, e se tornou conhecida como <B class="grifado">Milwaukee Hawks</B>. Em 1955, a equipe foi transferida novamente, desta vez para St. Louis, Missouri, onde ganhou o nome <b class="grifado">St. Louis Hawks</b>.
+            Durante os anos de St. Louis, os Hawks tiveram um período de sucesso notável. Eles ganharam seu único campeonato da NBA em 1958, liderados por lendas como Bob Pettit e Cliff Hagan
+            Em 1968, os Hawks mudaram-se novamente, desta vez para Atlanta, Georgia, onde permanecem até hoje. Desde então, os Hawks tiveram altos e baixos, mas têm sido consistentemente competitivos na liga. Eles chegaram às finais da Conferência Leste várias vezes, mas ainda estão buscando o segundo título da NBA.
+            Ao longo de sua história, os Hawks tiveram muitos jogadores e treinadores notáveis, contribuindo para a rica história da equipe na NBA.
+        </p>
+            <br>
+        
+            <h2><b>Arena</b></h2>
+        <p>
+             A arena principal dos Atlanta Hawks é o<b>State Farm Arena</b>. Localizada no centro de Atlanta, Geórgia, é usada não apenas pelos Hawks, mas também por outras equipes esportivas e para vários eventos de entretenimento.<br>
+            Sua capacidade é de aproximadamente 17.500 espectadores.
+        </p>
+        <br>
+            
+        
+        <hr>
+        <img src="https://mascothalloffame.com/wp-content/uploads/bb-plugin/cache/hawks-e1679257321296-circle.jpg" alt="">
+        <h2 id="mascote"><b>Mascote</b></h2>
+        <p>
+            <br>
+            O mascote dos Atlanta Hawks é o <b class="grifado" >"Harry the Hawk"</b>. Ele é um falcão antropomórfico, conhecido por seu entusiasmo, energia e espírito de equipe.
+            A história de Harry the Hawk remonta ao início dos anos 1980, quando os Hawks estavam estabelecendo sua identidade em Atlanta. Na época, os Hawks queriam criar um mascote que representasse a agressividade e a tenacidade da equipe.
+            <br>
+            Harry the Hawk foi introduzido como o mascote oficial da equipe em 1986. Ele rapidamente se tornou uma parte icônica das experiências dos fãs nos jogos dos Hawks. Com seu traje de falcão e personalidade cativante, Harry é conhecido por animar a multidão e entreter os fãs de todas as idades durante os jogos.
+            <br>
+            Além de suas aparições nos jogos em casa, Harry the Hawk também é envolvido em eventos comunitários, visitas a escolas e atividades de caridade, representando os Hawks e fazendo uma diferença positiva na comunidade de Atlanta.
+            <br>
+            Ao longo dos anos, Harry the Hawk se tornou não apenas um símbolo dos Atlanta Hawks, mas também um dos mascotes mais reconhecíveis e queridos na NBA. Sua presença vibrante e seu espírito incansável continuam a ser uma parte importante da experiência dos fãs nos jogos dos Hawks.  
+
+        </p>
+</div>
+    </section>
+    <hr>
+    <div>
+        <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">1958 Mudança para Atlanta:</b> Originalmente, a equipe foi fundada em 1946 em Buffalo, Nova York, como os Buffalo Bisons. Eles se mudaram para Tri-Cities (atualmente conhecida como Quad Cities) em 1949 e foram renomeados para Tri-Cities Blackhawks. Em 1951, eles se mudaram para Milwaukee e, finalmente, para Atlanta em 1968, onde se tornaram os Atlanta Hawks.</li>
+        <li><b class="grifado">1970-1971 NBA Finals:</b> Os Hawks alcançaram as finais da NBA pela primeira vez em 1970-1971, liderados por jogadores como Lou Hudson e Walt Bellamy. Infelizmente, perderam para o Milwaukee Bucks de Kareem Abdul-Jabbar e Oscar Robertson.</li>
+        <li><b class="grifado">Dominique Wilkins Era:</b> Dominique Wilkins, conhecido como "The Human Highlight Film", foi uma das estrelas mais brilhantes da história dos Hawks. Ele jogou a maior parte de sua carreira em Atlanta, sendo um dos principais destaques dos anos 80 e 90. Sua habilidade atlética e capacidade de pontuar o tornaram uma lenda da franquia.</li>
+        <li><b class="grifado">Bud Ball Era:</b> Sob o comando do treinador Mike Budenholzer, os Hawks tiveram um período de sucesso na década de 2010. Na temporada 2014-2015, eles tiveram um recorde de franquia de 60 vitórias e alcançaram as finais da Conferência Leste, sendo liderados por jogadores como Paul Millsap, Al Horford e Jeff Teague.</li>
+        <li><b class="grifado">Trae Young e a Reconstrução: </b> Trae Young emergiu como uma estrela em ascensão nos Hawks desde sua chegada em 2018. Sua habilidade de marcar pontos e fazer jogadas espetaculares reacendeu o entusiasmo dos fãs. Sua liderança foi fundamental para os Hawks retornarem aos playoffs e, eventualmente, chegarem às finais da Conferência Leste em 2021.</li>
+    </p>
+    </div>
+
+    <div class="rivalidades">
+        <h2 id="rivalidades"><b>Rivalidades</b></h2>
+    <p>
+        <li><a href="BostonCeltics.html">Boston Celtics:</a> Esta rivalidade é mais histórica, remontando aos anos em que os Hawks estavam baseados em St. Louis. Ambas as equipes tiveram sucesso na mesma era da NBA, o que resultou em confrontos memoráveis nos playoffs.</li> 
+        <li><a href="OrlandoMagic.html">Orlando Magic:</a> Esta rivalidade é mais recente e se desenvolveu principalmente devido à proximidade geográfica das duas equipes na Divisão Sudeste. Os jogos entre Hawks e Magic geralmente têm um nível extra de competição.</li>
+        <li><a href="NewYorkKnicks.html">New York Knicks: </a> Como duas das equipes originais da NBA, Hawks e Knicks têm uma rivalidade histórica. Embora não seja tão intensa quanto antes, ainda há uma certa tensão quando essas equipes se enfrentam.</li>
+    </p>
+    </div>
+   
+
+<hr>
+<div class="container">
+    <h1 id="CorePlayers"><b>Atlanta Hawks Core Players</b></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Número</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>Faculdade</th>
+                <th>Salário</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dominick Barlow</td>
+                <td>Ala</td>
+                <td>26</td>
+                <td>2,03 m</td>
+                <td>97 kg</td>
+                <td>--</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4870562.png" alt="Dominick Barlow" width="50"></td>
+            </tr>
+            <tr>
+                <td>Bogdan Bogdanovic</td>
+                <td>SG</td>
+                <td>13</td>
+                <td>1,96 m</td>
+                <td>102 kg</td>
+                <td>--</td>
+                <td>$17,260,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3037789.png" alt="Bogdan Bogdanovic" width="50"></td>
+            </tr>
+            <tr>
+                <td>Kobe Bufkin</td>
+                <td>Armador</td>
+                <td>4</td>
+                <td>1,93 m</td>
+                <td>88 kg</td>
+                <td>Michigan</td>
+                <td>$4,299,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683736.png" alt="Kobe Bufkin" width="50"></td>
+            </tr>
+            <tr>
+                <td>Clint Capela</td>
+                <td>Centro</td>
+                <td>15</td>
+                <td>2,08 m</td>
+                <td>116 kg</td>
+                <td>--</td>
+                <td>$22,265,280</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3102529.png" alt="Clint Capela" width="50"></td>
+            </tr>
+            <tr>
+                <td>Dyson Daniels</td>
+                <td>Armador</td>
+                <td>5</td>
+                <td>2,01 m</td>
+                <td>90 kg</td>
+                <td>--</td>
+                <td>$6,059,520</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4869342.png" alt="Dyson Daniels" width="50"></td>
+            </tr>
+            <tr>
+                <td>Mouhamed Gueye</td>
+                <td>Ala</td>
+                <td>18</td>
+                <td>2,08 m</td>
+                <td>95 kg</td>
+                <td>Washington State</td>
+                <td>$1,891,858</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4712863.png" alt="Mouhamed Gueye" width="50"></td>
+            </tr>
+            <tr>
+                <td>De'Andre Hunter</td>
+                <td>Ala</td>
+                <td>12</td>
+                <td>2,03 m</td>
+                <td>100 kg</td>
+                <td>Virginia</td>
+                <td>$21,696,429</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4065732.png" alt="De'Andre Hunter" width="50"></td>
+            </tr>
+            <tr>
+                <td>Jalen Johnson</td>
+                <td>Ala</td>
+                <td>1</td>
+                <td>2,03 m</td>
+                <td>99 kg</td>
+                <td>Duke</td>
+                <td>$4,510,905</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4701230.png" alt="Jalen Johnson" width="50"></td>
+            </tr>
+            <tr>
+                <td>Vit Krejci</td>
+                <td>Armador</td>
+                <td>27</td>
+                <td>2,03 m</td>
+                <td>88 kg</td>
+                <td>--</td>
+                <td>$2,162,606</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4578893.png" alt="Vit Krejci" width="50"></td>
+            </tr>
+            <tr>
+                <td>Garrison Mathews</td>
+                <td>SG</td>
+                <td>24</td>
+                <td>1,98 m</td>
+                <td>97 kg</td>
+                <td>Lipscomb</td>
+                <td>$2,230,253</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3913180.png" alt="Garrison Mathews" width="50"></td>
+            </tr>
+            <tr>
+                <td>Larry Nance Jr.</td>
+                <td>Pivô</td>
+                <td>22</td>
+                <td>2,03 m</td>
+                <td>111 kg</td>
+                <td>Wyoming</td>
+                <td>$11,205,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2580365.png" alt="Larry Nance Jr." width="50"></td>
+            </tr>
+            <tr>
+                <td>Onyeka Okongwu</td>
+                <td>Pivô</td>
+                <td>17</td>
+                <td>2,08 m</td>
+                <td>108 kg</td>
+                <td>USC</td>
+                <td>$14,000,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431680.png" alt="Onyeka Okongwu" width="50"></td>
+            </tr>
+            <tr>
+                <td>Daeqwon Plowden</td>
+                <td>Armador</td>
+                <td>29</td>
+                <td>1,98 m</td>
+                <td>97 kg</td>
+                <td>Bowling Green</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4279318.png" alt="Daeqwon Plowden" width="50"></td>
+            </tr>
+            <tr>
+                <td>Zaccharie Risacher</td>
+                <td>Pivô</td>
+                <td>10</td>
+                <td>2,03 m</td>
+                <td>90 kg</td>
+                <td>--</td>
+                <td>$12,569,040</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5211175.png" alt="Zaccharie Risacher" width="50"></td>
+            </tr>
+            <tr>
+                <td>David Roddy</td>
+                <td>Ala</td>
+                <td>8</td>
+                <td>1,93 m</td>
+                <td>115 kg</td>
+                <td>Colorado State</td>
+                <td>$2,847,240</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4593041.png" alt="David Roddy" width="50"></td>
+            </tr>
+            <tr>
+                <td>Keaton Wallace</td>
+                <td>Armador</td>
+                <td>2</td>
+                <td>1,91 m</td>
+                <td>83 kg</td>
+                <td>UTSA</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4279118.png" alt="Keaton Wallace" width="50"></td>
+            </tr>
+            <tr>
+                <td>Trae Young</td>
+                <td>Armador</td>
+                <td>11</td>
+                <td>1,85 m</td>
+                <td>74 kg</td>
+                <td>Oklahoma</td>
+                <td>$43,031,940</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4277905.png" alt="Trae Young" width="50"></td>
+            </tr>
+            <tr>
+                <td>Cody Zeller</td>
+                <td>Centro</td>
+                <td>41</td>
+                <td>2,11 m</td>
+                <td>108 kg</td>
+                <td>Indiana</td>
+                <td>$3,500,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2579258.png" alt="Cody Zeller" width="50"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    </div>
+    <div class="formulario">
+        <h2 id="quiz"><b>Formulário de Perguntas sobre o Atlanta Hawks</b></h2>
+        <form id="hawks-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Atlanta Hawks?</label>
+                <br>
+                <div>
+                    <label for="player-trae-young">Trae Young</label>
+                    <input type="radio" id="player-trae-young" name="favorite-player" value="Trae Young">
+                </div>
+                <div>
+                    <label for="player-john-collins">John Collins</label>
+                    <input type="radio" id="player-john-collins" name="favorite-player" value="John Collins">
+                </div>
+                <div>
+                    <label for="player-bogdan-bogdanovic">Bogdan Bogdanovic</label>
+                    <input type="radio" id="player-bogdan-bogdanovic" name="favorite-player" value="Bogdan Bogdanovic">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Atlanta Hawks?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-dominique-wilkins">Dominique Wilkins</label>
+                    <input type="radio" id="greatest-player-dominique-wilkins" name="greatest-player" value="Dominique Wilkins">
+                </div>
+                <div>
+                    <label for="greatest-player-bob-pettit">Bob Pettit</label>
+                    <input type="radio" id="greatest-player-bob-pettit" name="greatest-player" value="Bob Pettit">
+                </div>
+                <div>
+                    <label for="greatest-player-paul-millsap">Paul Millsap</label>
+                    <input type="radio" id="greatest-player-paul-millsap" name="greatest-player" value="Paul Millsap">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Atlanta Hawks!</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+  <script>
+    document.getElementById('hawks-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>

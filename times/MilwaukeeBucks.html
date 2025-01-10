@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Milwaukee Bucks </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            color: #00471B;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #00471B;
+        }
+        .grifado{
+            padding: 0px;
+        }
+        th {
+            background-color: #00471B;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: #00471B;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #00bb48;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #00471B;
+           }
+           .box-texto{
+            text-align:center;
+            position: absolute;
+            top:0;
+            left:0;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            display: contents;
+        
+        }
+        .cabecalho { width:100%; float:left; }
+        
+        .box-texto span{ display:block; }
+        
+        .title{
+            
+            font-size: 56px;
+            font-weight: 700;
+            color: #00471B;
+            font-family: 'open_sansregular';
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            background:#fff;
+            position: relative;
+            animation: motion 3s 1;
+        }
+        
+        .descricao{
+        
+            font-size:1.5em;
+            color: #868686;
+            font-family: 'open_sansregular';
+            letter-spacing: 26px;
+            transition:6s;
+        
+        }
+        .logo{
+            width: 6em;
+            padding-right: 30px;
+        }
+
+        .formulario {
+            max-width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #EEE1C6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo{
+            width: 5em;
+            height: 4em;
+        }
+        .texto-lista{
+            padding: 15px;
+        }
+        .container1 {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: white;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        color: #007A33;
+    }
+    b {
+        padding: 15px;
+        font-size: 1em;
+        color: #007A33;
+    }
+    .grifado{
+        padding: 0px;
+    }
+    th {
+        background-color: #007A33;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+    input[type="text"] {
+        margin-left: 5px;
+    }
+    input[type="submit"] {
+        display: block;
+        margin: 20px auto 0;
+        background-color: #026b0b;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #208801;
+    }
+    .bg-light {
+        background-color: darkgray;
+    
+    }
+    .bg-body-tertiary{
+        background: #007A33;
+       }
+       .box-texto{
+        text-align:center;
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: contents;
+        background: red;
+    
+    }
+    .cabecalho { width:100%; float:left; }
+    
+    .box-texto span{ display:block; }
+    
+    .title{
+        
+        font-size: 56px;
+        font-weight: 700;
+        color: #007A33;
+        font-family: 'open_sansregular';
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+        background:#fff;
+        position: relative;
+        animation: motion 3s 1;
+    }
+    
+    .descricao{
+    
+        font-size:1.5em;
+        color: #868686;
+        font-family: 'open_sansregular';
+        letter-spacing: 26px;
+        transition:6s;
+    
+    }
+    .logo{
+        width: 6em;
+        padding-right: 30px;
+    }
+
+    .formulario {
+        max-width: 80%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #e8ffea;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .logo{
+        width: 5em;
+        height: 4em;
+    }
+    .texto-lista{
+        padding: 15px;
+    }
+    .container1 {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+.form-group {
+    margin-bottom: 20px;
+}
+.baner{
+    padding-left: 150px;
+}
+footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+footer ul li a {
+    margin: 0 1px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer ul li a:hover {
+    color: #5f00cc;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+footer .social-icons a:hover {
+    color: #4a2fc4;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 12px;
+}
+    @keyframes motion{
+        0%{
+            color: #318f58;
+            margin-bottom: -42px;
+        }
+        30%{
+            letter-spacing: 30px;
+            margin-bottom: -42px;
+            }
+        85%{
+            letter-spacing: 5px;
+            margin-bottom: -42px;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Bucks Fans!</h1>
+        <span class="descricao">Milwaukee Bucks</span>
+      </header><br>
+      <br>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+        <h1 style="color: #00471B;">Times</h1>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/contato.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="historia" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612749/2021/09/logo.svg" alt="Milwaukee Bucks">
+            <br>
+            <h1><b>Milwaukee Bucks</b></h1>
+            <br>
+            <h2 id="historia"><b>História</b></h2>
+            <p>
+                A franquia foi fundada em 1968 por Wesley Pavalon e Marvin Fishman, entre outros investidores. A NBA concedeu a cidade de Milwaukee uma equipe de expansão devido ao interesse crescente no basquete na região e ao sucesso da equipe local da NBA, o Milwaukee Hawks, que se mudou para St. Louis em 1955.
+                <br>
+                    A equipe realizou um concurso para escolher o nome da nova franquia. "Bucks," que faz referência ao cervo, um símbolo comum em Wisconsin devido à popularidade da caça, foi o nome vencedor. Outros nomes considerados foram "Robins" e "Skunks."   
+                    Os Bucks começaram a jogar oficialmente na temporada 1968-1969 da NBA. Em sua primeira temporada, os Bucks selecionaram Kareem Abdul-Jabbar (na época, Lew Alcindor) como a primeira escolha geral no draft da NBA. Sob a liderança de Abdul-Jabbar e com o treinador Larry Costello, os Bucks tiveram um início impressionante e alcançaram as finais da NBA em sua terceira temporada, em 1971. Eles perderam para o New York Knicks na série final.
+                    Nos anos seguintes, os Bucks continuaram a ser uma equipe competitiva, mas não conseguiram repetir o sucesso inicial. No entanto, em 1974, os Bucks conquistaram seu primeiro título de divisão. Eles alcançaram as finais da NBA novamente em 1974, mas foram derrotados pelo Boston Celtics.
+                    Ao longo dos anos, os Bucks tiveram altos e baixos, passando por mudanças de propriedade e períodos de reconstrução. Eles tiveram várias estrelas ao longo de sua história, incluindo Oscar Robertson, Sidney Moncrief e Ray Allen, entre outros.
+                    Em 2014, a equipe foi comprada por um grupo liderado por Marc Lasry e Wesley Edens. Desde então, os Bucks passaram por um renascimento, construindo uma equipe em torno de estrelas como Giannis Antetokounmpo e alcançando sucesso nos playoffs novamente, incluindo uma vitória no campeonato da NBA em 2021, conquistando seu segundo título da liga.
+            </p>
+
+            <h2><b>Arena</b></h2>
+                <p>A arena do Milwaukee Bucks é o<b>Fiserv Forum</b> , que está localizada em Milwaukee, Wisconsin. A capacidade do Fiserv Forum é de aproximadamente 17.500 espectadores para jogos de basquete.</p>
+
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612749/2022/03/211026-bango-main.png" alt="mascote">
+                
+                <h2><b>Cores e Mascote</b></h2>
+                <p>
+                    As cores oficiais do Milwaukee Bucks são Verde, Branco e Creme <br>
+                    <br>
+                    O mascote do Milwaukee Bucks é <b class="grifado">"Bango"</b>. um cervo antropomorfizado que tem sido uma presença animada e querida nos jogos dos Bucks desde sua introdução.
+                    Bango foi apresentado pela primeira vez aos fãs em 18 de outubro de 1977, durante um jogo dos Milwaukee Bucks no MECCA Arena.
+                    O nome "Bango" foi escolhido por meio de um concurso entre os fãs. O nome é uma referência ao grito usado pelos locutores de rádio dos Bucks para descrever um chute certeiro: "Bango!" O nome foi sugerido por <b class="grifado">Bob Moning</b>, um fã da equipe.
+                    Desde sua introdução, Bango tem passado por diversas atualizações em sua aparência, mantendo-se sempre atualizado com a evolução do time e das preferências dos fãs. A versão atual de Bango é um cervo alto e musculoso, vestindo as cores do time.
+
+                </p>
+        </div>
+    </section>
+<hr>
+    <section>
+        <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+        <p>
+            <li><b class="grifado">Campeonato da NBA em 1971:</b> Os Bucks venceram seu primeiro campeonato da NBA na temporada 1970-1971, liderados por Kareem Abdul-Jabbar e Oscar Robertson. Foi uma conquista marcante na história da franquia.</li>
+            <li><b class="grifado">Draft de Giannis Antetokounmpo em 2013:</b> Selecionar Giannis Antetokounmpo como a 15ª escolha no draft da NBA em 2013 foi um momento crucial. Ele se tornou o rosto da equipe e levou os Bucks a novos patamares.</li>
+            <li><b class="grifado">Mudança para o Fiserv Forum em 2018:</b> A inauguração do Fiserv Forum marcou uma nova era para os Bucks, trazendo uma moderna arena e ajudando a revitalizar a área ao redor.</li>
+            <li><b class="grifado">Prêmio de MVP de Giannis em 2019:</b> Giannis Antetokounmpo ganhou seu primeiro prêmio de MVP da NBA na temporada 2018-2019, destacando sua ascensão como uma estrela dominante da liga.</li>
+            <li><b class="grifado">Campeonato da NBA em 2021:</b> O título de 2021 foi um momento histórico para os Bucks, encerrando um jejum de 50 anos sem títulos e solidificando Giannis Antetokounmpo como uma lenda da franquia.</li>
+        </p>
+    </section>
+<hr>   
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+        <p>
+            <li><a href="ChicagoBulls.html"> Chicago Bulls:</a> A rivalidade com o Chicago Bulls é uma das mais antigas e acirradas dos Bucks. Ambas as equipes estão na Divisão Central e têm competido ferozmente ao longo dos anos, especialmente durante os anos 80 e 90.</li>
+            <li><a href="BostonCeltics.html"> Boston Celtics:</a> Os Bucks têm uma rivalidade histórica com o Boston Celtics, que remonta aos anos 70 e 80. Ambas as equipes tiveram grandes confrontos nos playoffs, gerando uma rivalidade intensa.</li>
+            <li><a href="Philadelphia76ers.html"> Philadelphia 76ers:</a> A rivalidade com os Philadelphia 76ers também é significativa, especialmente durante os anos em que ambos os times estavam competindo no auge da Conferência Leste. Os confrontos nos playoffs aumentaram a intensidade dessa rivalidade.</li>
+        </p>
+    </div>
+
+    <div id="CorePlayers" class="container">
+        <h1><b>Milwaukee Bucks Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Grayson Allen</td>
+                    <td>Armador</td>
+                    <td>8</td>
+                    <td>1.93 m</td>
+                </tr>
+                <tr>
+                    <td>Udoka Azubuike</td>
+                    <td>Pivô</td>
+                    <td>27</td>
+                    <td>2.11 m</td>
+                </tr>
+                <tr>
+                    <td>Bradley Beal</td>
+                    <td>Armador</td>
+                    <td>3</td>
+                    <td>1.93 m</td>
+                </tr>
+                <tr>
+                    <td>Bol Bol</td>
+                    <td>Pivô</td>
+                    <td>11</td>
+                    <td>2.21 m</td>
+                </tr>
+                <tr>
+                    <td>Devin Booker</td>
+                    <td>Armador</td>
+                    <td>1</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Kevin Durant</td>
+                    <td>Ala-Pivô</td>
+                    <td>35</td>
+                    <td>2.11 m</td>
+                </tr>
+                <tr>
+                    <td>Drew Eubanks</td>
+                    <td>Ala-Pivô</td>
+                    <td>14</td>
+                    <td>2.08 m</td>
+                </tr>
+                <tr>
+                    <td>Eric Gordon</td>
+                    <td>Armador</td>
+                    <td>23</td>
+                    <td>1.91 m</td>
+                </tr>
+                <tr>
+                    <td>Damion Lee</td>
+                    <td>Armador</td>
+                    <td>10</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Saben Lee</td>
+                    <td>Guarda</td>
+                    <td>38</td>
+                    <td>1.88 m</td>
+                </tr>
+                <tr>
+                    <td>Nassir Little</td>
+                    <td>Ala</td>
+                    <td>25</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Jusuf Nurkic</td>
+                    <td>Pivô</td>
+                    <td>20</td>
+                    <td>2.13 m</td>
+                </tr>
+                <tr>
+                    <td>Royce O'Neale</td>
+                    <td>Ala-Pivô</td>
+                    <td>00</td>
+                    <td>1.98 m</td>
+                </tr>
+                <tr>
+                    <td>Josh Okogie</td>
+                    <td>Ala</td>
+                    <td>2</td>
+                    <td>1.93 m</td>
+                </tr>
+                <tr>
+                    <td>David Roddy</td>
+                    <td>Ala</td>
+                    <td>21</td>
+                    <td>1.93 m</td>
+                </tr>
+                <tr>
+                    <td>Isaiah Thomas</td>
+                    <td>Guarda</td>
+                    <td>4</td>
+                    <td>1.75 m</td>
+                </tr>
+                <tr>
+                    <td>Ish Wainright</td>
+                    <td>Ala</td>
+                    <td>12</td>
+                    <td>1.96 m</td>
+                </tr>
+                <tr>
+                    <td>Thaddeus Young</td>
+                    <td>Ala</td>
+                    <td>30</td>
+                    <td>2,03 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Milwaukee Bucks</b></h2>
+        <form id="bucks-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Milwaukee Bucks?</label>
+                <br>
+                <div>
+                    <label for="player-giannis-antetokounmpo">Giannis Antetokounmpo</label>
+                    <input type="radio" id="player-giannis-antetokounmpo" name="favorite-player" value="Giannis Antetokounmpo">
+                </div>
+                <div>
+                    <label for="player-khris-middleton">Khris Middleton</label>
+                    <input type="radio" id="player-khris-middleton" name="favorite-player" value="Khris Middleton">
+                </div>
+                <div>
+                    <label for="player-jrue-holiday">Jrue Holiday</label>
+                    <input type="radio" id="player-jrue-holiday" name="favorite-player" value="Jrue Holiday">
+                </div>
+                <div>
+                    <label for="player-brook-lopez">Brook Lopez</label>
+                    <input type="radio" id="player-brook-lopez" name="favorite-player" value="Brook Lopez">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Milwaukee Bucks?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-giannis-antetokounmpo">Giannis Antetokounmpo</label>
+                    <input type="radio" id="greatest-player-giannis-antetokounmpo" name="greatest-player" value="Giannis Antetokounmpo">
+                </div>
+                <div>
+                    <label for="greatest-player-kareem-abdul-jabbar">Kareem Abdul-Jabbar</label>
+                    <input type="radio" id="greatest-player-kareem-abdul-jabbar" name="greatest-player" value="Kareem Abdul-Jabbar">
+                </div>
+                <div>
+                    <label for="greatest-player-ray-allen">Ray Allen</label>
+                    <input type="radio" id="greatest-player-ray-allen" name="greatest-player" value="Ray Allen">
+                </div>
+                <div>
+                    <label for="greatest-player-oscar-robertson">Oscar Robertson</label>
+                    <input type="radio" id="greatest-player-oscar-robertson" name="greatest-player" value="Oscar Robertson">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA para o Milwaukee Bucks?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Milwaukee Bucks!</p>
+    </div>
+
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="nbaoficial/index.html">Home</a></li>
+            <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+            <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+            <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+        </ul>
+        
+        <div class="social-icons">
+            <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+  </footer>
+
+  <script>
+    document.getElementById('bucks-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body> 

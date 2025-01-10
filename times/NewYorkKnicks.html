@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - New York Knicks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #003399 ;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #F58220 ;
+        }
+ 
+        th {
+            background-color: #003399 ;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #F58220 ;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #F58220 ;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #003399 ;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #F58220 ;
+
+        }
+        
+        .formulario {
+            background-color: #fffaf3;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #003399 ;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="box-texto">      
+      <h1 class="title">Bem vindo Knicks Fans!</h1>
+      <span class="descricao">New York Knicks</span>
+    </header><br>
+    <br>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+        <h1 style="color: #F58220;">Times <i class="fa-solid fa-building" style="color: #F58220;"></i></h1>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/pages/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/allstargames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/arenas.html">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/times.html">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/e-mail.html">Contato</a>
+                </li>
+              </ul>
+        </div>
+      </nav>
+</header>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mascote">Mascote</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rivalidades">Rivalidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#CorePlayers">Core Players</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quiz">Formulario</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<section>
+    <div>
+        <img src="https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg" alt="New York Knicks">
+        <br>
+        <h1><b>New York Knicks</b></h1>
+        <br>
+        <h2 id="historia"><b>História</b></h2>
+        <p>
+            O<b class="grifado">New York Knicks</b>é um dos times mais tradicionais e populares da NBA. <br> 
+            Os Knicks foram fundados em 1946 como membro fundador da Basketball Association of America (BAA), que em 1949 se tornou a NBA. Os Knicks têm uma história rica repleta de momentos gloriosos, rivalidades ferozes e uma base de fãs apaixonada.
+            <br>
+            Seu fundador é Ned Irish, um ex-jornalista esportivo que desempenhou um papel importante na criação dos Knicks.
+            Na década de 1970, os Knicks venceram dois campeonatos da NBA (1970 e 1973) com a ajuda de lendas como Willis Reed, Walter Frazier e Dave DeBusschere, consolidando sua posição.
+            <br>
+            <h2><b>Arena</b></h2>
+            <p>A arena do New York Knicks é o conhecido<b>Madison Square Garden</b>localizado em Manhattan, Nova York.É uma das arenas mais icônicas do mundo, conhecida por ser palco de diversos eventos esportivos e de entretenimento.<br>
+                O Madison Square Garden tem uma capacidade aproximada de 19.000 pessoas para jogos de basquete, podendo variar dependendo do tipo de evento.</p>
+            <hr>
+            <img src="https://mascothalloffame.com/wp-content/uploads/bb-plugin/cache/Hudson-e1679833011584-circle.jpg" alt="Mascote">
+            
+            <h2 id="mascote"><b>Mascote</b></h2>
+            <p>   
+                O mascote dos New York Knicks é o <b class="grifado">Rocky the Raccoon</b>,Ele foi introduzido como mascote oficial do time na década de 1990. No entanto, é importante notar que, embora Rocky tenha sido um mascote popular entre os fãs, os Knicks não possuem um mascote tão permanente e oficial quanto outros times da NBA.
+                Rocky era um guaxinim (raccoon) que se destacava por sua personalidade enérgica, presença durante os jogos e atividades interativas com a torcida. No entanto, a relação dos Knicks com mascotes tem sido mais esporádica ao longo dos anos, com o time não sendo tão associado a um mascote fixo como outras equipes.
+                Em vez de um mascote oficial constante, o Madison Square Garden e os Knicks frequentemente se envolvem em diversas promoções e eventos interativos, mas a identidade de um mascote permanente não é tão forte quanto em outros times da NBA.
+            </p>
+    </div>
+</section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Os Campeonatos da Década de 1970:</b> Os Knicks viveram um dos períodos mais vitoriosos da história do time durante a década de 1970. Com grandes jogadores como Willis Reed, Walt Frazier e Bill Bradley, o time conquistou dois campeonatos da NBA, em 1970 e 1973, com a vitória de 1970 sendo especialmente memorável pela incrível performance de Reed nas Finais.</li>
+        <li><b class="grifado">A Incrível Série de 1970:</b> Nas Finais de 1970, os Knicks enfrentaram os Los Angeles Lakers em uma série épica. Willis Reed, que estava lesionado, surpreendeu a todos ao retornar para o jogo 7 e liderar sua equipe à vitória, tornando-se um dos maiores momentos da história da NBA.</li>
+        <li><b class="grifado">A Era de Patrick Ewing (1985-2000):</b> Patrick Ewing, uma das maiores lendas da franquia, foi a espinha dorsal do time dos Knicks durante as décadas de 1980 e 1990. Embora nunca tenha conquistado um título, ele levou o time a várias finais de conferência e a uma aparição nas Finais da NBA em 1994, onde os Knicks perderam para os Houston Rockets em sete jogos.</li>
+        <li><b class="grifado">Final de 1994:</b> Os Knicks chegaram às finais da NBA em 1994, com Patrick Ewing, John Starks e Charles Oakley. Embora tenham lutado arduamente contra os Houston Rockets, a equipe de Nova York foi derrotada por 4-3 em uma série disputada, ainda assim marcando a última aparição dos Knicks em uma final da NBA até o momento.</li>
+        <li><b class="grifado">A Dura Perda nas Finais de 1999:</b> Em 1999, os Knicks surpreenderam muitos ao chegar às Finais da NBA, mesmo como a oitava semente da Conferência Leste. No entanto, perderam para o San Antonio Spurs em 5 jogos, mas a corrida foi uma das mais inesperadas e emocionantes da história recente da franquia.</li>
+        <li><b class="grifado">O Retorno ao Topo na Temporada 2010-2011:</b> Com a chegada de Carmelo Anthony, os Knicks começaram a reconstruir sua equipe em torno de uma estrela. Embora não tenha conquistado títulos, o time começou a reverter anos de frustrações e ofereceu um novo ímpeto para a equipe.</li>
+        <li><b class="grifado">A Melhoria com Julius Randle e RJ Barrett:</b> Nos últimos anos, os Knicks mostraram um renascimento com a ascensão de jogadores como Julius Randle e RJ Barrett. A temporada de 2020-2021, com o time retornando aos playoffs após anos de dificuldades, marcou um momento de otimismo para o futuro da franquia.</li>
+    </p> 
+    </section> 
+<hr>
+<div class="rivalidades">
+    <h2 id="rivalidades"><b>Rivalidades</b></h2>
+<p>
+    <li><a href="/times/BostonCeltics.html">Boston Celtics:</a> A rivalidade entre os Knicks e os Celtics é uma das mais antigas e intensas da NBA. Com confrontos históricos nas décadas de 1950 e 1960, além das várias disputas em playoffs, as equipes sempre se enfrentaram com grande emoção. A disputa pela supremacia da Conferência Leste tem sido uma constante, com os Celtics sendo um rival tradicional dos Knicks.</li>
+    <li><a href="/times/MiamiHeat.html">Miami Heat:</a> Nos anos 1990 e 2000, a rivalidade com o Miami Heat se intensificou, especialmente durante os confrontos nos playoffs. Figuras como Alonzo Mourning e Pat Riley, com sua abordagem física e competitiva, fizeram dessa rivalidade uma das mais marcantes da época. As disputas entre esses times sempre foram muito intensas e recheadas de tensão.</li>
+    <li><a href="/times/NewJerseyNets.html">New Jersey Nets (agora Brooklyn Nets):</a> A proximidade geográfica e a disputa pelo domínio de Nova York sempre alimentaram a rivalidade entre os Knicks e os Nets. Desde os tempos em que os Nets jogavam em Nova Jersey até sua mudança para o Brooklyn, os confrontos entre as duas franquias de Nova York sempre geraram grande interesse entre os fãs da cidade.</li>
+</p>
+</div>
+
+<div class="container">
+    <h1 id="CorePlayers"><b>New York Knicks Core Players</b></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Número</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>Universidade</th>
+                <th>Salário</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Precious Achiuwa</td>
+                <td>Pivô</td>
+                <td>5</td>
+                <td>2,03 m</td>
+                <td>110 kg</td>
+                <td>Memphis</td>
+                <td>$6,000,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431679.png" alt="Precious Achiuwa"></td>
+            </tr>
+            <tr>
+                <td>OG Anunoby</td>
+                <td>Ala</td>
+                <td>8</td>
+                <td>2,01 m</td>
+                <td>108 kg</td>
+                <td>Indiana</td>
+                <td>$36,637,931</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3934719.png" alt="OG Anunoby"></td>
+            </tr>
+            <tr>
+                <td>Mikal Bridges</td>
+                <td>Ala</td>
+                <td>25</td>
+                <td>1,98 m</td>
+                <td>94 kg</td>
+                <td>Villanova</td>
+                <td>$23,300,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3147657.png" alt="Mikal Bridges"></td>
+            </tr>
+            <tr>
+                <td>Jalen Brunson</td>
+                <td>Armador</td>
+                <td>11</td>
+                <td>1,88 m</td>
+                <td>86 kg</td>
+                <td>Villanova</td>
+                <td>$24,960,001</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3934672.png" alt="Jalen Brunson"></td>
+            </tr>
+            <tr>
+                <td>Pacome Dadiet</td>
+                <td>Guard</td>
+                <td>4</td>
+                <td>2,03 m</td>
+                <td>95 kg</td>
+                <td>--</td>
+                <td>$1,808,080</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5211983.png" alt="Pacome Dadiet"></td>
+            </tr>
+            <tr>
+                <td>Josh Hart</td>
+                <td>Ala-armador</td>
+                <td>3</td>
+                <td>1,93 m</td>
+                <td>97 kg</td>
+                <td>Villanova</td>
+                <td>$18,144,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3062679.png" alt="Josh Hart"></td>
+            </tr>
+            <tr>
+                <td>Ariel Hukporti</td>
+                <td>Pivô</td>
+                <td>55</td>
+                <td>2,11 m</td>
+                <td>111 kg</td>
+                <td>--</td>
+                <td>$1,064,558</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4871141.png" alt="Ariel Hukporti"></td>
+            </tr>
+            <tr>
+                <td>Tyler Kolek</td>
+                <td>Guard</td>
+                <td>13</td>
+                <td>1,91 m</td>
+                <td>88 kg</td>
+                <td>Marquette</td>
+                <td>$2,087,519</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433225.png" alt="Tyler Kolek"></td>
+            </tr>
+            <tr>
+                <td>Miles McBride</td>
+                <td>Armador</td>
+                <td>2</td>
+                <td>1,85 m</td>
+                <td>88 kg</td>
+                <td>West Virginia</td>
+                <td>$4,710,144</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4431823.png" alt="Miles McBride"></td>
+            </tr>
+            <tr>
+                <td>Kevin McCullar Jr.</td>
+                <td>Ala</td>
+                <td>9</td>
+                <td>1,98 m</td>
+                <td>95 kg</td>
+                <td>Kansas</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4411057.png" alt="Kevin McCullar Jr."></td>
+            </tr>
+            <tr>
+                <td>Cameron Payne</td>
+                <td>Armador</td>
+                <td>1</td>
+                <td>1,91 m</td>
+                <td>83 kg</td>
+                <td>Murray State</td>
+                <td>$2,087,519</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3064230.png" alt="Cameron Payne"></td>
+            </tr>
+            <tr>
+                <td>Mitchell Robinson</td>
+                <td>Pivô</td>
+                <td>23</td>
+                <td>2,13 m</td>
+                <td>108 kg</td>
+                <td>--</td>
+                <td>$14,318,182</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4351852.png" alt="Mitchell Robinson"></td>
+            </tr>
+            <tr>
+                <td>Matt Ryan</td>
+                <td>Ala</td>
+                <td>37</td>
+                <td>1,98 m</td>
+                <td>97 kg</td>
+                <td>Chattanooga</td>
+                <td>$1,919,558</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3908336.png" alt="Matt Ryan"></td>
+            </tr>
+            <tr>
+                <td>Landry Shamet</td>
+                <td>Ala-armador</td>
+                <td>44</td>
+                <td>1,93 m</td>
+                <td>86 kg</td>
+                <td>Wichita State</td>
+                <td>$1,343,690</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3914044.png" alt="Landry Shamet"></td>
+            </tr>
+            <tr>
+                <td>Jericho Sims</td>
+                <td>Pivô</td>
+                <td>20</td>
+                <td>2,08 m</td>
+                <td>113 kg</td>
+                <td>Texas</td>
+                <td>$2,092,344</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4277922.png" alt="Jericho Sims"></td>
+            </tr>
+            <tr>
+                <td>Jacob Toppin</td>
+                <td>Ala</td>
+                <td>00</td>
+                <td>2,03 m</td>
+                <td>90 kg</td>
+                <td>Kentucky</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592461.png" alt="Jacob Toppin"></td>
+            </tr>
+            <tr>
+                <td>Karl-Anthony Towns</td>
+                <td>Pivô</td>
+                <td>32</td>
+                <td>2,13 m</td>
+                <td>112 kg</td>
+                <td>Kentucky</td>
+                <td>$49,205,800</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3136195.png" alt="Karl-Anthony Towns"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="formulario">
+    <h2><b>Formulário de Perguntas sobre o New York Knicks</b></h2>
+    <form id="knicks-form">
+        <div class="form-group">
+            <label>Qual é o seu jogador favorito atual do New York Knicks?</label>
+            <br>
+            <div>
+                <label for="player-julius-randle">Julius Randle</label>
+                <input type="radio" id="player-julius-randle" name="favorite-player" value="Julius Randle">
+                
+            </div>
+            <div>
+                <label for="player-rj-barrett">RJ Barrett</label>
+                <input type="radio" id="player-rj-barrett" name="favorite-player" value="RJ Barrett">
+                
+            </div>
+            <div>
+                <label for="player-derrick-rose">Derrick Rose</label>
+                <input type="radio" id="player-derrick-rose" name="favorite-player" value="Derrick Rose">
+                
+            </div>
+            <div>
+                
+                <label for="player-other">Outro:</label>
+                <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Quem você considera o maior jogador da história do New York Knicks?</label>
+            <br>
+            <div>
+                <label for="greatest-player-willis-reed">Willis Reed</label>
+                <input type="radio" id="greatest-player-willis-reed" name="greatest-player" value="Willis Reed">    
+            </div>
+            <div>   
+                <label for="greatest-player-patrick-ewing">Patrick Ewing</label>
+                <input type="radio" id="greatest-player-patrick-ewing" name="greatest-player" value="Patrick Ewing">
+            </div>
+            <div>
+                <label for="greatest-player-walt-frazier">Walt Frazier</label>
+                <input type="radio" id="greatest-player-walt-frazier" name="greatest-player" value="Walt Frazier">
+            </div>
+            <div>
+                <label for="greatest-player-other">Outro:</label>
+                <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Qual é a sua expectativa para a próxima temporada do New York Knicks?</label>
+            <br>
+            <div>
+                <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                
+            </div>
+            <div>
+                <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                
+            </div>
+            <div>
+                <label for="next-season-expectation-other">Outro:</label>
+                <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+            </div>
+            <br>
+            <div>
+                <label for="next-season-expectation-question">Quais áreas você acredita que o New York Knicks precisa melhorar para ter sucesso na próxima temporada?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+            <br>
+            <div>
+                <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo New York Knicks nesta offseason?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+            <br>
+            <div>
+                <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do New York Knicks, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+            </div>
+        </div>
+        <input type="submit" value="Enviar Respostas">
+    </form>
+</div>
+
+<div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+    <h2>Obrigado pela sua participação!</h2>
+    <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos New York Knicks!</p>
+</div>
+
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="nbaoficial/index.html">Home</a></li>
+            <li><a href="/pages/allstargames.html">AllStarGames</a></li>
+            <li><a href="/pages/arenas.html">Arenas</a></li>
+            <li><a href="/pages/e-mail.html">Contato</a></li>
+        </ul>
+        
+        <div class="social-icons">
+            <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    
+    <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+  </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+      <script>
+        document.getElementById('knicks-form').addEventListener('submit', function (event) {
+          event.preventDefault(); // Impede o envio padrão do formulário
+          document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+          document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+        });
+      </script>
+</body>

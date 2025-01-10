@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Pelicans</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #002B5C;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #002B5C;
+        }
+ 
+        th {
+            background-color: #85714D;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        input[type="submit"] {
+            background-color: #002B5C;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #85714D;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #85714D;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #002B5C;
+
+        }
+        
+        .formulario {
+            background-color: #ebebeb;
+        }
+        footer ul li {
+            display: inline-block;
+            margin: 0 -7px;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #85714D;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <header class="box-texto">      
+          <h1 class="title">Bem vindo Pelicans Fans!</h1>
+          <span class="descricao">New Orleans Pelicans</span>
+        </header><br>
+        <br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #85714D;">Times</h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612740/2021/12/pelicans_primary_logo.svg" alt="New Orleans Pelicans">
+            <br>
+            <h1><b>New Orleans Pelicans</b></h1>
+            <br>
+            <h2><b>História</b></h2>
+            <p>
+                A história e fundação dos <b class="grifado">New Orleans Pelicans</b> remontam ao ano de 2002, quando a NBA (National Basketball Association) concedeu a franquia para a cidade de New Orleans. Originalmente, 
+                a equipe foi chamada de New Orleans Hornets. O nome "Hornets" foi inspirado na história de New Orleans, onde durante a Guerra de 1812, os soldados locais eram conhecidos como "Os Hornets de Nova Orleans" por sua ferocidade.<br>
+                Os Hornets tiveram um período variado de sucesso durante sua permanência em Nova Orleans. Eles tiveram alguns anos fortes, incluindo temporadas com jogadores notáveis como Chris Paul, mas também tiveram anos menos bem-sucedidos.<br>
+                Em 2012, a franquia mudou de nome para New Orleans Pelicans. A mudança veio depois que a franquia anterior de New Orleans, os Hornets, foi vendida para Tom Benson, o proprietário do New Orleans Saints, uma equipe da NFL (National Football League). A mudança para Pelicans foi feita para refletir mais a região e a cultura de Nova Orleans, além de criar uma nova identidade para a equipe.<br>
+                Desde então, os Pelicans têm trabalhado para estabelecer uma identidade forte na NBA, contando com jogadores talentosos como Anthony Davis e Zion Williamson, e buscando construir uma base sólida para o sucesso a longo prazo. A equipe continua a evoluir e competir na liga sob a bandeira dos New Orleans Pelicans.<br> 
+                
+                <h2><b>Arena</b></h2>
+                <p>A arena principal dos New Orleans Pelicans é o <b>Smoothie King Center</b>, localizado em Nova Orleans, Louisiana.<br>
+                    A capacidade do Smoothie King Center é de aproximadamente 17.791 espectadores</p>
+                <hr>
+                <img src="https://mascothalloffame.com/wp-content/uploads/bb-plugin/cache/Pelicans-e1679257579125-circle.png" alt="Mascote">
+                
+                <h2><b>Mascote</b></h2>
+                <p>   
+                    O mascote dos New Orleans Pelicans é chamado de <b class="grifado">"Pierre the Pelican"</b>.<br>
+                    Ele foi introduzido como mascote oficial da equipe em outubro de 2013. No entanto, a história por trás de Pierre é um tanto peculiar.<br>
+                    Quando Pierre foi originalmente revelado ao público, ele recebeu reações mistas devido ao seu visual um tanto peculiar e até assustador. Muitos fãs consideraram sua aparência como sendo um pouco assustadora, o que gerou uma reação negativa nas redes sociais.<br>
+                    Devido às críticas e à reação negativa do público, houve uma reformulação do design de Pierre. Em fevereiro de 2014, o Pelicans anunciou uma "cirurgia" fictícia para Pierre, resultando em um novo visual mais amigável e agradável para o mascote.<br>
+
+                </p>
+        </div>
+    </section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Draft de Anthony Davis:</b> Em 2012, os Pelicans ganharam o direito de selecionar Anthony Davis como a primeira escolha geral no Draft da NBA. Davis rapidamente se tornou uma estrela da liga e foi uma peça central na reconstrução da equipe.</li>
+        <li><b class="grifado">Primeira Aparição nos Playoffs como Pelicans:</b> Na temporada 2014-2015, os Pelicans se classificaram para os playoffs da NBA pela primeira vez desde que mudaram seu nome para Pelicans. Eles foram liderados por Anthony Davis e enfrentaram o Golden State Warriors na primeira rodada.</li>
+        <li><b class="grifado">Troca de DeMarcus Cousins: </b> Em 2017, os Pelicans adquiriram DeMarcus Cousins em uma troca com o Sacramento Kings. A parceria de Cousins com Anthony Davis prometeu muito para a equipe, mas infelizmente, a temporada foi interrompida por uma lesão de Cousins.</li>
+        <li><b class="grifado">Seleção de Zion Williamson:</b> Os Pacers chegaram às Finais da NBA em 2000, liderados por Reggie Miller e uma equipe talentosa que incluía Jermaine O'Neal, Jalen Rose e Mark Jackson. Embora tenham perdido para o Los Angeles Lakers, foi um marco significativo na história da franquia.</li>
+        <li><b class="grifado">Jogo de 50 pontos de Anthony Davis:</b> No Draft de 2019, os Pelicans selecionaram Zion Williamson com a primeira escolha geral. Williamson chegou à NBA com uma enorme expectativa e tem sido uma peça central nos planos de reconstrução dos Pelicans.</li>
+        </p>
+</section>
+<hr>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+        <p>
+            <a href="MemphisGrizzlies.html">Memphis Grizzlies:</a> Embora não seja uma rivalidade histórica, os Pelicans e os Grizzlies competem na mesma divisão (Sudoeste) desde que os Pelicans mudaram para Nova Orleans. Como tal, os confrontos entre essas equipes têm o potencial de se tornarem rivalidades, especialmente com jogos frequentes na temporada regular. <br>
+            <a href="GoldenStateWarriors.html">Golden State Warriors:</a> Durante os playoffs de 2015, os Pelicans enfrentaram os Warriors na primeira rodada. Embora os Warriors fossem favoritos e vencessem a série, os confrontos competitivos entre essas equipes podem alimentar uma rivalidade em desenvolvimento.<br>
+            <a href="LaLakers.html">Los Angeles Lakers: </a> Os Pelicans compartilham uma divisão com os Lakers, e houve alguns momentos notáveis de competição entre as duas equipes ao longo dos anos. Além disso, a presença de jogadores estelares como Anthony Davis nos Pelicans e LeBron James nos Lakers adiciona interesse a esses confrontos.<br>
+         </p>
+    </div>
+
+    <div class="container">
+        <h1 id="CorePlayers"><b>Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jose Alvarado</td>
+                    <td>PG</td>
+                    <td>15</td>
+                    <td>1,83 m</td>
+                    <td>81 kg</td>
+                    <td>Georgia Tech</td>
+                    <td>$1,988,598</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4277869.png" alt="Jose Alvarado" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Brandon Boston</td>
+                    <td>SG</td>
+                    <td>11</td>
+                    <td>1,98 m</td>
+                    <td>85 kg</td>
+                    <td>Kentucky</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432162.png" alt="Brandon Boston" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jamal Cain</td>
+                    <td>A</td>
+                    <td>8</td>
+                    <td>1,98 m</td>
+                    <td>86 kg</td>
+                    <td>Oakland</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278572.png" alt="Jamal Cain" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Javonte Green</td>
+                    <td>G</td>
+                    <td>4</td>
+                    <td>1,96 m</td>
+                    <td>92 kg</td>
+                    <td>Radford</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2596112.png" alt="Javonte Green" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jordan Hawkins</td>
+                    <td>G</td>
+                    <td>24</td>
+                    <td>1,96 m</td>
+                    <td>86 kg</td>
+                    <td>UConn</td>
+                    <td>$4,525,680</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683750.png" alt="Jordan Hawkins" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Brandon Ingram</td>
+                    <td>SF</td>
+                    <td>14</td>
+                    <td>2,03 m</td>
+                    <td>86 kg</td>
+                    <td>Duke</td>
+                    <td>$36,016,200</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3913176.png" alt="Brandon Ingram" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Trey Jemison III</td>
+                    <td>C</td>
+                    <td>55</td>
+                    <td>2,08 m</td>
+                    <td>117 kg</td>
+                    <td>UAB</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395623.png" alt="Trey Jemison III" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Herbert Jones</td>
+                    <td>SF</td>
+                    <td>2</td>
+                    <td>2,01 m</td>
+                    <td>93 kg</td>
+                    <td>Alabama</td>
+                    <td>$12,976,362</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4277813.png" alt="Herbert Jones" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Karlo Matkovic</td>
+                    <td>C</td>
+                    <td>17</td>
+                    <td>2,08 m</td>
+                    <td>104 kg</td>
+                    <td>--</td>
+                    <td>$1,407,153</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4997538.png" alt="Karlo Matkovic" width="50"></td>
+                </tr>
+                <tr>
+                    <td>CJ McCollum</td>
+                    <td>SG</td>
+                    <td>3</td>
+                    <td>1,91 m</td>
+                    <td>86 kg</td>
+                    <td>Lehigh</td>
+                    <td>$33,333,333</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2490149.png" alt="CJ McCollum" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Yves Missi</td>
+                    <td>C</td>
+                    <td>21</td>
+                    <td>2,11 m</td>
+                    <td>106 kg</td>
+                    <td>Baylor</td>
+                    <td>$3,202,560</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5061589.png" alt="Yves Missi" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Trey Murphy III</td>
+                    <td>SG</td>
+                    <td>25</td>
+                    <td>2,03 m</td>
+                    <td>93 kg</td>
+                    <td>Virginia</td>
+                    <td>$5,159,855</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397688.png" alt="Trey Murphy III" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Dejounte Murray</td>
+                    <td>SG</td>
+                    <td>5</td>
+                    <td>1,93 m</td>
+                    <td>81 kg</td>
+                    <td>Washington</td>
+                    <td>$29,535,801</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3907497.png" alt="Dejounte Murray" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Antonio Reeves</td>
+                    <td>G</td>
+                    <td>12</td>
+                    <td>1,96 m</td>
+                    <td>92 kg</td>
+                    <td>Kentucky</td>
+                    <td>$1,157,153</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592686.png" alt="Antonio Reeves" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jeremiah Robinson-Earl</td>
+                    <td>A</td>
+                    <td>50</td>
+                    <td>2,03 m</td>
+                    <td>108 kg</td>
+                    <td>Villanova</td>
+                    <td>$2,196,970</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432813.png" alt="Jeremiah Robinson-Earl" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Daniel Theis</td>
+                    <td>C</td>
+                    <td>10</td>
+                    <td>2,03 m</td>
+                    <td>111 kg</td>
+                    <td>--</td>
+                    <td>$2,087,519</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2451037.png" alt="Daniel Theis" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Zion Williamson</td>
+                    <td>PF</td>
+                    <td>1</td>
+                    <td>1,98 m</td>
+                    <td>128 kg</td>
+                    <td>Duke</td>
+                    <td>$36,725,670</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395628.png" alt="Zion Williamson" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o New Orleans Pelicans</b></h2>
+        <form id="pelicans-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do New Orleans Pelicans?</label>
+                <br>
+                <div>
+                    <label for="player-zion-williamson">Zion Williamson</label>
+                    <input type="radio" id="player-zion-williamson" name="favorite-player" value="Zion Williamson">
+                    
+                </div>
+                <div>
+                    <label for="player-brandon-ingram">Brandon Ingram</label>
+                    <input type="radio" id="player-brandon-ingram" name="favorite-player" value="Brandon Ingram">
+                    
+                </div>
+                <div>
+                    <label for="player-jonas-valančiūnas">Jonas Valančiūnas</label>
+                    <input type="radio" id="player-jonas-valančiūnas" name="favorite-player" value="Jonas Valančiūnas">
+                    
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do New Orleans Pelicans?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-anthony-davis">Anthony Davis</label>
+                    <input type="radio" id="greatest-player-anthony-davis" name="greatest-player" value="Anthony Davis">    
+                </div>
+                <div>   
+                    <label for="greatest-player-chris-paul">Chris Paul</label>
+                    <input type="radio" id="greatest-player-chris-paul" name="greatest-player" value="Chris Paul">
+                </div>
+                <div>
+                    <label for="greatest-player-demarcus-cousins">DeMarcus Cousins</label>
+                    <input type="radio" id="greatest-player-demarcus-cousins" name="greatest-player" value="DeMarcus Cousins">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+                <div>
+                    <label for="next-season-expectation-question">Quais áreas você acredita que o New Orleans Pelicans precisa melhorar para ter sucesso na próxima temporada?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+
+                <br>
+                <div>
+                    <label for="next-season-expectation-question">Como você avalia as contratações feitas pelo New Orleans Pelicans nesta offseason?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+                <br>
+
+                <div>
+                    <label for="next-season-expectation-question">Qual é a sua opinião sobre o treinador atual do New Orleans Pelicans, e o que você gostaria de ver diferente na abordagem técnica da equipe?</label>
+                    <input type="text" id="question-next-season-expectation" name="question-next-season-expectation" placeholder="Digite a resposta">
+                </div>
+
+                </div>
+                <input type="submit" value="Enviar Respostas">
+            </form>
+    </div>
+
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos New Orleans Pelicans!</p>
+    </div>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+          <script>
+            document.getElementById('pelicans-form').addEventListener('submit', function (event) {
+              event.preventDefault(); // Impede o envio padrão do formulário
+              document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+              document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+            });
+          </script>
+</body>

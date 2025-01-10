@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Indiana Pacers </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #002D62;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #002D62;
+        }
+ 
+        th {
+            background-color: #FDBB30;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #FDBB30;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #FDBB30;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #002D62;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #FDBB30;
+
+        }
+        
+        .formulario {
+            background-color: #fafae9;
+        }
+   
+        @keyframes motion{
+            0%{
+                color: #FDBB30;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+   
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Pacers Fans!</h1>
+        <span class="descricao">Indiana Pacers</span>
+      </header><br>
+      <br>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+          <h1 style="color: #FDBB30;">Times <i class="fa-solid fa-car" style="color: #FDBB30;"></i></h1>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                </li>
+              </ul>
+        </div>
+        </nav>
+  </header>
+
+  <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="CorePlayers">Core Players</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Quiz">Formulario</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612754/2021/10/logo-pacers.svg">
+            <br>
+            <h1><b>Indiana Pacers</b></h1>
+            <br>
+
+            <h2><b>História</b></h2>
+            <p>
+                O Indiana Pacers é uma equipe profissional de basquete sediada em Indianápolis, Indiana, nos Estados Unidos.<br>
+                O Indiana Pacers foram fundados em 1967 como uma equipe inaugural da American Basketball Association (ABA), uma liga rival da NBA na época.<br>
+                O nome "Pacers" foi escolhido em homenagem à "Indianapolis 500-Mile Race", uma famosa corrida de automóveis realizada anualmente em Indianápolis.<br>
+                Em 1976, a ABA fundiu-se com a NBA, e os Pacers foram uma das quatro equipes da ABA a ingressarem na NBA.<br> 
+            </p>
+
+            <h2><b>Arena:</b></h2>
+            <p>
+                arena principal do Indiana Pacers é o <b> Gainbridge Fieldhouse</b> ,localizada em Indianápolis, Indiana, nos Estados Unidos.<br>
+                A capacidade do Gainbridge Fieldhouse varia dependendo do evento. Para jogos de basquete da NBA, a capacidade é de aproximadamente 17.923 espectadores.<br>
+            </p>
+
+            <hr>
+            <img src="https://www.indystar.com/gcdn/-mm-/f2e38c496037a0d6fae1a214e9e065120b252430/c=0-185-1972-2814/local/-/media/2015/10/13/Indianapolis/Indianapolis/635803702792173458-19-Pacers101814.-.JPG" alt="Mascote">
+                <h2><b>Mascote</b></h2>
+                <p>
+                    O mascote dos Indiana Pacers é chamado de <b>"Boomer"</b>. Boomer foi introduzido como mascote oficial dos Indiana Pacers em 1991.<br>
+                    Ele é retratado como um pantera, refletindo a agilidade e a força associadas ao basquete e à identidade da equipe. A escolha de uma pantera como mascote pode refletir a identidade e os valores da equipe.<br>
+                    Ele é uma parte essencial da experiência do jogo, interagindo com os fãs, fazendo acrobacias e promovendo a equipe durante os intervalos e eventos especiais.<br> 
+                </p>
+        </div>
+    <hr>
+        <div>
+            <h2><b>Momentos Notáveis</b></h2>
+            <p>
+            <li><b class="grifado">Três títulos da ABA (1970, 1972, 1973):</b> Nos primeiros anos da franquia, os Pacers foram uma força dominante na American Basketball Association, conquistando três campeonatos em um período de quatro temporadas.</li>
+            <li><b class="grifado">Transferência para a NBA (1976):</b> Os Pacers foram uma das equipes da ABA selecionadas para se juntar à NBA após a fusão das duas ligas em 1976, solidificando seu lugar no cenário do basquete profissional dos EUA.</li>
+            <li><b class="grifado">Era Reggie Miller: </b> Reggie Miller é uma lenda dos Pacers e protagonizou vários momentos inesquecíveis ao longo de sua carreira. Um dos mais notáveis foi o jogo de playoffs de 1995 contra o New York Knicks, no qual Miller marcou 8 pontos em 8.9 segundos para selar a vitória dos Pacers.</li>
+            <li><b class="grifado">Finais da NBA de 2000:</b> Os Pacers chegaram às Finais da NBA em 2000, liderados por Reggie Miller e uma equipe talentosa que incluía Jermaine O'Neal, Jalen Rose e Mark Jackson. Embora tenham perdido para o Los Angeles Lakers, foi um marco significativo na história da franquia.</li>
+            <li><b class="grifado">Rivalidade com os Knicks: </b> Ao longo dos anos, os Pacers tiveram uma rivalidade intensa com o New York Knicks, especialmente nos anos 90. Os confrontos entre as duas equipes nos playoffs eram frequentemente emocionantes e disputados até o fim.</li>
+            </p>
+        </div>
+
+        <div class="rivalidades">
+          <h2><b>Rivalidades</b></h2>
+          <p>
+               <a href="NewYorkKnicks.html">New York Knicks:</a> Durante os anos 90 e início dos anos 2000, os Pacers e os Knicks tiveram uma rivalidade intensa. Os confrontos entre as duas equipes nos playoffs eram sempre acirrados e cheios de emoção, com momentos memoráveis e jogos disputados até o último segundo. <br>
+               <a href="ChicagoBulls.html">Chicago Bulls:</a> Nos anos 90, os Pacers enfrentaram frequentemente o Chicago Bulls de Michael Jordan nos playoffs. Embora os Bulls fossem dominantes na época, os confrontos entre as duas equipes eram sempre emocionantes e ajudaram a alimentar uma rivalidade entre os dois times.<br>
+               <a href="MiamiHeat.html">Miami Heat: </a> Nos anos 2010, os Pacers e o Miami Heat desenvolveram uma rivalidade competitiva, especialmente durante os playoffs. As batalhas entre LeBron James e Dwyane Wade, do Heat, e Paul George e Roy Hibbert, dos Pacers, eram intensas e resultaram em alguns jogos memoráveis.<br>
+              </p>
+            </div>
+
+<div class="container">
+        <h1 id="CorePlayers"><b>Boston Celtics Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                <th>Foto</th>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Idade</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>Universidade</th>
+                <th>Salário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Thomas Bryant</td>
+                <td>C</td>
+                <td>27</td>
+                <td>2.08 m</td>
+                <td>112 kg</td>
+                <td>Indiana</td>
+                <td>$2,087,519</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3934723.png" alt="Thomas Bryant"></td>
+              </tr>
+              <tr>
+                <td>RayJ Dennis</td>
+                <td>G</td>
+                <td>23</td>
+                <td>1.88 m</td>
+                <td>81 kg</td>
+                <td>Baylor</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4431941.png&w=350&h=254" alt="RayJ Dennis"></td>
+              </tr>
+              <tr>
+                <td>Enrique Freeman</td>
+                <td>A</td>
+                <td>24</td>
+                <td>2.01 m</td>
+                <td>93 kg</td>
+                <td>Akron</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592699.png" alt="Enrique Freeman"></td>
+              </tr>
+              <tr>
+                <td>Johnny Furphy</td>
+                <td>A</td>
+                <td>20</td>
+                <td>2.06 m</td>
+                <td>90 kg</td>
+                <td>Kansas</td>
+                <td>$1,850,842</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5157066.png" alt="Johnny Furphy"></td>
+              </tr>
+              <tr>
+                <td>Tyrese Haliburton</td>
+                <td>PG</td>
+                <td>24</td>
+                <td>1.96 m</td>
+                <td>83 kg</td>
+                <td>Iowa State</td>
+                <td>$42,176,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4396993.png" alt="Tyrese Haliburton"></td>
+              </tr>
+              <tr>
+                <td>Isaiah Jackson</td>
+                <td>SF</td>
+                <td>22</td>
+                <td>2.06 m</td>
+                <td>92 kg</td>
+                <td>Kentucky</td>
+                <td>$4,435,381</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432170.png" alt="Isaiah Jackson"></td>
+              </tr>
+              <tr>
+                <td>Quenton Jackson</td>
+                <td>G</td>
+                <td>26</td>
+                <td>1.96 m</td>
+                <td>78 kg</td>
+                <td>Texas A&M</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4592829.png" alt="Quenton Jackson"></td>
+              </tr>
+              <tr>
+                <td>James Johnson</td>
+                <td>PF</td>
+                <td>37</td>
+                <td>2.01 m</td>
+                <td>108 kg</td>
+                <td>Wake Forest</td>
+                <td>$2,087,519</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3999.png" alt="James Johnson"></td>
+              </tr>
+              <tr>
+                <td>Bennedict Mathurin</td>
+                <td>SG</td>
+                <td>22</td>
+                <td>1.96 m</td>
+                <td>95 kg</td>
+                <td>Arizona</td>
+                <td>$7,245,720</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683634.png" alt="Bennedict Mathurin"></td>
+              </tr>
+              <tr>
+                <td>T.J. McConnell</td>
+                <td>PG</td>
+                <td>32</td>
+                <td>1.85 m</td>
+                <td>86 kg</td>
+                <td>Arizona</td>
+                <td>$9,300,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2530530.png" alt="T.J. McConnell"></td>
+              </tr>
+              <tr>
+                <td>Andrew Nembhard</td>
+                <td>PG</td>
+                <td>24</td>
+                <td>1.93 m</td>
+                <td>86 kg</td>
+                <td>Gonzaga</td>
+                <td>$2,019,699</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395712.png" alt="Andrew Nembhard"></td>
+              </tr>
+              <tr>
+                <td>Aaron Nesmith</td>
+                <td>SF</td>
+                <td>25</td>
+                <td>1.98 m</td>
+                <td>97 kg</td>
+                <td>Vanderbilt</td>
+                <td>$11,000,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4396909.png" alt="Aaron Nesmith"></td>
+              </tr>
+              <tr>
+                <td>Ben Sheppard</td>
+                <td>G</td>
+                <td>23</td>
+                <td>1.98 m</td>
+                <td>86 kg</td>
+                <td>Belmont</td>
+                <td>$2,663,880</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433076.png" alt="Ben Sheppard"></td>
+              </tr>
+              <tr>
+                <td>Pascal Siakam</td>
+                <td>PF</td>
+                <td>30</td>
+                <td>2.03 m</td>
+                <td>111 kg</td>
+                <td>New Mexico State</td>
+                <td>$42,176,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3149673.png" alt="Pascal Siakam"></td>
+              </tr>
+              <tr>
+                <td>Obi Toppin</td>
+                <td>PF</td>
+                <td>26</td>
+                <td>2.06 m</td>
+                <td>99 kg</td>
+                <td>Dayton</td>
+                <td>$12,946,429</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278355.png" alt="Obi Toppin"></td>
+              </tr>
+              <tr>
+                <td>Myles Turner</td>
+                <td>C</td>
+                <td>28</td>
+                <td>2.11 m</td>
+                <td>113 kg</td>
+                <td>Texas</td>
+                <td>$19,928,500</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3133628.png" alt="Myles Turner"></td>
+              </tr>
+              <tr>
+                <td>Jarace Walker</td>
+                <td>A</td>
+                <td>21</td>
+                <td>2.01 m</td>
+                <td>106 kg</td>
+                <td>Houston</td>
+                <td>$6,362,520</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5106060.png" alt="Jarace Walker"></td>
+              </tr>
+              <tr>
+                <td>James Wiseman</td>
+                <td>C</td>
+                <td>23</td>
+                <td>2.11 m</td>
+                <td>108 kg</td>
+                <td>Memphis</td>
+                <td>$4,516,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432808.png" alt="James Wiseman"></td>
+              </tr>
+            </tbody>
+        </table>
+    </div>         
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Indiana Pacers</b></h2>
+        <form id="pacers-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Indiana Pacers?</label>
+                <br>
+                <div>
+                    <label for="player-caris-levert">Caris LeVert</label>
+                    <input type="radio" id="player-caris-levert" name="favorite-player" value="Caris LeVert">
+                </div>
+                <div>
+                    <label for="player-malcolm-brogdon">Malcolm Brogdon</label>
+                    <input type="radio" id="player-malcolm-brogdon" name="favorite-player" value="Malcolm Brogdon">
+                </div>
+                <div>
+                    <label for="player-myles-turner">Myles Turner</label>
+                    <input type="radio" id="player-myles-turner" name="favorite-player" value="Myles Turner">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Indiana Pacers?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-reggie-miller">Reggie Miller</label>
+                    <input type="radio" id="greatest-player-reggie-miller" name="greatest-player" value="Reggie Miller">
+                </div>
+                <div>
+                    <label for="greatest-player-paul-george">Paul George</label>
+                    <input type="radio" id="greatest-player-paul-george" name="greatest-player" value="Paul George">
+                </div>
+                <div>
+                    <label for="greatest-player-jermaine-oneal">Jermaine O'Neal</label>
+                    <input type="radio" id="greatest-player-jermaine-oneal" name="greatest-player" value="Jermaine O'Neal">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA para o Indiana Pacers?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-rebuilding">Reconstrução do time</label>
+                    <input type="radio" id="next-season-expectation-rebuilding" name="next-season-expectation" value="Reconstrução do time">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Indiana Pacers!</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+  <script>
+    document.getElementById('pacers-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+
+</body>

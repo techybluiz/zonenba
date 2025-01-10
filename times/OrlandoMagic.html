@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Orlando Magic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #0077C0;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #0077C0;
+        }
+ 
+        th {
+            background-color: #0077C0;
+            color: rgb(0, 0, 0);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #0077C0;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #0077C0;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #0077C0;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #0077C0;
+
+        }
+        
+        .formulario {
+            background-color: #ddf1fc;
+        }
+        
+        footer ul li {
+            display: inline-block;
+            margin: 0 -7px;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #0077C0;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <header class="box-texto">      
+          <h1 class="title">Bem vindo Magic Fans!</h1>
+          <span class="descricao">Orlando Magic</span>
+        </header><br>
+        <br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #0077C0;">Teams <i class="fa-solid fa-wand-magic-sparkles"></i></h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg" alt="Orlando Magic">
+            <br>
+            <h1><b>Orlando Magic</b></h1>
+            <br>
+            <h2><b>História</b></h2>
+            <p>
+                O Orlando Magic foi fundado em 1989 como uma expansão da NBA, sendo uma das novas franquias a entrar na liga naquela década.<br>
+                <br>
+                Em Orlando, um grupo de investidores locais, liderado por Rich DeVos e seu parceiro, William "Bill" Davidson, decidiu entrar na competição para obter uma franquia da NBA. Rich DeVos, fundador da Amway, desempenhou um papel crucial na criação da equipe.<br>
+                <br>
+                O nome "Magic" foi escolhido como uma referência ao famoso time de basquete da cidade, o "Orlando Magic" do high school e à cultura local de entretenimento e magia. O mascote do time, "Stuff the Magic Dragon," também se alinhou com essa temática.
+                <h2><b>Arena</b></h2>
+                <p>A arena do Orlando Magic é o<b>Amway Center</b>, localizado no centro de Orlando, Flórida. Inaugurado em 2010 <br>
+                    o Amway Center pode acomodar aproximadamente 18.846 espectadores durante os jogos de basquete da NBA</p>
+                <hr>
+                <img src="https://cdn.nba.com/teams/legacy/www.nba.com/magic/sites/magic/files/stuff2_072916.jpg?imwidth=512&imheight=512" alt="Mascote">
+                
+                <h2><b>Mascote</b></h2>
+                <p>   
+                    O mascote do Orlando Magic, conhecido carinhosamente como <b class="grifado">Stuff the Magic Dragon</b>,é uma figura icônica que adiciona uma dose extra de diversão e energia a cada evento da equipe.<br> Sua origem remonta à fundação da franquia em 1989, quando foi introduzido como parte integrante da identidade da equipe.<br>
+
+                    O nome "Stuff" é uma homenagem à música <b>"Puff, the Magic Dragon"</b>,uma canção que ecoou nos anos 60 e que ainda hoje é reconhecida por muitos.<br> Essa referência não apenas adiciona uma camada de nostalgia, mas também estabelece uma conexão afetuosa com a história cultural que atravessa gerações.<br>
+                    Stuff é mais do que apenas um dragão antropomórfico; ele personifica o espírito vibrante e acolhedor da comunidade do Orlando Magic. Com suas grandes asas, olhos expressivos e um sorriso amigável, ele rapidamente se tornou um favorito dos fãs.<br> Sua presença é sempre aguardada ansiosamente nos jogos em casa, onde ele se destaca com suas acrobacias impressionantes, interações engraçadas com os jogadores e danças energéticas que contagiam a multidão.<br>
+                    
+                    Além de entreter os fãs nas arquibancadas, Stuff desempenha um papel significativo em eventos comunitários, aparições escolares e atividades promocionais. Sua presença vai além das quadras de basquete, ajudando a promover a mensagem de união, diversão e espírito de equipe que são fundamentais para a filosofia do Orlando Magic.<br>
+               
+                </p>
+        </div>
+    </section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+    <p>
+        <li><b class="grifado">Final da NBA de 1995:</b>  O Magic chegou à sua primeira final da NBA em 1995, liderado por estrelas como Shaquille O'Neal e Anfernee "Penny" Hardaway. Embora tenham perdido para o Houston Rockets, essa conquista marcou um momento histórico para a franquia. </li>
+        <li><b class="grifado">Dwight Howard e a Final de 2009:</b> Nos playoffs de 2009, Dwight Howard liderou o Magic até a final da NBA novamente, enfrentando o Los Angeles Lakers. Embora tenham perdido a série, a jornada até a final foi repleta de momentos emocionantes e demonstrou a habilidade de Howard como uma força dominante no basquete.</li>
+        <li><b class="grifado">Três Pontos de Rashard Lewis em 2009:</b> Durante as finais de conferência da NBA em 2009 contra o Cleveland Cavaliers, Rashard Lewis acertou uma cesta de três pontos no último segundo do Jogo 1, garantindo a vitória do Magic e estabelecendo o tom para a série.</li>
+        <li><b class="grifado">Magic vs. Bulls em 1996:</b> Durante a temporada regular de 1995-1996, o Magic enfrentou o Chicago Bulls liderado por Michael Jordan. O confronto entre essas duas equipes de elite foi sempre emocionante e deixou uma marca duradoura na história da NBA.</li>
+        <li><b class="grifado">Recordes Individuais:</b> Ao longo dos anos, jogadores do Orlando Magic estabeleceram diversos recordes individuais, como Shaquille O'Neal, que detinha recordes de pontuação e rebotes durante sua passagem pela equipe</li>
+        <li><b class="grifado">Retorno de Tracy McGrady:</b>Em 2000, Tracy McGrady foi adquirido pelo Orlando Magic e rapidamente se tornou uma estrela na liga. Seu retorno ao Orlando Magic em 2004, após um breve período em outro time, foi um momento emocionante para os fãs.</li>
+    </p>
+</section>
+<hr>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+        <p>
+            <a href="MiamiHeat.html">Miami Heat:</a> Como duas das equipes da NBA localizadas na Flórida, o Orlando Magic e o Miami Heat naturalmente desenvolveram uma rivalidade regional. Os jogos entre essas equipes são sempre emocionantes, pois ambos os times competem pela supremacia na região. <br>
+            <a href="BostonCeltics.html">Boston Celtics:</a> O Boston Celtics é uma das equipes mais históricas e bem-sucedidas da NBA, e sua rivalidade com o Orlando Magic foi intensa em várias ocasiões, especialmente durante os anos em que ambos os times estavam competindo no topo da Conferência Leste.<br>
+            <a href="ClevelandCavaliers.html">Cleveland Cavaliers: </a>Durante a era de LeBron James nos Cleveland Cavaliers, houve uma rivalidade emergente entre o Cavs e o Orlando Magic, especialmente após a derrota dos Cavaliers nas finais da Conferência Leste de 2009 para o Magic.<br>
+         </p>
+    </li>
+
+   
+    <div class="container">
+        <h1 id="CorePlayers"><b>Orlando Magic Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Universidade</th>
+                    <th>Salário</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cole Anthony</td>
+                    <td>PG</td>
+                    <td>50</td>
+                    <td>1,88 m</td>
+                    <td>83 kg</td>
+                    <td>North Carolina</td>
+                    <td>$12,900,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432809.png" alt="Cole Anthony" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Paolo Banchero</td>
+                    <td>PF</td>
+                    <td>5</td>
+                    <td>2,08 m</td>
+                    <td>113 kg</td>
+                    <td>Duke</td>
+                    <td>$12,160,800</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432573.png" alt="Paolo Banchero" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Goga Bitadze</td>
+                    <td>C</td>
+                    <td>35</td>
+                    <td>2,08 m</td>
+                    <td>113 kg</td>
+                    <td>--</td>
+                    <td>$9,057,971</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4348700.png" alt="Goga Bitadze" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Anthony Black</td>
+                    <td>G</td>
+                    <td>0</td>
+                    <td>2,01 m</td>
+                    <td>90 kg</td>
+                    <td>Arkansas</td>
+                    <td>$7,607,760</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4712849.png" alt="Anthony Black" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Kentavious Caldwell-Pope</td>
+                    <td>SG</td>
+                    <td>3</td>
+                    <td>1,96 m</td>
+                    <td>92 kg</td>
+                    <td>Georgia</td>
+                    <td>$22,757,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2581018.png" alt="Kentavious Caldwell-Pope" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Wendell Carter Jr.</td>
+                    <td>C</td>
+                    <td>34</td>
+                    <td>2,08 m</td>
+                    <td>122 kg</td>
+                    <td>Duke</td>
+                    <td>$11,950,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4277847.png" alt="Wendell Carter Jr." width="50"></td>
+                </tr>
+                <tr>
+                    <td>Tristan da Silva</td>
+                    <td>A</td>
+                    <td>23</td>
+                    <td>2,03 m</td>
+                    <td>98 kg</td>
+                    <td>Colorado</td>
+                    <td>$3,628,440</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4702382.png" alt="Tristan da Silva" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Gary Harris</td>
+                    <td>SG</td>
+                    <td>14</td>
+                    <td>1,93 m</td>
+                    <td>95 kg</td>
+                    <td>Michigan State</td>
+                    <td>$6,730,769</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2999547.png" alt="Gary Harris" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Caleb Houstan</td>
+                    <td>G</td>
+                    <td>2</td>
+                    <td>2,03 m</td>
+                    <td>92 kg</td>
+                    <td>Michigan</td>
+                    <td>$2,019,693</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433623.png" alt="Caleb Houstan" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jett Howard</td>
+                    <td>G</td>
+                    <td>13</td>
+                    <td>1,98 m</td>
+                    <td>97 kg</td>
+                    <td>Michigan</td>
+                    <td>$5,278,320</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5105806.png" alt="Jett Howard" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jonathan Isaac</td>
+                    <td>PF</td>
+                    <td>1</td>
+                    <td>2,08 m</td>
+                    <td>104 kg</td>
+                    <td>Florida State</td>
+                    <td>$25,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4065654.png" alt="Jonathan Isaac" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Cory Joseph</td>
+                    <td>PG</td>
+                    <td>10</td>
+                    <td>1,88 m</td>
+                    <td>90 kg</td>
+                    <td>Texas</td>
+                    <td>$3,303,771</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/6446.png" alt="Cory Joseph" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Mac McClung</td>
+                    <td>G</td>
+                    <td>8</td>
+                    <td>1,88 m</td>
+                    <td>83 kg</td>
+                    <td>Memphis</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397071.png" alt="Mac McClung" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Trevelin Queen</td>
+                    <td>SG</td>
+                    <td>12</td>
+                    <td>1,96 m</td>
+                    <td>86 kg</td>
+                    <td>New Mexico State</td>
+                    <td>--</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4409222.png" alt="Trevelin Queen" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Jalen Suggs</td>
+                    <td>SG</td>
+                    <td>4</td>
+                    <td>1,96 m</td>
+                    <td>92 kg</td>
+                    <td>Gonzaga</td>
+                    <td>$9,188,385</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432165.png" alt="Jalen Suggs" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Franz Wagner</td>
+                    <td>SF</td>
+                    <td>22</td>
+                    <td>2,08 m</td>
+                    <td>99 kg</td>
+                    <td>Michigan</td>
+                    <td>$7,007,092</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4566434.png" alt="Franz Wagner" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Moritz Wagner</td>
+                    <td>C</td>
+                    <td>21</td>
+                    <td>2,11 m</td>
+                    <td>111 kg</td>
+                    <td>Michigan</td>
+                    <td>$11,000,000</td>
+                    <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3150844.png" alt="Moritz Wagner" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Orlando Magic</b></h2>
+        <form id="magic-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Orlando Magic?</label>
+                <br>
+                <div>
+                    <label for="player-cole-anthony">Cole Anthony</label>
+                    <input type="radio" id="player-cole-anthony" name="favorite-player" value="Cole Anthony">
+                    
+                </div>
+                <div>
+                    <label for="player-paolo-banchero">Paolo Banchero</label>
+                    <input type="radio" id="player-paolo-banchero" name="favorite-player" value="Paolo Banchero">
+                    
+                </div>
+                <div>
+                    <label for="player-markelle-fultz">Markelle Fultz</label>
+                    <input type="radio" id="player-markelle-fultz" name="favorite-player" value="Markelle Fultz">
+                    
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Orlando Magic?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-shaq">Shaquille O'Neal</label>
+                    <input type="radio" id="greatest-player-shaq" name="greatest-player" value="Shaquille O'Neal">    
+                </div>
+                <div>   
+                    <label for="greatest-player-penny">Penny Hardaway</label>
+                    <input type="radio" id="greatest-player-penny" name="greatest-player" value="Penny Hardaway">
+                </div>
+                <div>
+                    <br>
+                    <label for="greatest-player-dwight-howard">Dwight Howard</label>
+                    <input type="radio" id="greatest-player-dwight-howard" name="greatest-player" value="Dwight Howard">
+                </div>
+                <div>
+                    <br>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada do Orlando Magic?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                    
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Orlando Magic!</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+  <script>
+    document.getElementById('magic-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body> 

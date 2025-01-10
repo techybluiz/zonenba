@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Oklahoma Thunder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #007DC3;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #F05033;
+        }
+ 
+        th {
+            background-color: #007DC3;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="submit"] {
+            background-color: #F05033;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #007DC3;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #F05033;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #007DC3;
+
+        }
+        
+        .formulario {
+            background-color: #e0f4ff;
+        }
+        footer ul li {
+            display: inline-block;
+            margin: 0 -7px;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #F05033;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <header class="box-texto">      
+          <h1 class="title">Bem vindo Thunder Fans!</h1>
+          <span class="descricao">Oklahoma City Thunder</span>
+        </header><br>
+        <br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #007DC3;">Times <i class="fa-solid fa-bolt"></i></h1>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CoreseMascote">Cores e Mascote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="momentosnotaveis">Momentos Notáveis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rivalidades">Rivalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="CorePlayers">Core Players</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Quiz">Formulario</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section>
+        <div>
+            <img src="https://cdn.nba.com/teams/uploads/sites/1610612760/2021/12/logo.svg" alt="Oklahoma City Thunder">
+            <br>
+            <h1><b class="grifado">Oklahoma City Thunder</b></h1>
+            <br>
+            <h2><b>História</b></h2>
+            <p>
+                Os <b class="grifado">Oklahoma City Thunder</b> foram fundados em 1946 como parte da Basketball Association of America (BAA), que mais tarde se fundiu com a National Basketball League (NBL) para formar a NBA em 1949.<br> 
+                A equipe foi fundada por <b class="grifado"> Walter A. Brown</b>, um executivo de Boston Garden, e inicialmente era propriedade de Brown e dos irmãos Walter e Lou Pieri.
+                <br>
+                Nos primeiros anos da equipe, os Celtics não conseguiram encontrar muito sucesso em termos de campeonatos, mas eram competitivos na liga. Durante esse tempo, eles tiveram jogadores notáveis como<b>Bob Cousy,Tommy Heinsohn e Bill Sharman.</b>
+                <br>
+                <br>
+                <h2><b>Arena</b></h2>
+                <p>O Oklahoma City Thunder joga seus jogos em casa no <b class="grifado">Chesapeake Energy Arena</b>, localizada no centro de Oklahoma City. A arena tem capacidade para mais de 18.000 espectadores durante os jogos de basquete da NBA.</p>
+                <hr>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rumble_the_bison.png/378px-Rumble_the_bison.png" alt="Macote">
+                
+                <h2><b>Cores e Mascote</b></h2>
+                <p>   
+                        Seu mascote é o <b class="grifado">"Rumble the Bison"</b>, um bisonte antropomórfico que é uma figura popular durante os jogos da equipe.<br>
+                        Rumble, o bisão, é o mascote da equipe de basquete Oklahoma City Thunder, da NBA. Sua história como mascote é uma criação inspirada na rica herança cultural e geográfica de Oklahoma.<br>
+                        A história fictícia de Rumble remonta a centenas de anos, à época dos nativos americanos. Segundo a lenda, um grande rebanho de bisões americanos se perdeu nas Montanhas Arbuckle durante uma tempestade feroz, única da região de Oklahoma. Enquanto o rebanho tentava encontrar seu caminho para a segurança das planícies, um bisão corajoso ficou para trás para ajudar seus amigos a escapar de um desfiladeiro traiçoeiro.<br>
+                        No entanto, quando o bisão tentou seguir seus amigos, seu caminho foi bloqueado por rochas caídas.<br>
+                        Ele escalou o pico mais alto da montanha em busca de um caminho de volta, mas foi atingido por um raio. Em vez de ser destruído, ele foi transformado pelo poder do deus do trovão, ganhando habilidades sobre-humanas e se tornando uma figura lendária.<br>
+
+                        Esta história mítica se encaixa perfeitamente na identidade da equipe de basquete de Oklahoma City, cujo nome, Thunder, é uma referência direta aos trovões que são comuns na região. Rumble personifica a força, a energia e a determinação associadas à cultura e ao povo de Oklahoma.<br>
+
+                        A história de Rumble é contada durante os jogos do Oklahoma City Thunder, onde ele entretém os fãs com suas acrobacias, interações com a multidão e performances animadas. Ele se tornou uma figura icônica e amada dentro da comunidade do Thunder e é uma parte fundamental da experiência do jogo para os fãs.<br>
+            
+                </p>
+        </div>
+    </section>
+<hr>
+<section>
+    <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+        <p>
+            <li><b class="grifado">Chegada de Kevin Durant e o "Big Three"</b>Com a chegada de Kevin Durant, Russell Westbrook e James Harden, o Thunder formou um "Big Three" jovem e promissor. Esse trio ajudou a transformar a equipe em uma das mais competitivas da NBA, estabelecendo uma base sólida para o futuro.</li>
+            <li><b class="grifado">Final da NBA (2012)</b>Em 2012, o Thunder chegou às Finais da NBA, enfrentando o Miami Heat. Embora tenham perdido para o Heat de LeBron James, Dwyane Wade e Chris Bosh, chegar às Finais foi um marco significativo e um indicativo do potencial da equipe.</li>
+            <li><b class="grifado">MVP de Russell Westbrook e a Temporada de 2016-2017</b> Na temporada 2016-2017, Russell Westbrook teve uma das temporadas individuais mais impressionantes da história da NBA, conquistando o prêmio de MVP. Ele teve uma média de triplo-duplo ao longo da temporada, o que foi um feito notável e destacou a habilidade e a dedicação de Westbrook.</li>
+            <li><b class="grifado">Mudança para Oklahoma City (2008)</b> Em 2008, a franquia Seattle SuperSonics se mudou para Oklahoma City e foi rebatizada como Oklahoma City Thunder. A mudança marcou o início de uma nova era para a equipe em uma nova cidade e foi um momento decisivo na história da franquia.</li>
+        </p>
+
+</section>
+<hr>
+    <div class="rivalidades">
+        <h2><b>Rivalidades</b></h2>
+    <p>
+        <li><a href="SanAntonioSpurs.html">San Antonio Spurs:</a> A rivalidade entre o Thunder e o Spurs é intensa e remonta aos anos em que ambas as equipes eram fortes concorrentes na Conferência Oeste. O Spurs, liderado por Gregg Popovich e jogadores como Tim Duncan, enfrentou o Thunder em várias batalhas de playoffs significativas.</li>
+        <li><a href="DallasMavericks.html">Dallas Mavericks:</a> O confronto entre o Thunder e os Mavericks é também bastante notável. A rivalidade é intensificada pelos jogos acirrados e pelas batalhas na Conferência Oeste, especialmente durante os playoffs.</li>
+        <li><a href="HoustonRockets.html">Houston Rockets:</a> A rivalidade entre o Thunder e os Rockets cresceu principalmente devido às disputas de playoffs e às trocas de jogadores importantes, como a troca de James Harden, que passou do Thunder para os Rockets.</li>
+    </p>
+    
+</div>
+
+<div class="container">
+    <h1 id="CorePlayers"><b>Oklahoma City Thunder Core Players </b></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Idade</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>Universidade</th>
+                <th>Salário</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alex Caruso</td>
+                <td>SG</td>
+                <td>30</td>
+                <td>1,96 m</td>
+                <td>84 kg</td>
+                <td>Texas A&M</td>
+                <td>$9,890,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/2991350.png" alt="Alex Caruso" width="50"></td>
+            </tr>
+            <tr>
+                <td>Ousmane Dieng</td>
+                <td>A</td>
+                <td>21</td>
+                <td>2,06 m</td>
+                <td>83 kg</td>
+                <td>--</td>
+                <td>$5,027,040</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4997526.png" alt="Ousmane Dieng" width="50"></td>
+            </tr>
+            <tr>
+                <td>Luguentz Dort</td>
+                <td>G</td>
+                <td>25</td>
+                <td>1,93 m</td>
+                <td>99 kg</td>
+                <td>Arizona State</td>
+                <td>$16,500,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397020.png" alt="Luguentz Dort" width="50"></td>
+            </tr>
+            <tr>
+                <td>Alex Ducas</td>
+                <td>G</td>
+                <td>24</td>
+                <td>2,01 m</td>
+                <td>99 kg</td>
+                <td>Saint Mary's</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432971.png" alt="Alex Ducas" width="50"></td>
+            </tr>
+            <tr>
+                <td>Adam Flagler</td>
+                <td>A</td>
+                <td>25</td>
+                <td>1,91 m</td>
+                <td>81 kg</td>
+                <td>Baylor</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397654.png" alt="Adam Flagler" width="50"></td>
+            </tr>
+            <tr>
+                <td>Shai Gilgeous-Alexander</td>
+                <td>PG</td>
+                <td>26</td>
+                <td>1,98 m</td>
+                <td>88 kg</td>
+                <td>Kentucky</td>
+                <td>$35,859,950</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4278073.png" alt="Shai Gilgeous-Alexander" width="50"></td>
+            </tr>
+            <tr>
+                <td>Isaiah Hartenstein</td>
+                <td>C</td>
+                <td>26</td>
+                <td>2,13 m</td>
+                <td>113 kg</td>
+                <td>--</td>
+                <td>$30,000,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4222252.png" alt="Isaiah Hartenstein" width="50"></td>
+            </tr>
+            <tr>
+                <td>Chet Holmgren</td>
+                <td>PF</td>
+                <td>22</td>
+                <td>2,16 m</td>
+                <td>94 kg</td>
+                <td>Gonzaga</td>
+                <td>$10,880,640</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4433255.png" alt="Chet Holmgren" width="50"></td>
+            </tr>
+            <tr>
+                <td>Isaiah Joe</td>
+                <td>SG</td>
+                <td>25</td>
+                <td>1,91 m</td>
+                <td>74 kg</td>
+                <td>Arkansas</td>
+                <td>$12,991,650</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395702.png" alt="Isaiah Joe" width="50"></td>
+            </tr>
+            <tr>
+                <td>Dillon Jones</td>
+                <td>A</td>
+                <td>23</td>
+                <td>1,96 m</td>
+                <td>106 kg</td>
+                <td>Weber State</td>
+                <td>$2,622,360</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4702159.png" alt="Dillon Jones" width="50"></td>
+            </tr>
+            <tr>
+                <td>Ajay Mitchell</td>
+                <td>G</td>
+                <td>22</td>
+                <td>1,96 m</td>
+                <td>86 kg</td>
+                <td>UC Santa Barbara</td>
+                <td>--</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4900671.png" alt="Ajay Mitchell" width="50"></td>
+            </tr>
+            <tr>
+                <td>Nikola Topic</td>
+                <td>G</td>
+                <td>19</td>
+                <td>1,98 m</td>
+                <td>90 kg</td>
+                <td>--</td>
+                <td>$4,935,960</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/5159925.png" alt="Nikola Topic" width="50"></td>
+            </tr>
+            <tr>
+                <td>Cason Wallace</td>
+                <td>G</td>
+                <td>21</td>
+                <td>1,91 m</td>
+                <td>88 kg</td>
+                <td>Kentucky</td>
+                <td>$5,555,880</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4683692.png" alt="Cason Wallace" width="50"></td>
+            </tr>
+            <tr>
+                <td>Aaron Wiggins</td>
+                <td>SG</td>
+                <td>26</td>
+                <td>1,96 m</td>
+                <td>86 kg</td>
+                <td>Maryland</td>
+                <td>$10,514,017</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4397183.png" alt="Aaron Wiggins" width="50"></td>
+            </tr>
+            <tr>
+                <td>Jalen Williams</td>
+                <td>A</td>
+                <td>23</td>
+                <td>1,96 m</td>
+                <td>95 kg</td>
+                <td>Santa Clara</td>
+                <td>$4,775,760</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4593803.png" alt="Jalen Williams" width="50"></td>
+            </tr>
+            <tr>
+                <td>Jaylin Williams</td>
+                <td>A</td>
+                <td>22</td>
+                <td>2,06 m</td>
+                <td>108 kg</td>
+                <td>Arkansas</td>
+                <td>$2,019,699</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4432823.png" alt="Jaylin Williams" width="50"></td>
+            </tr>
+            <tr>
+                <td>Kenrich Williams</td>
+                <td>SF</td>
+                <td>30</td>
+                <td>1,98 m</td>
+                <td>95 kg</td>
+                <td>TCU</td>
+                <td>$6,669,000</td>
+                <td><img src="https://a.espncdn.com/i/headshots/nba/players/full/3133626.png" alt="Kenrich Williams" width="50"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+    <div class="formulario">
+        <h2><b>Formulário de Perguntas sobre o Oklahoma City Thunder</b></h2>
+        <form id="thunder-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Oklahoma City Thunder?</label>
+                <br>
+                <div>
+                    <label for="player-shai-gilgeous-alexander">Shai Gilgeous-Alexander</label>
+                    <input type="radio" id="player-shai-gilgeous-alexander" name="favorite-player" value="Shai Gilgeous-Alexander">
+                </div>
+                <div>
+                    <label for="player-luguentz-dort">Luguentz Dort</label>
+                    <input type="radio" id="player-luguentz-dort" name="favorite-player" value="Luguentz Dort">
+                </div>
+                <div>
+                    <label for="player-josh-giddey">Josh Giddey</label>
+                    <input type="radio" id="player-josh-giddey" name="favorite-player" value="Josh Giddey">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Oklahoma City Thunder?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-kevin-durant">Kevin Durant</label>
+                    <input type="radio" id="greatest-player-kevin-durant" name="greatest-player" value="Kevin Durant">
+                </div>
+                <div>
+                    <label for="greatest-player-russell-westbrook">Russell Westbrook</label>
+                    <input type="radio" id="greatest-player-russell-westbrook" name="greatest-player" value="Russell Westbrook">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-championship">Vencer o campeonato</label>
+                    <input type="radio" id="next-season-expectation-championship" name="next-season-expectation" value="Vencer o campeonato">
+                </div>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelos Oklahoma City Thunder!</p>
+    </div>
+    
+    
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+      <script>
+        document.getElementById('thunder-form').addEventListener('submit', function (event) {
+          event.preventDefault(); // Impede o envio padrão do formulário
+          document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+          document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+        });
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+</body>

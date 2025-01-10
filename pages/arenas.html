@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>NBAZone - Arenas</title>
+    <style>
+        .baner {
+            width: 100%;
+            height: auto;
+        }
+        
+        .allstar-games {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Barlow', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .allstar-games h1 {
+            text-align: center;
+            color: #C8102E;
+            margin-bottom: 30px;
+        }
+        
+        .allstar-games h2 {
+            color: #004B87;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #d81b60;
+            padding-bottom: 5px;
+        }
+
+        .allstar-games h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .arena {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .arena:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .arena img {
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            height: auto;
+        }
+        
+        .arena-info {
+            flex: 1;
+            margin: 30px;
+        }
+
+        .arena-info p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .arena-info:last-child {
+            margin-bottom: 0;
+        }
+
+        .arena-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        #eventos-memoraveis {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#eventos-memoraveis h2 {
+  color: #004B87;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#eventos-memoraveis ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#eventos-memoraveis li {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+ 
+}
+
+        footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #333; /* Linha sutil para separar */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px; /* Espaçamento entre links */
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12; /* Cor laranja suave no hover */
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between; /* Espaça os itens */
+  align-items: center;
+  flex-wrap: wrap; /* Permite quebra em telas menores */
+  max-width: 1200px; /* Limita o tamanho máximo do footer */
+  margin: 0 auto; /* Centraliza o footer */
+}
+
+footer ul {
+  list-style: none;
+  display: flex; /* Organiza os links em linha */
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 0 10px; /* Espaçamento entre os itens */
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+}
+
+footer .social-icons a {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2); /* Aumenta o ícone no hover */
+}
+
+footer .copy-text {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.7;
+  width: 100%;
+  text-align: center; /* Centraliza o texto de copyright */
+} 
+        
+        /* Ajuste responsivo para telas menores */
+        @media (max-width: 768px) {
+            .arena {
+                flex-direction: column;
+                text-align: center; /* Centraliza o texto em telas pequenas */
+            }
+            
+            .arena img {
+                margin-top: 20px;
+                max-width: 100%;
+            }
+
+            .arena-info {
+                padding-right: 0;
+                padding-bottom: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <img class="baner" src="https://i.ibb.co/tH9Z1Mh/stargamesbaner.png" alt="baner">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/nbaoficial/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="AllStarGames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="arenas.html">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="times.html">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="e-mail.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    
+    <div class="allstar-games">
+        <h1>Arenas</h1>
+        <section id="introducao">
+            <p>
+                As arenas da NBA são muito mais do que simples locais onde acontecem os jogos. Elas representam verdadeiros templos do basquete, locais onde a história do esporte foi escrita e continua a ser feita a cada temporada. São espaços icônicos que carregam em suas arquibancadas a emoção de milhões de fãs, sendo o palco de momentos decisivos, jogadas inesquecíveis e conquistas históricas. Além disso, cada arena possui uma atmosfera única, refletindo a cultura e o espírito da cidade que representa. Seja pela vibração dos torcedores, pelas grandes rivalidades ou pelas celebrações emocionantes, essas arenas são o coração pulsante da NBA, onde a paixão pelo basquete ganha vida em cada partida, evento ou celebração que ali acontece.
+            </p>
+        </section>
+        <br>
+        <section id="arenas">
+            <h2>Arenas Principais</h2>
+            <div class="arena">
+              <div class="arena-info">
+                <h3>Madison Square Garden</h3>
+                <p>Localização: Los Angeles, CA</p>
+                <p>Capacidade: 19,068</p>
+              </div>
+              <img src="https://image.visitenovayork.com.br/wp-content/uploads/2015/03/Madison-Square-Garden-in-New-York.jpg" alt="Staples Center">
+            </div>
+            <div class="arena">
+                <div class="arena-info">
+                  <h3>Staples Center</h3>
+                  <p>Localização: Los Angeles, CA</p>
+                  <p>Capacidade: 19,068</p>
+                </div>
+                <img src="https://i0.wp.com/stadiumbase.com/wp-content/uploads/2020/05/Staples-Center-shutterstock_1321244213.jpg?fit=1000%2C562&ssl=1" alt="Staples Center">
+              </div>
+            <div class="arena">
+                <div class="arena-info">
+                  <h3>United Center</h3>
+                  <p>Localização: New York, NY</p>
+                  <p>Capacidade: 19,812</p>
+                </div>
+                <img src="https://www.unitedcenter.com/assets/1/7/unitedcenter3.png" alt="United Center">
+              </div>
+        </section>
+          
+        <section id="curiosidades">
+            <h2>Curiosidades</h2>
+            <ul>
+                <li><b>O Madison Square Garden, em Nova York, é mais antigo que a própria NBA:</b> Inaugurado em 1968, o MSG já foi palco de diversos eventos históricos, incluindo concertos de grandes artistas e lutas de boxe. Ele já teve diversas reformas e expansões, mas mantém seu charme e importância para a cidade.</li><br>
+                <li><b>O Chase Center, casa do Golden State Warriors, é um dos mais modernos da NBA:</b> Inaugurado em 2019, o Chase Center é um verdadeiro show de tecnologia e sustentabilidade. A arena possui um telhado retrátil, um sistema de som de última geração e diversas opções de alimentação.</li><br>
+                <li><b>O Staples Center, em Los Angeles, é um dos mais movimentados do mundo: </b> Além de ser a casa dos Lakers e Clippers, o Staples Center também recebe shows, eventos e outras competições esportivas. A arena é um dos principais destinos turísticos de Los Angeles.</li><br>
+                <li><b>O TD Garden, em Boston, é conhecido por sua atmosfera intimidadora: </b> A torcida dos Celtics é considerada uma das mais apaixonadas da NBA, e o TD Garden é o palco perfeito para essa paixão. A arena é conhecida por ser barulhenta e por criar um ambiente hostil para os times visitantes.</li><br>
+                <li><b>O Smoothie King Center, em Nova Orleans, foi construído após o furacão Katrina:</b>A arena dos Pelicans foi inaugurada em 2007, após a devastação causada pelo furacão Katrina. A construção do Smoothie King Center foi um marco na recuperação da cidade.</li><br>
+            </ul>
+        </section>
+
+        <section>
+          <h2>Eventos Memoráveis</h2>
+          <ul>
+            <li>
+              <h3>Final da NBA de 2016</h3>
+              <p>Local: Oracle Arena, Oakland, CA</p>
+              <p>O Golden State Warriors enfrentou o Cleveland Cavaliers em uma das finais mais emocionantes da história.</p>
+            </li>
+            <li>
+              <h3>Jogo de despedida de Kobe Bryant</h3>
+              <p>Local: Staples Center, Los Angeles, CA</p>
+              <p>Uma noite inesquecível em 2016, onde Kobe marcou 60 pontos no último jogo de sua carreira.</p>
+            </li>
+            <li>
+              <h3>O Jogo das Estrelas de 1992</h3>
+              <p>Local: Orlando Arena, Orlando, FL</p>
+              <p>Este All-Star Game ficou marcado pela emocionante participação de Magic Johnson, que havia se aposentado em 1991 após revelar que era portador do HIV. Ele foi ovacionado pelos fãs e encerrou o jogo com uma performance icônica, sendo eleito o MVP da partida.</p>
+            </li>
+            <li>
+              <h3>A Volta dos Bulls em 1996</h3>
+              <p>Local: United Center, Chicago, IL</p>
+              <p>Após o retorno de Michael Jordan, os Bulls conquistaram o título da NBA com um recorde de 72 vitórias na temporada regular, tornando-se uma das equipes mais icônicas da história.</p>
+            </li>
+            <li>
+              <h3>O Bloqueio de LeBron James em 2016</h3>
+              <p>Local: Oracle Arena, Oakland, CA</p>
+              <p>Conhecido como "The Block", o lance de LeBron James contra Andre Iguodala no Jogo 7 das Finais de 2016 é considerado um dos momentos mais lendários da história da NBA.</p>
+            </li>
+          </ul>
+        </section>           
+    </div>
+
+    <footer>
+      <div class="container">
+          <ul>
+              <li><a href="nbaoficial/index.html">Home</a></li>
+              <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+              <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+              <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+          </ul>
+          
+          <div class="social-icons">
+              <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div>
+      
+      <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+    </footer>
+    
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fIS28fKNuSy82olZu2UNUbzJrjKk4cOeY0PnN/3kq5CkTX9aW1Kgq3M08iIKG/mnEw5rwS8QqH0a1ED6N5O4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script> import Card from 'primevue/card'; </script>
+    <title>NBAZone - Times</title>
+    <style>
+
+.baner {
+    width: 100%;
+    height: auto; 
+}
+
+h1 {
+    text-align: center;
+    color: #C8102E;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.column {
+    flex: 1 0 20%; 
+    padding: 10px;
+    text-align: center;
+}
+
+.column img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.column p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #790000;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer .social-icons a:hover {
+    color: #790000;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 1300px) {
+    .column {
+        flex: 1 0 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    .column {
+        flex: 1 0 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 1 0 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .column {
+        flex: 1 0 100%; 
+    }
+
+    .column img {
+        width: 80px; 
+        height: 80px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <img class="baner" src="https://i.ibb.co/hBTpdpJ/Onde-a-paix-o-pelo-basquete-ganha-vida.png" alt="baner">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/pages/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/AllStarGames.html">All Star Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/arenas.html">Arenas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/times.html">Times</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/e-mail.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <div class="conteudo">
+        <h1 class="titulo">Times</h1>
+    </div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <a href="/times/AtlantaHawks.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg" alt="Atlanta Hawks">
+                <p>Atlanta Hawks</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/BostonCeltics.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg" alt="Boston Celtics">
+                <p>Boston Celtics</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/BrooklynNets.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612751/global/L/logo.svg" alt="Brooklyn Nets">
+                <p>Brooklyn Nets</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/CharlotteHornets.html" target="_blank">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612766/2022/04/hornets_logo2.svg" alt="Charlotte Hornets">
+                <p>Charlotte Hornets</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/ChicagoBulls.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg" alt="Chicago Bulls">
+                <p>Chicago Bulls</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/ClevelandCavaliers.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" alt="Cleveland Cavaliers">
+                <p>Cleveland Cavaliers</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/DallasMavericks.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg" alt="Dallas Mavericks">
+                <p>Dallas Mavericks</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/DenverNuggets.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg" alt="Denver Nuggets">
+                <p>Denver Nuggets</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/DetroitPistons.html" target="_blank">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612765/2021/09/dp-primary.svg" alt="Detroit Pistons">
+                <p>Detroit Pistons</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/GoldenStateWarriors.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg" alt="Golden State Warriors">
+                <p>Golden State Warriors</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <a href="/times/HoustonRockets.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg" alt="Houston Rockets">
+                <p>Houston Rockets</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/IndianaPacers.html" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/e/ef/Indiana_Pacers.png" alt="Indiana Pacers">
+                <p>Indiana Pacers</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/LaClippers.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg" alt="Los Angeles Clippers">
+                <p>Los Angeles Clippers</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/LaLakers.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612747/primary/L/logo.svg" alt="Los Angeles Lakers">
+                <p>Los Angeles Lakers</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/MemphisGrizzlies.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg" alt="Memphis Grizzlies">
+                <p>Memphis Grizzlies</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/MiamiHeat.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612748/global/L/logo.svg" alt="Miami Heat">
+                <p>Miami Heat</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/MilwaukeeBucks.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg" alt="Milwaukee Bucks">
+                <p>Milwaukee Bucks</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/MinnesotaTimberwolves.html" target="_blank">
+                <img src="https://cdn.nba.com/teams/uploads/sites/1610612750/2021/11/logo-1.svg" alt="Minnesota Timberwolves">
+                <p>Minnesota Timberwolves</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/NewOrleansPelicans.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg" alt="New Orleans Pelicans">
+                <p>New Orleans Pelicans</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/NewYorkKnicks.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg" alt="New York Knicks">
+                <p>New York Knicks</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <a href="/times/OklahomaCityThunder.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg" alt="Oklahoma City Thunder">
+                <p>Oklahoma City Thunder</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/OrlandoMagic.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg" alt="Orlando Magic">
+                <p>Orlando Magic</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/Philadelphia76ers.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg" alt="Philadelphia 76ers">
+                <p>Philadelphia 76ers</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/PhoenixSuns.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg" alt="Phoenix Suns">
+                <p>Phoenix Suns</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/PortlandTrailBlazers.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg" alt="Portland Trail Blazers">
+                <p>Portland Trail Blazers</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/SacramentoKings.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg" alt="Sacramento Kings">
+                <p>Sacramento Kings</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/SanAntonioSpurs.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg" alt="San Antonio Spurs">
+                <p>San Antonio Spurs</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/TorontoRaptors.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg" alt="Toronto Raptors">
+                <p>Toronto Raptors</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/UtahJazz.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg" alt="Utah Jazz">
+                <p>Utah Jazz</p>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/times/WashingtonWizards.html" target="_blank">
+                <img src="https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg" alt="Washington Wizards">
+                <p>Washington Wizards</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Times</a></li>
+                        <li><a href="#">Jogadores</a></li>
+                        <li><a href="http://localhost/pasta_teste/arenas.html">Arenas</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXSnhDSBMsQXLsFNHlJrnVZsbhLNnBLzZNKgvVgRNCpXGcmGzVsCKBtzhlhHgsDJrCKMN"><i class="fa-solid fa-envelope"></i></a>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+</body>
+</html>

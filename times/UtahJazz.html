@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBAZone - Utah Jazz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/nbazone/CSS/geral.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-expand-lg .navbar-nav {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: white;
+        }
+    
+        h2{
+            color: #1D7A3D;
+        }
+        b {
+            padding: 15px;
+            font-size: 1em;
+            color: #5F2A7F;
+        }
+ 
+        th {
+            background-color: #1D7A3D;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        input[type="submit"] {
+            background-color: #5F2A7F;
+            color: #fff;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #1D7A3D;
+        }
+        .bg-light {
+            background-color: darkgray;
+        
+        }
+        .bg-body-tertiary{
+            background: #F9A828;
+           }
+
+           .box-texto{
+            background: red;
+        
+        }
+
+        .title{
+            color: #1D7A3D;
+
+        }
+        
+        .formulario {
+            background-color: #fffaf2;
+        }
+   
+
+        @keyframes motion{
+            0%{
+                color: #F9A828;
+                margin-bottom: -42px;
+            }
+            30%{
+                letter-spacing: 30px;
+                margin-bottom: -42px;
+                }
+            85%{
+                letter-spacing: 5px;
+                margin-bottom: -42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="box-texto">      
+        <h1 class="title">Bem vindo Jazz Fans!</h1>
+        <span class="descricao">Utah Jazz</span>
+      </header><br>
+      <br>
+  <header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="https://icons.pn.vg/2019/11/14/5dcd9fafae66a.png" class="logo" alt="NBA LOGO">
+            <h1 style="color: #5F2A7F;">Times <i class="fa-solid fa-music" style="color: #5F2A7F;"></i></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/nbaoficial/pages/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/allstargames.html">All Star Games</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/times.html">Times</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nbaoficial/pages/e-mail.html">Contato</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mascote">Mascote</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#momentosnotaveis">Momentos Notáveis</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#rivalidades">Rivalidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#CorePlayers">Core Players</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#quiz">Formulario</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<br>
+    <header>
+        <h1><b>Utah Jazz</b></h1>
+        <img src="https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg" alt="Utah Jazz">
+    </header>
+
+    <section>
+        <h2 id="historia"><b>História</b></h2>
+        <p>O Utah Jazz foi fundado em 1974, inicialmente com o nome de New Orleans Jazz, localizado em Nova Orleans, Louisiana. A equipe foi uma das franquias de expansão da NBA e o nome foi inspirado no famoso legado musical de jazz da cidade. Contudo, a equipe se mudou para Salt Lake City, Utah, em 1979, devido a dificuldades financeiras e a falta de sucesso esportivo na cidade original.
+        <br>
+        A mudança para Salt Lake City trouxe um novo início para o time, e o nome "Jazz" foi mantido, apesar de Utah não ter a mesma tradição musical de Nova Orleans. No entanto, Utah começou a se destacar no cenário da NBA durante os anos 80 e 90, com a chegada de duas grandes lendas: John Stockton e Karl Malone. Juntos, eles formaram uma das duplas mais icônicas da história da NBA, levando o time a vários playoffs e duas finais de conferência durante a década de 1990.
+        <br>
+        O time conquistou uma base de fãs fiel e continuou a ser competitivo, mesmo após a aposentadoria de Stockton e Malone. O Utah Jazz continuou sua trajetória de sucesso, com momentos significativos em várias épocas, incluindo o trabalho com treinadores renomados como Jerry Sloan, que ficou à frente da equipe por mais de 20 anos.
+        </p>
+<br>
+        <h2><b>Arena</b></h2>
+        <p>
+            O Utah Jazz joga na<b>Vivint Arena</b>, localizada em Salt Lake City, Utah. Sua capacidade para jogos de basquete é de aproximadamente 18.000 espectadores para jogos de basquete.
+        </p>
+            <hr>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQmZU9iFDgKE5pzlO0Vc3xw4MhbnRArRqvw&s" alt="mascote">
+            <h2 id="mascote"><b>Mascote</b></h2>
+            <p>
+                O mascote do Utah Jazz é chamado<b>Jazz Bear</b>. Ele é um dos mascotes mais conhecidos e carismáticos da NBA e se tornou um símbolo de entretenimento e energia para os fãs do time.
+                Ele foi introduzido na liga em 1994 e já se apresentou em mais de 800 jogos em casa da equipe.
+                O Jazz Bear é um ursinho grande, com pelagem marrom e um rosto expressivo e amigável. Ele usa uma camiseta do time, com o logo do Utah Jazz, e frequentemente exibe acessórios coloridos durante os jogos, interagindo com a torcida.
+                Jazz Bear foi introduzido na década de 1990 e rapidamente se tornou uma das figuras mais amadas pelos fãs do Utah Jazz. Ele é conhecido por ser muito ativo, sempre criando momentos divertidos e às vezes até engraçados, além de ter conquistado o público de todas as idades.
+            </p>
+        </div>
+  
+        <div>
+            <h2 id="momentosnotaveis"><b>Momentos Notáveis</b></h2>
+            <p>
+                <li><b class="grifado">Fundação e Início da História (1974-1979):</b> O **Utah Jazz** foi fundado em **1974** sob o nome de **New Orleans Jazz** e foi a primeira franquia da NBA na cidade de Nova Orleans. A equipe mudou-se para **Salt Lake City**, Utah, em **1979**, mantendo o nome "Jazz", mesmo sem uma grande ligação com a tradição musical de Utah.</li>
+                <li><b class="grifado">A Era Stockton e Malone (1980-2003):</b> Durante as décadas de 1980 e 1990, os **Utah Jazz** se tornaram uma das equipes mais fortes da NBA, graças à lendária dupla **John Stockton** (armador) e **Karl Malone** (pivô). Essa parceria levou o time a vários playoffs, incluindo duas finais de conferência em 1997 e 1998.</li>
+                <li><b class="grifado">As Finais de Conferência (1997 e 1998):</b> Nos anos 90, o Jazz teve duas de suas maiores conquistas, chegando a **duas finais de conferência** seguidas, ambas contra o **Chicago Bulls** de Michael Jordan. Embora o Jazz tenha sido derrotado nas finais da NBA, os times de 1997 e 1998 ficaram marcados pela excelência de Stockton e Malone.</li>
+                <li><b class="grifado">A Era de Jerry Sloan (1988-2011):</b> O treinador **Jerry Sloan**, que comandou o Jazz por 23 anos, teve um impacto profundo na identidade do time, criando um estilo de jogo focado na defesa e no jogo coletivo. Sloan ajudou o time a se manter competitivo, tornando o Jazz uma presença constante nos playoffs durante as décadas de 1990 e 2000.</li>
+                <li><b class="grifado">Chegada de Deron Williams (2005):</b> Em 2005, o Jazz adquiriu o armador **Deron Williams**, que trouxe uma nova era de sucesso para o time. Sob sua liderança, o Jazz se tornou novamente uma ameaça nos playoffs e chegou às finais da Conferência Oeste em 2007, onde foi derrotado pelo **San Antonio Spurs**.</li>
+                <li><b class="grifado">A Era de Rudy Gobert e Donovan Mitchell (2017-presente):</b> Com a ascensão de **Rudy Gobert**, um dos melhores defensores da NBA, e **Donovan Mitchell**, um dos maiores talentos jovens da liga, o Utah Jazz entrou em uma nova fase de sucesso. A equipe teve ótimas campanhas na temporada regular e se tornou uma das principais forças da Conferência Oeste, especialmente na temporada 2020-2021, quando terminou com a melhor campanha da NBA.</li>
+            </p>
+        </div>
+        
+
+        <div class="rivalidades">
+            <h2 id="rivalidades"><b>Rivalidades</b></h2>
+            <p>
+                <li><a href="LosAngelesLakers.html">Los Angeles Lakers:</a> A rivalidade entre os Utah Jazz e os Los Angeles Lakers começou com as emocionantes finais da Conferência Oeste de 1988, 1997 e 1998. Os Lakers de Magic Johnson e depois de Kobe Bryant sempre foram uma pedra no sapato do Jazz, com o time californiano frequentemente vencendo nos momentos decisivos. O confronto permanece intenso, especialmente pela proximidade e competitividade das duas equipes na Conferência Oeste.</li>
+                <li><a href="DenverNuggets.html">Denver Nuggets:</a> Outra rivalidade importante do Utah Jazz é com os Denver Nuggets, alimentada por anos de confrontos nas fases de playoffs. As duas equipes se enfrentaram em algumas batalhas memoráveis, especialmente nas últimas temporadas, com jogos físicos e disputados. A rivalidade também é destacada pela proximidade geográfica das duas cidades, o que adiciona uma dimensão extra de competição.</li>
+                <li><a href="PortlandTrailBlazers.html">Portland Trail Blazers:</a> O Utah Jazz também tem uma rivalidade histórica com os Portland Trail Blazers, que remonta aos anos 90, quando as duas equipes se enfrentaram diversas vezes nos playoffs. A rivalidade continuou ao longo dos anos, com confrontos emocionantes e disputados nas temporadas regulares e nos playoffs da NBA.</li>
+            </p>
+        </div>
+        
+    </section>
+<div class="container">
+    <h1 id="CorePlayers"><b>Utah Jazz Core Players</b></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Posição</th>
+                    <th>Número</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Precious Achiuwa</td>
+                    <td>Ala-pivô</td>
+                    <td>5</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Keita Bates-Diop</td>
+                    <td>Ala</td>
+                    <td>28</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Mikal Bridges</td>
+                    <td>Ala</td>
+                    <td>1</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Nic Claxton</td>
+                    <td>Pivô</td>
+                    <td>33</td>
+                    <td>2,11 m</td>
+                </tr>
+                <tr>
+                    <td>Noah Clowney</td>
+                    <td>Armador</td>
+                    <td>21</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Dorian Finney-Smith</td>
+                    <td>Ala-pivô</td>
+                    <td>28</td>
+                    <td>2,01 m</td>
+                </tr>
+                <tr>
+                    <td>Jacob Gilyard</td>
+                    <td>Armador</td>
+                    <td>14</td>
+                    <td>1,73 m</td>
+                </tr>
+                <tr>
+                    <td>Cameron Johnson</td>
+                    <td>Ala</td>
+                    <td>2</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Keon Johnson</td>
+                    <td>Armador</td>
+                    <td>45</td>
+                    <td>1,96 m</td>
+                </tr>
+                <tr>
+                    <td>Jaylen Martin</td>
+                    <td>Armador</td>
+                    <td>16</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Dennis Schroder</td>
+                    <td>Armador</td>
+                    <td>17</td>
+                    <td>1,85 m</td>
+                </tr>
+                <tr>
+                    <td>Day'Ron Sharpe</td>
+                    <td>Pivô</td>
+                    <td>20</td>
+                    <td>2,06 m</td>
+                </tr>
+                <tr>
+                    <td>Ben Simmons</td>
+                    <td>Armador</td>
+                    <td>10</td>
+                    <td>2,08 m</td>
+                </tr>
+                <tr>
+                    <td>Dennis Smith Jr.</td>
+                    <td>Armador</td>
+                    <td>4</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>Cam Thomas</td>
+                    <td>Ala-armador</td>
+                    <td>24</td>
+                    <td>1,91 m</td>
+                </tr>
+                <tr>
+                    <td>Lonnie Walker IV</td>
+                    <td>Armador</td>
+                    <td>8</td>
+                    <td>1,93 m</td>
+                </tr>
+                <tr>
+                    <td>Trendon Watford</td>
+                    <td>Ala-pivô</td>
+                    <td>9</td>
+                    <td>2,03 m</td>
+                </tr>
+                <tr>
+                    <td>Dariq Whitehead</td>
+                    <td>Armador</td>
+                    <td>0</td>
+                    <td>1,98 m</td>
+                </tr>
+                <tr>
+                    <td>Jalen Wilson</td>
+                    <td>Ala</td>
+                    <td>22</td>
+                    <td>1,98 m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="formulario">
+        <h2 id="quiz"><b>Formulário de Perguntas sobre o Utah Jazz</b></h2>
+        <form id="jazz-form">
+            <div class="form-group">
+                <label>Qual é o seu jogador favorito atual do Utah Jazz?</label>
+                <br>
+                <div>
+                    <label for="player-donovan-mitchell">Donovan Mitchell</label>
+                    <input type="radio" id="player-donovan-mitchell" name="favorite-player" value="Donovan Mitchell">
+                </div>
+                <div>
+                    <label for="player-rudy-gobert">Rudy Gobert</label>
+                    <input type="radio" id="player-rudy-gobert" name="favorite-player" value="Rudy Gobert">
+                </div>
+                <div>
+                    <label for="player-mike-conley">Mike Conley</label>
+                    <input type="radio" id="player-mike-conley" name="favorite-player" value="Mike Conley">
+                </div>
+                <div>
+                    <label for="player-other">Outro:</label>
+                    <input type="text" id="other-player" name="other-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Quem você considera o maior jogador da história do Utah Jazz?</label>
+                <br>
+                <div>
+                    <label for="greatest-player-john-stockton">John Stockton</label>
+                    <input type="radio" id="greatest-player-john-stockton" name="greatest-player" value="John Stockton">
+                </div>
+                <div>
+                    <label for="greatest-player-karl-malone">Karl Malone</label>
+                    <input type="radio" id="greatest-player-karl-malone" name="greatest-player" value="Karl Malone">
+                </div>
+                <div>
+                    <label for="greatest-player-other">Outro:</label>
+                    <input type="text" id="other-greatest-player" name="other-greatest-player" placeholder="Digite o nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Qual é a sua expectativa para a próxima temporada da NBA?</label>
+                <br>
+                <div>
+                    <label for="next-season-expectation-playoffs">Chegar aos playoffs</label>
+                    <input type="radio" id="next-season-expectation-playoffs" name="next-season-expectation" value="Chegar aos playoffs">
+                </div>
+                <div>
+                    <label for="next-season-expectation-title">Lutar pelo título</label>
+                    <input type="radio" id="next-season-expectation-title" name="next-season-expectation" value="Lutar pelo título">
+                </div>
+                <div>
+                    <label for="next-season-expectation-development">Desenvolvimento dos jogadores</label>
+                    <input type="radio" id="next-season-expectation-development" name="next-season-expectation" value="Desenvolvimento dos jogadores">
+                </div>
+                <div>
+                    <label for="next-season-expectation-other">Outro:</label>
+                    <input type="text" id="other-next-season-expectation" name="other-next-season-expectation" placeholder="Digite a expectativa">
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respostas">
+        </form>
+    </div>
+    
+    <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Obrigado pela sua participação!</h2>
+        <p>Suas respostas foram enviadas com sucesso. Continuamos juntos torcendo pelo Utah Jazz!</p>
+    </div>
+    
+    
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="nbaoficial/index.html">Home</a></li>
+                <li><a href="/nbaoficial/pages/allstargames.html">AllStarGames</a></li>
+                <li><a href="/nbaoficial/pages/arenas.html">Arenas</a></li>
+                <li><a href="/nbaoficial/pages/e-mail.html">Contato</a></li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="https://github.com/techybluiz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/biihlz_?s=21"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:techy.bluiz@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/bianca-santos-71227a19b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <p class="copy-text">&copy; 2025 Todos os direitos reservados. Desenvolvido por Bianca Luiz.</p>
+      </footer>
+
+  <script>
+    document.getElementById('jazz-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      document.querySelector('.formulario').style.display = 'none'; // Esconde o formulário
+      document.getElementById('thank-you-message').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+  </script>
+</body>
